@@ -1,0 +1,1656 @@
+{
+  "Fan": "Ornatilgan Tizimlar",
+  "Discrption": "Savollar_Toplami faylidagi barcha test savollari",
+  "test_savollari": [
+    {
+      "id": 1,
+      "savol": "UART qisqartmasining ma'nosi nima?",
+      "variantlar": {
+        "A": "Universal Asynchronous Receiver-Transmitter",
+        "B": "Universal Analog Routing Technology",
+        "C": "Unified Asynchronous Radio Transmission",
+        "D": "Universal Asynchronous Router-Transceiver"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 2,
+      "savol": "UART protokoli sinxronmi yoki asinxronmi va uning asosiy xususiyati nimada?",
+      "variantlar": {
+        "A": "Asinxron - ma'lumot uzatish uchun alohida taymer (clock) signali talab qilinmaydi",
+        "B": "Sinxron - ma'lumot uzatish uchun alohida taymer (clock) signali kerak bo'ladi",
+        "C": "Sinxron - ma'lumotlar faqat bitta sim orqali ikki tomonga uzatiladi",
+        "D": "Asinxron - ma'lumotlar faqat parallel ravishda uzatiladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 3,
+      "savol": "Ikki qurilma o'rtasida ikki tomonlama (full-duplex) UART aloqasini o'rnatish uchun kamida nechta asosiy ma'lumot liniyasi (sim) kerak (GND ni hisobga olmaganda)?",
+      "variantlar": {
+        "A": "2 ta (TX - uzatish va RX - qabul qilish liniyalari)",
+        "B": "1 ta (faqat Data liniyasi)",
+        "C": "3 ta (TX, RX va CLK liniyalari)",
+        "D": "4 ta (MISO, MOSI, SCK, CS liniyalari)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 4,
+      "savol": "UART aloqasida \"Baud rate\" nima va u aloqa qilayotgan ikki qurilmada qanday bo'lishi kerak?",
+      "variantlar": {
+        "A": "Bu ma'lumot uzatish tezligi (sekundiga bitlar soni) bo'lib, har ikki qurilmada bir xil qilib sozlanishi shart",
+        "B": "Bu ma'lumotlarni shifrlash darajasi bo'lib, faqat bitta qurilmada sozlanadi",
+        "C": "Bu xatoliklarni tekshirish algoritmiga berilgan nom",
+        "D": "Bu qurilmalarning kuchlanish darajasi bo'lib, har ikki qurilmada har xil bo'lishi mumkin"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 5,
+      "savol": "Odatda UART ma'lumotlar paketi (frame) tarkibi qanday ketma-ketlikdan iborat bo'ladi?",
+      "variantlar": {
+        "A": "Start bit, ma'lumot bitlari (Data bits), Paritet biti (Parity bit - ixtiyoriy) va Stop bit(lar)",
+        "B": "Faqat ma'lumot bitlari (Data bits) va sinxronlash signali (Clock)",
+        "C": "MAC manzil, IP manzil va ma'lumotlar",
+        "D": "Qurilma ID raqami, Register manzili va ma'lumotlar"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 6,
+      "savol": "SPI qisqartmasi qanday ma'noni anglatadi?",
+      "variantlar": {
+        "A": "Serial Peripheral Interface.",
+        "B": "System Peripheral Interconnect",
+        "C": "Synchronous Parallel Interface",
+        "D": "Serial Port Interface"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 7,
+      "savol": "SPI qanday turdagi aloqa protokoli hisoblanadi va uning asosiy xususiyati nima?",
+      "variantlar": {
+        "A": "Sinxron — ma'lumotlar uzatilishini sinxronlash uchun Master (Bosh) qurilma SCK (Serial Clock) signalini ishlab chiqaradi",
+        "B": "Asinxron — ma'lumot uzatish uchun maxsus takt (clock) signali kerak emas",
+        "C": "Yarim-sinxron — taymer signali Master va Slave qurilmalarda mustaqil ravishda ishlaydi",
+        "D": "Asinxron — ma'lumotlar faqat \"start\" va \"stop\" bitlari orqali boshqariladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 8,
+      "savol": "SPI interfeysida Master (Bosh) qurilmadan Slave (Tobe) qurilmaga ma'lumot uzatish uchun qaysi liniyadan foydalaniladi?",
+      "variantlar": {
+        "A": "MOSI (Master Out Slave In).",
+        "B": "MISO (Master In Slave Out)",
+        "C": "CS / SS (Chip Select/Slave Select)",
+        "D": "SCK (Serial Clock)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 9,
+      "savol": "CS (Chip Select) yoki SS (Slave Select) liniyasining asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "SPI tarmog'ida aynan qaysi Slave qurilma bilan aloqa o'rnatilishini tanlash va uni faollashtirish",
+        "B": "Ma'lumot uzatish tezligini (Baud rate) sozlash",
+        "C": "Uzatilgan ma'lumotlarda xatolik bor-yo'qligini tekshirish",
+        "D": "Master qurilmani quvvat bilan ta'minlash"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 10,
+      "savol": "SPI tarmog'ining ishlash arxitekturasi odatda qanday tuzilgan bo'ladi?",
+      "variantlar": {
+        "A": "Bitta Master qurilma va bitta yoki bir nechta Slave qurilmalar arxitekturasi asosida ishlaydi",
+        "B": "Bir nechta Master qurilmalar faqat bitta Slave qurilmani boshqaradi",
+        "C": "Barcha qurilmalar bitta tarmoqda teng huquqli (Peer-to-Peer) bo'lib ishlaydi",
+        "D": "Qurilmalar bir-biri bilan faqat halqa (Ring) ko'rinishida ulanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 11,
+      "savol": "11.I2C qsiqartmasining to’liq ma’nosi nima?",
+      "variantlar": {
+        "A": "Inter-Integrated Circuit.",
+        "B": "Internal-Internet Connection",
+        "C": "Inter-Interface Computer",
+        "D": "Integrated-Internal Chip"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 12,
+      "savol": "​I2C protokoli ma'lumot uzatish uchun nechta simdan (liniyadan) foydalanadi?",
+      "variantlar": {
+        "A": "2 ta (SDA va SCL).",
+        "B": "1 ta (faqat ma'lumot uchun)",
+        "C": "3 ta (MISO, MOSI, SCK)",
+        "D": "4 ta (RX, TX, GND, VCC)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 13,
+      "savol": "​I2C tarmog'ida SDA va SCL liniyalarining vazifasi nima?",
+      "variantlar": {
+        "A": "SDA – ma'lumotlar liniyasi, SCL – sinxronizatsiya (soat) liniyasi",
+        "B": "SDA – faqat qabul qilish, SCL – faqat jo'natish",
+        "C": "SDA – quvvat manbai, SCL – yer (GND)",
+        "D": "SDA – qurilmani yoqish, SCL – qurilmani o'chirish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 14,
+      "savol": "​I2C tarmog'i qanday arxitekturaga (boshqaruv turiga) asoslangan?",
+      "variantlar": {
+        "A": "Master-Slave (Asosiy va tobe qurilmalar)",
+        "B": "Peer-to-Peer (Teng huquqli)",
+        "C": "Ring (Halqa)",
+        "D": "Mesh (To'rsimon)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 15,
+      "savol": "​I2C protokoli asosan qanday maqsadlarda qo'llaniladi?",
+      "variantlar": {
+        "A": "Bitta plata ichida mikrokontroller va turli modullar (datchiklar, xotira chiplari, RTC) o'rtasida qisqa masofali aloqa o'rnatish uchun.",
+        "B": "Video va yuqori sifatli audio signallarni uzoq masofaga uzatish uchun",
+        "C": "Faqat katta hajmdagi fayllarni tezkor ko'chirish uchun",
+        "D": "Kompyuterlarni global tarmoqqa (Internetga) ulash uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 16,
+      "savol": "CAN qisqartmasi qanday ma'noni anglatadi?",
+      "variantlar": {
+        "A": "Controller Area Network",
+        "B": "Computer Area Network",
+        "C": "Central Analog Node",
+        "D": "Control and Navigation"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 17,
+      "savol": "CAN shina tizimi asosan qaysi sohalarda eng ko'p qo'llaniladi?",
+      "variantlar": {
+        "A": "Avtomobil sanoatida va sanoat avtomatizatsiyasida (mikrokontrollerlar va datchiklar o'rtasida)",
+        "B": "Uy internet tarmoqlarida (Wi-Fi va LAN o'rniga)",
+        "C": "Veb-serverlar o'rtasida katta hajmdagi fayllarni uzatishda",
+        "D": "Smartfonlar va simsiz qulochinlar o'rtasidagi aloqada"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 18,
+      "savol": "CAN tarmog'ida ma'lumotlar ikkita sim (CAN High va CAN Low) orqali differensial signal ko'rinishida uzatiladi. Buning asosiy sababi nima?",
+      "variantlar": {
+        "A": "Tashqi elektromagnit xalaqitlardan (shovqinlardan) himoya qilish va axborotning ishonchli yetib borishini ta'minlash",
+        "B": "Tarmoqdagi qurilmalarni yuqori kuchlanishli elektr energiyasi bilan ta'minlash",
+        "C": "Ma'lumotlarni apparat darajasida shifrlash (kriptografiya) uchun",
+        "D": "Biri faqat qabul qilish (RX), ikkinchisi faqat uzatish (TX) uchun xizmat qilgani sababli"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 19,
+      "savol": "CAN tizimida xabarlarning ustuvorligi (prioriteti) qanday aniqlanadi?",
+      "variantlar": {
+        "A": "Eng kichik ID (Identifier) raqamiga ega xabar eng yuqori ustuvorlikka ega bo'ladi va shina band bo'lganda birinchi bo'lib uzatiladi",
+        "B": "Eng katta ID (Identifier) raqamiga ega xabar birinchi bo'lib uzatiladi",
+        "C": "Ma'lumotlar navbat asosida (FIFO - birinchi kelgan, birinchi ketadi) uzatiladi",
+        "D": "Maxsus \"Master\" qurilma qaysi xabar birinchi ketishini hal qiladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 20,
+      "savol": "CAN tarmog'ining arxitekturasi (topologiyasi) qanday tuzilgan va markaziy boshqaruvchi (Master) qurilma bormi?",
+      "variantlar": {
+        "A": "Barcha qurilmalar umumiy shinaga parallel ulanadi (Bus topology) va tarmoqda qat'iy Master qurilma yo'q (Multi-master tizim)",
+        "B": "Tizimda qat'iy Master va Slave arxitekturasi ishlaydi, Master ruxsatisiz hech kim ma'lumot yo'llay olmaydi",
+        "C": "Tarmoq Yulduz (Star) shaklida bo'ladi va markaziy router barcha ma'lumotlarni boshqaradi",
+        "D": "Qurilmalar bir-biri bilan faqat halqa (Ring) shaklida ketma-ket ulanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 21,
+      "savol": "USB qisqartmasi qanday ma'noni anglatadi?",
+      "variantlar": {
+        "A": "Universal Serial Bus.",
+        "B": "Unified System Bus",
+        "C": "Universal Synchronous Board",
+        "D": "Utility Serial Bandwidth"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 22,
+      "savol": "USB tarmog'ining arxitekturasi (topologiyasi) qanday tuzilgan va kim uni boshqaradi?",
+      "variantlar": {
+        "A": "\"Yulduz\" (Tiered Star) topologiyasi asosida ishlaydi, tizimda faqat bitta Boshqaruvchi (Host - masalan, kompyuter) bo'ladi va barcha jarayonlarni faqat u boshqaradi",
+        "B": "\"Halqa\" (Ring) topologiyasi asosida ishlaydi, barcha qurilmalar bir-biriga ketma-ket zanjir bo'lib ulanadi",
+        "C": "Teng huquqli (Peer-to-Peer) bo'lib, har qanday qurilma xohlagan vaqtida boshqaruvni o'z qo'liga olishi mumkin",
+        "D": "\"To'r\" (Mesh) topologiyasi bo'lib, har bir USB qurilma tarmoqdagi boshqa barcha qurilmalar bilan to'g'ridan-to'g'ri ulanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 23,
+      "savol": "Standart USB 1.x va 2.0 portlari orqali qurilmalarni quvvatlantirish uchun taqdim etiladigan odatiy ishchi kuchlanish (VBUS) qancha bo'ladi?",
+      "variantlar": {
+        "A": "5V.",
+        "B": "3.3V",
+        "C": "12V",
+        "D": "24V"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 24,
+      "savol": "USB interfeysining standart (masalan, USB 2.0) ma'lumot uzatish liniyalari qanday nomlanadi va ular qanday ishlaydi?",
+      "variantlar": {
+        "A": "D+ va D- (Data+ va Data-) — shovqinlarga chidamli differensial signal orqali ma'lumot uzatiladi",
+        "B": "SCL va SDA — sinxron takt va ma'lumot liniyalari orqali",
+        "C": "RX va TX — alohida qabul qilish va uzatish liniyalari orqali",
+        "D": "MISO va MOSI — Master va Slave o'rtasidagi parallel liniyalar orqali"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 25,
+      "savol": "USB interfeysining \"Hot-swapping\" (yoki Hot-plugging) xususiyati nimani anglatadi?",
+      "variantlar": {
+        "A": "Kompyuterni (yoki Host qurilmani) o'chirib-yoqmasdan turib, USB qurilmalarni ulash va uzish imkoniyatini.",
+        "B": "Qurilma qizib ketganda avtomatik ravishda o'chishini va sovitish tizimi ishga tushishini",
+        "C": "Tarmoq tezligini avtomatik ravishda eng yuqori darajaga ko'tarish va optimallashtirishni",
+        "D": "Ma'lumotlarni apparat darajasida shifrlangan holda xavfsiz uzatishni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 26,
+      "savol": "Bluetooth orqali bir nechta qurilmalar o'zaro ulanganda qanday nomlanuvchi kichik tarmoq hosil bo'ladi?",
+      "variantlar": {
+        "A": "Piconet (Pikotarmoq).",
+        "B": "Ethernet (Eternet)",
+        "C": "Intranet (Intratarmoq)",
+        "D": "Subnet (Qism-tarmoq)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 27,
+      "savol": "Bluetooth tarmog'ida qurilmalar o'rtasida ulanishni boshqarish uchun qanday rollar taqsimlanadi?",
+      "variantlar": {
+        "A": "Master (Boshqaruvchi) va bitta yoki bir nechta Slave (Tobe) qurilmalar orqali",
+        "B": "Router (Marshrutizator) va Switch (Kommutator) rollari orqali",
+        "C": "Faqat teng huquqli (Peer-to-Peer) tugunlar bo'lib ishlaydi",
+        "D": "Faqat Ikkita Master qurilma orqali"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 28,
+      "savol": "Zamonaviy aqlli soatlar, fitnes datchiklar va \"Aqlli uy\" qurilmalarini uzoq vaqt quvvatlantirmasdan boshqarish imkonini beruvchi BLE texnologiyasining kengaytmasi nima?",
+      "variantlar": {
+        "A": "Bluetooth Low Energy.",
+        "B": "Bluetooth Large Extension",
+        "C": "Bluetooth Light Emission",
+        "D": "Bluetooth Local Environment"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 29,
+      "savol": "Ikki Bluetooth qurilmasini bir-biriga birinchi marta tanishtirish va xavfsiz boshqaruvni o'rnatish (masalan, smartfonni mashina magnitolasiga ulash) jarayoni nima deb ataladi?",
+      "variantlar": {
+        "A": "Pairing (Juftlash/Bog'lash)",
+        "B": "Broadcasting (Eshittirish)",
+        "C": "Handshaking (Qo'l siqish)",
+        "D": "Ping (Pinglash)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 30,
+      "savol": "Kundalik hayotda eng ko'p ishlatiladigan standart (Class 2) Bluetooth qurilmalarini smartfon orqali barqaror boshqarish uchun ular orasidagi masofa odatda qancha bo'lishi kerak?",
+      "variantlar": {
+        "A": "Taxminan 10 metr atrofida (to'siqlarga qarab)",
+        "B": "Maksimal 1-2 metr",
+        "C": "O'rtacha 100 metr",
+        "D": "1 kilometrgacha bemalol yetadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 31,
+      "savol": "O'rnatilgan tizimlarda (embedded systems) Wi-Fi tarmog'iga ulanish uchun eng mashhur, qulay va arzon mikrokontroller modullaridan biri qaysi?",
+      "variantlar": {
+        "A": "ESP8266 yoki ESP32 oilasiga mansub chiplar",
+        "B": "ATmega328P (Arduino Uno asosiy chipi)",
+        "C": "PIC16F877A",
+        "D": "555 Taymer mikrosxemasi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 32,
+      "savol": "Wi-Fi tarmog'ida qurilmalar (datchiklar, kontrollerlar) markaziy router (Kirish nuqtasi - Access Point) orqali bir-biriga va internetga ulansa, bu ulanish rejimi nima deb ataladi?",
+      "variantlar": {
+        "A": "Infrastructure (Infratuzilma rejimi)",
+        "B": "Piconet (Pikotarmoq)",
+        "C": "Ad-hoc (Teng huquqli ulanish)",
+        "D": "Ring (Halqasimon topologiya)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 33,
+      "savol": "Wi-Fi orqali ishlaydigan \"Aqlli uy\" yoki IoT (Internet of Things) qurilmalarida ma'lumotlarni kam energiya va trafik sarflab, tezkor uzatish uchun ko'pincha qaysi protokoldan foydalaniladi?",
+      "variantlar": {
+        "A": "MQTT (Message Queuing Telemetry Transport)",
+        "B": "FTP (File Transfer Protocol)",
+        "C": "POP3 (Post Office Protocol)",
+        "D": "SSH (Secure Shell)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 34,
+      "savol": "Wi-Fi tarmog'iga ulanuvchi o'rnatilgan tizimlar xavfsizligini ta'minlashda hozirgi kunda qaysi shifrlash protokoli eng ishonchli va keng tarqalgan standart hisoblanadi?",
+      "variantlar": {
+        "A": "WPA2 yoki WPA3 (Wi-Fi Protected Access)",
+        "B": "WEP (Wired Equivalent Privacy)",
+        "C": "MAC Manzilni filtrlash",
+        "D": "Yashirin SSID (Hidden Network)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 35,
+      "savol": "Batareyadan (avtonom) ishlaydigan Wi-Fi asosidagi o'rnatilgan tizimlarning (masalan, harorat datchiklarining) eng katta muammosi va kamchiligi nima hisoblanadi?",
+      "variantlar": {
+        "A": "Wi-Fi modulining energiya (quvvat) sarfi ancha yuqori ekanligi",
+        "B": "Faqat 1-2 metr masofada ishlashi.",
+        "C": "Ma'lumot uzatish tezligining Bluetooth'dan ham sekinligi",
+        "D": "Bir vaqtning o'zida faqat bitta qurilma bilan ma'lumot almashadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 36,
+      "savol": "Arduino platasiga LED ulayotganda uning kuyib qolmasligi uchun zanjirga qaysi elektron komponentni qo'shish zarur?",
+      "variantlar": {
+        "A": "Rezistor (odatda 220 yoki 330 Om)",
+        "B": "Tranzistor",
+        "C": "Kondensator",
+        "D": "Drossel (g'altak)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 37,
+      "savol": "Arduino dasturida LED ulangan pinni ma'lumot chiquvchi port sifatida sozlash uchun setup() qismida qaysi funksiyadan foydalaniladi?",
+      "variantlar": {
+        "A": "pinMode()",
+        "B": "digitalWrite()",
+        "C": "analogRead()",
+        "D": "delay()"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 38,
+      "savol": "LED ni yoqish (unga 5V kuchlanish berish) uchun dasturda qanday buyruq yoziladi (agar LED 13-pinga ulangan bo'lsa)?",
+      "variantlar": {
+        "A": "digitalWrite(13, HIGH);",
+        "B": "analogWrite(13, ON);",
+        "C": "digitalRead(13, HIGH);",
+        "D": "pinMode(13, 1);"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 39,
+      "savol": "LED ning yorug'lik darajasini asta-sekin pasaytirish yoki kuchaytirish (xira/yorug' qilish) uchun qaysi texnologiya va funksiyadan foydalaniladi?",
+      "variantlar": {
+        "A": "PWM (Pulse Width Modulation) va analogWrite()",
+        "B": "ADC va digitalWrite()",
+        "C": "UART va Serial.print()",
+        "D": "SPI va shiftOut()"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 40,
+      "savol": "LED miltillashi (Blink) uchun uni yoqqandan so'ng ma'lum vaqt kutish talab etiladi. Buni ta'minlovchi delay(1000); buyrug'i dasturni qancha vaqtga to'xtatib turadi?",
+      "variantlar": {
+        "A": "1 soniyaga (1000 millisoniyaga).",
+        "B": "1 daqiqaga",
+        "C": "1000 soniyaga",
+        "D": "1 millisoniyaga"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 41,
+      "savol": "Arduino yoki ESP kabi mikrokontrollerlar yordamida ham harorat, ham namlikni bir vaqtda o'lchash uchun eng mashhur va arzon datchiklardan biri qaysi?",
+      "variantlar": {
+        "A": "DHT11 yoki DHT22 (Harorat va namlik datchigi)",
+        "B": "LDR (Foytorezistor - yorug'lik datchigi)",
+        "C": "HC-SR04 (Ultratovushli masofa datchigi)",
+        "D": "PIR (Harakat datchigi)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 42,
+      "savol": "Harorat o'lchagichni haqiqiy \"aqlli\" (IoT - Internet of Things) qurilmaga aylantirish, ya'ni ma'lumotlarni bevosita Wi-Fi orqali serverga jo'natish uchun qaysi mikrokontroller platasidan foydalanish eng qulay?",
+      "variantlar": {
+        "A": "NodeMCU (ESP8266) yoki ESP32 (chunki ularda Wi-Fi modul o'rnatilgan)",
+        "B": "Arduino Uno (chunki u eng kuchli protsessorga ega)",
+        "C": "Arduino Mega (chunki pinlari juda ko'p)",
+        "D": "ATtiny85 (chunki u eng kichik mikrokontroller)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 43,
+      "savol": "\"Aqlli\" harorat o'lchagich ma'lumotlarni (masalan, har 5 soniyada) serverga yoki smartfonga yuborishi uchun qaysi yengil, IoT qurilmalari uchun maxsus moslashtirilgan protokoldan foydalanish maqsadga muvofiq?",
+      "variantlar": {
+        "A": "MQTT (Message Queuing Telemetry Transport)",
+        "B": "SMTP (Elektron pochta protokoli)",
+        "C": "FTP (File Transfer Protocol)",
+        "D": "SSH (Secure Shell)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 44,
+      "savol": "Qurilmaning o'zida harorat ma'lumotlarini chiroyli va ixcham tarzda ko'rsatib turish uchun ko'pincha I2C interfeysi orqali ulanadigan qaysi ekran turidan keng foydalaniladi?",
+      "variantlar": {
+        "A": "0.96 dyuymli SPI OLED display 128x64",
+        "B": "Katta hajmdagi LCD televizor ekrani",
+        "C": "7 segmentli mexanik soat ekrani",
+        "D": "VGA portli eski monitor"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 45,
+      "savol": "DS18B20 kabi aniq raqamli harorat datchiklarini mikrokontrollerga ulashda, signal barqarorligini ta'minlash uchun ma'lumot (Data) va quvvat (VCC) liniyalari o'rtasiga qanday elektron komponent ulash talab etiladi?",
+      "variantlar": {
+        "A": "4.7k Om yoki 10k Om kuchlanish tortuvchi (Pull-up) resistor",
+        "B": "100 uF sig'imli elektrolitik kondensator",
+        "C": "NPN turdagi kuchaytirgich tranzistor",
+        "D": "5V kuchlanishda ishlaydigan elektromagnit rele"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 46,
+      "savol": "\"Aqlli uy\" (Smart Home) tizimida turli xil ishlab chiqaruvchilarning datchik va qurilmalarini bitta umumiy tarmoqqa birlashtirib, ularni markazdan boshqarishga imkon beruvchi asosiy qurilma nima deb ataladi?",
+      "variantlar": {
+        "A": "Smart Hub (Markaziy boshqaruvchi / Shlyuz)",
+        "B": "Smart TV (Aqlli televizor)",
+        "C": "Wi-Fi Router",
+        "D": "Bluetooth kuchaytirgich"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 47,
+      "savol": "Aqlli uy tizimidagi batareyadan ishlaydigan datchiklar ko'p energiya sarflaydigan Wi-Fi o'rniga, quvvatni tejash va o'zaro \"to'r\" (Mesh) tarmog'ini hosil qilish uchun ko'pincha qaysi maxsus simsiz protokollardan foydalanadi?",
+      "variantlar": {
+        "A": "Zigbee va Z-Wave",
+        "B": "HTTP va FTP",
+        "C": "5G va LTE",
+        "D": "NFC va RFID"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 48,
+      "savol": "Aqlli uy modelida \"Stsenariy\" (Scenario) yoki \"Avtomatlashtirish\" atamasi nimani anglatadi?",
+      "variantlar": {
+        "A": "Ma'lum bir shart bajarilganda (masalan, datchik harakatni sezganda yoki kechki soat 10 bo'lganda) tizimning avtomatik ravishda bir qator amallarni (chiroqni yoqish, eshikni qulflash) bajarishi.",
+        "B": "Qurilmalarni faqat maxsus mobil ilova orqali qo'lda yoqib-o'chirish imkoniyati.",
+        "C": "Uy qurilishi boshlanishidan oldin chiziladigan 3D arxitektura loyihasi.",
+        "D": "Tizimning faqatgina inson ovozini tanib ishlash xususiyati."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 49,
+      "savol": "Aqlli uyni xavfsizlik tizimi (Security) nuqtai nazaridan modellashtirishda, xonaga yoki hovliga ruxsatsiz kirishni aniqlash uchun asosan qaysi turdagi datchiklardan foydalaniladi?",
+      "variantlar": {
+        "A": "PIR (Harakat datchigi) va Gerkon (eshik/deraza ochilishini sezuvchi magnit datchik)",
+        "B": "DS18B20 (Harorat datchigi) va CO2 datchigi",
+        "C": "LDR (Yorug'lik datchigi) va tuproq namligi datchigi",
+        "D": "Ultratovushli masofa datchigi (HC-SR04)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 50,
+      "savol": "Bulutli (Cloud-based) aqlli uy tizimlari va Mahalliy (Local) tizimlar o'rtasidagi eng asosiy farq nima?",
+      "variantlar": {
+        "A": "Bulutli tizimlar qaror qabul qilish uchun internet orqali uzoqdagi serverga bog'lanadi, mahalliy tizimlar (masalan, Home Assistant) esa barcha ma'lumotlarni uyning o'zidagi xususiy serverda, internetsiz qayta ishlaydi.",
+        "B": "Mahalliy tizimlarni umuman smartfon orqali boshqarib bo'lmaydi.",
+        "C": "Bulutli tizimlarda qurilmalar faqat sim orqali ulanadi.",
+        "D": "Bulutli tizimlar internetsiz ham to'laqonli ishlayveradi, mahalliy tizimlar esa doim internet talab qiladi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 51,
+      "savol": "Avtomatik sug'orish tizimida o'simlikning suvga muhtoj yoki muhtoj emasligini aniqlash uchun asosan qaysi datchikdan foydalaniladi?",
+      "variantlar": {
+        "A": "Tuproq namligi datchigi (Soil Moisture Sensor)",
+        "B": "Harorat va namlik datchigi (DHT11)",
+        "C": "Ultratovushli masofa datchigi (HC-SR04)",
+        "D": "Yorug'lik datchigi (LDR)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 52,
+      "savol": "Tizimda mikrokontrollerdan kelgan buyruqqa asosan suv oqimini ochib-yopish yoki suv tortish vazifasini qaysi qurilma bajaradi?",
+      "variantlar": {
+        "A": "Elektromagnit klapan (Solenoid valve) yoki kichik suv pompasi",
+        "B": "Qadamli (Stepper) motor",
+        "C": "Rele (Relay) modulisiz oddiy LED chiroq",
+        "D": "Pyezodinamik (Buzzer)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 53,
+      "savol": "Tuproq namligi datchigidan olingan signalni o'qib, qachon suv pompasini yoqish kerakligini hal qiluvchi va tizimni boshqaruvchi \"miya\" vazifasini qaysi komponent bajaradi?",
+      "variantlar": {
+        "A": "Arduino, ESP yoki shunga o'xshash mikrokontroller",
+        "B": "LCD displey",
+        "C": "5V Quvvat bloki (Adapter)",
+        "D": "Wi-Fi router"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 54,
+      "savol": "Avtomatik sug'orish tizimlarining an'anaviy (qo'lda) sug'orishdan eng asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "Suv resurslarini tejashi va inson aralashuvisiz o'simlikni doimiy ravishda optimal namlikda ushlab turishi.",
+        "B": "O'simliklarning tezroq gullashini kimyoviy tarzda ta'minlashi.",
+        "C": "Faqat tunda ishlashga mo'ljallanganligi.",
+        "D": "Tuproq tarkibidagi barcha mineral elementlarni tahlil qila olishi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 55,
+      "savol": "Zamonaviy IoT (Internet of Things) asosidagi \"aqlli\" sug'orish tizimlari tuproq namligidan tashqari yana qanday tashqi ma'lumotlarga asoslanib suvni yanada ko'proq tejashi mumkin?",
+      "variantlar": {
+        "A": "Internetdagi ob-havo prognozlariga tayanib (masalan, bugun yomg'ir yog'ishi kutilayotgan bo'lsa, sug'orishni bekor qilishi orqali).",
+        "B": "O'simlik turiga qarab audiodinamikadan musiqa qo'yishi orqali.",
+        "C": "Internet tezligiga qarab suv bosimini o'zgartirishi orqali.",
+        "D": "Uydagi boshqa aqlli qurilmalarning elektr quvvati sarfiga qarab."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 56,
+      "savol": "Nima uchun o'rnatilgan tizimlarda C va C++ eng ko'p qo'llaniladigan dasturlash tillari hisoblanadi?",
+      "variantlar": {
+        "A": "Xotira va registrlarni to'g'ridan-to'g'ri boshqarish imkoniyati hamda apparat resurslaridan tejamkor, tezkor (yuqori samaradorlik bilan) foydalana olgani uchun.",
+        "B": "Avtomatik xotira tozalash (Garbage collection) xususiyati bo'lgani va xotira to'lishining oldini olgani uchun.",
+        "C": "Dasturlash tillari ichida eng sodda va sintaksisi o'rganishga eng oson bo'lgani uchun.",
+        "D": "Yozilgan kodlar faqat bulutli (Clouserverlarga ulanib ishlagani uchun."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 57,
+      "savol": "Mikrokontroller registrlarida ma'lum bir bitni mantiqiy \"1\" holatiga o'tkazish (Set qilish) uchun C/C++ dasturlashda odatda qaysi bitli (bitwise) operatordan foydalaniladi?",
+      "variantlar": {
+        "A": "| (Bitwise OR - Mantiqiy QO'SHISH).",
+        "B": "& (Bitwise AND - Mantiqiy KO'PAYTIRISH)",
+        "C": "~ (Bitwise NOT - Mantiqiy INKOR)",
+        "D": "^ (Bitwise XOR - Mantiqiy ISTISNO)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 58,
+      "savol": "O'rnatilgan tizimlarda yozilgan va kompilyatsiya qilingan asosiy dastur kodi (buyruqlar to'plami) odatda mikrokontrollerning qaysi xotirasida saqlanadi?",
+      "variantlar": {
+        "A": "Flash (Daimiy - ROM) xotirasida.",
+        "B": "EEPROM xotirasida",
+        "C": "RAM (Tezkor xotira - SRAM yoki DRAM)",
+        "D": "Mikrokontrollerning oziqlantirish blokida"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 59,
+      "savol": "C/C++ tilida mikrokontrollerning apparat registrlari yoki uzilishlar (Interrupts) bilan ishlashda o'zgaruvchilar oldiga nima maqsadda volatile kalit so'zi qo'yiladi?",
+      "variantlar": {
+        "A": "Kompilyatorga ushbu o'zgaruvchini kesh xotiraga olib optimallashtirmaslikni uqtirish uchun (chunki uning qiymati dastur kodidan tashqari, apparat tomonidan ham kutilmaganda o'zgartirilishi mumkin).",
+        "B": "O'zgaruvchi qiymati dastur ishlashi davomida umuman o'zgarmasligini (konstanta bo'lishini) ta'minlash uchun.",
+        "C": "O'zgaruvchini xotirada eng kam joy egallaydigan formatga (bit formatga) o'tkazish uchun.",
+        "D": "O'zgaruvchi faqatgina mikrokontrollerning tashqi xotirasida saqlanishi uchun."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 60,
+      "savol": "Mikrokontrollerlar uchun C/C++ tilida yozilgan dasturlarning main() funksiyasi nima uchun doimo cheksiz tsikl (masalan, while(1) yoki for(;;)) ichida yoziladi?",
+      "variantlar": {
+        "A": "Chunki mikrokontrollerda kompyuterdagi kabi qaytish uchun Operatsion Tizim (OS) yo'q, agar dastur tugasa mikrokontroller qotib qoladi, shu sababli jarayon doimiy aylanishi kerak.",
+        "B": "Bu xato hisoblanadi, cheksiz tsikl yozish mikrokontrollerni qizdirib yuboradi.",
+        "C": "Datchiklardan keladigan ma'lumotlarni qabul qilib olguncha kutib turish uchun, keyin tsikl tugatiladi.",
+        "D": "Mikrokontroller quvvatini tejash maqsadida uni tezda uyqu rejimiga o'tkazish uchun."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 61,
+      "savol": "\"Aqlli\" svetoforni oddiy an'anaviy svetofordan ajratib turuvchi eng asosiy xususiyat nimada?",
+      "variantlar": {
+        "A": "Datchiklar yoki kameralar orqali chorrahadagi haqiqiy tirbandlikni (avtomobillar oqimini) tahlil qilib, chiroqlar yonish vaqtini shunga moslab avtomatik o'zgartirishida.",
+        "B": "Faqat quyosh energiyasi (panellari) yordamida ishlashida.",
+        "C": "Svetofor faqat piyodalar maxsus tugmani bosganda ishlashida.",
+        "D": "Oddiy lampochkalar o'rniga faqat svetodiodlardan (LED) foydalanishida."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 62,
+      "savol": "Aqlli svetofor tizimlarida avtomobillar bor-yo'qligini yoki ularning sonini aniqlash uchun ko'pincha qaysi datchik va texnologiyalardan foydalaniladi?",
+      "variantlar": {
+        "A": "Asfalt ostiga o'rnatilgan induktiv halqalar (Inductive loop), ultratovushli datchiklar yoki aqlli kameralardan.",
+        "B": "LDR (Yorug'lik) va gaz datchiklaridan.",
+        "C": "Tuproq namligi va harorat datchiklaridan.",
+        "D": "Gerkon (eshik/deraza ochilishini sezuvchi) datchiklardan."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 63,
+      "savol": "Aqlli svetofor tizimi tez yordam, o't o'chirish yoki politsiya kabi maxsus xizmat mashinalariga qanday qilib ustuvorlik (yashil yo'lak) berishi mumkin?",
+      "variantlar": {
+        "A": "V2X (Vehicle-to-Everything) radioaloqasi, GPS yoki maxsus akustik (ovoz) signallarni aniqlash orqali ularni uzoqdan payqab, ularning yo'nalishida avtomatik yashil chiroqni yoqish orqali.",
+        "B": "Ular kelganda barcha chiroqlarni o'chirib, miltillovchi sariq rejimga o'tish orqali.",
+        "C": "Tezlik datchiklari orqali eng tez kelayotgan mashinani aniqlab, faqat shunga ruxsat berish orqali.",
+        "D": "Maxsus mashinalar faqat tungi vaqtda ustuvorlikka ega bo'ladi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 64,
+      "savol": "Butun bir shahardagi aqlli svetoforlarni yagona markaziy server (backend) bilan bog'lash va katta ma'lumotlarni (Big Data) tahlil qilish uchun qanday aloqa texnologiyalaridan foydalaniladi?",
+      "variantlar": {
+        "A": "4G/5G mobil tarmoqlari, tolali optik internet yoki LoRaWAN kabi IoT (Internet of Things) tarmoqlari.",
+        "B": "I2C yoki SPI kabi mikrokontroller ichki protokollari.",
+        "C": "Bluetooth Low Energy (BLE) va oddiy radioto'lqinlar.",
+        "D": "Infraqizil (IR) nurlar."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 65,
+      "savol": "Arduino kabi mikrokontrollerlarda aqlli svetofor prototipini dasturlashda, chiroqlar vaqtini kutish davomida mikrokontroller qotib qolmasligi va boshqa datchiklarni (masalan, piyoda tugmasini) ham o'qiy olishi uchun qaysi yondashuv to'g'ri bo'ladi?",
+      "variantlar": {
+        "A": "delay() o'rniga mikrokontrollerning ichki taymeridan (millis() funksiyasidan) foydalanib asinxron kod yozish.",
+        "B": "Dasturni faqat setup() qismi ichida aylantirish.",
+        "C": "Har bir chiroq o'rtasida delay() funksiyasidan ko'p marta foydalanish.",
+        "D": "Har safar chiroq o'zgarganda plataning Reset tugmasini dasturiy tarzda bosish."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 66,
+      "savol": "Masofadan boshqariluvchi robot g'ildiraklarini harakatga keltirishda asosan qaysi turdagi dvigatel va qo'shimcha modul birgalikda ishlatiladi?",
+      "variantlar": {
+        "A": "O'zgarmas tok dvigateli (DC motor) va Motor drayveri (masalan, L298N)",
+        "B": "Servo motor va rele moduli",
+        "C": "Qadamli motor (Stepper) va Wi-Fi router",
+        "D": "Pyezodinamik va tranzistor"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 67,
+      "savol": "Robotni oddiy smartfon (mobil ilova) orqali taxminan 10 metr masofadan boshqarish uchun robotga qaysi simsiz aloqa modulini o'rnatish eng qulay va arzon yechim hisoblanadi?",
+      "variantlar": {
+        "A": "Bluetooth modul (HC-05 yoki HC-06)",
+        "B": "GSM modul (SIM800L)",
+        "C": "NRF24L01 (Radio modul)",
+        "D": "GPS modul (NEO-6M)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 68,
+      "savol": "Arduino kabi mikrokontroller va dvigatellar o'rtasiga nima maqsadda albatta Motor drayveri (L298N yoki L293D) o'rnatilishi shart?",
+      "variantlar": {
+        "A": "Arduino pinlari to'g'ridan-to'g'ri motor uchun yetarli kuchlanish va tok bera olmagani hamda motorning aylanish yo'nalishini (oldinga/orqagdastur orqali o'zgartirish uchun.",
+        "B": "Motorlarni internetga to'g'ridan-to'g'ri ulash va ma'lumotlarni bulutli serverga jo'natish uchun.",
+        "C": "Robotning og'irlik markazini muvozanatda ushlab turish uchun.",
+        "D": "Dasturdagi mantiqiy xatolarni avtomatik tarzda to'g'rilab borish uchun."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 69,
+      "savol": "Robotning elektr quvvati ta'minotini (Power supply) to'g'ri tashkil etish bo'yicha eng yaxshi amaliyot qaysi?",
+      "variantlar": {
+        "A": "Motorlar uchun alohida kuchliroq quvvat manbai (masalan, 18650 Li-ion akkumulyatorlar) ajratish, chunki motorlar harakatlanganda tarmoqdagi kuchlanish tushib ketib mikrokontrollerni o'chirib qo'yishi mumkin.",
+        "B": "Barcha elektronikani (Arduino va motorlarni) bitta kichik 9V \"Krona\" batareyasidan quvvatlash (bu eng kuchli batareya hisoblanadi).",
+        "C": "Robotni umuman batareyasiz, faqat xona yorug'ligida ishlaydigan kichik quyosh panellariga ulash.",
+        "D": "Dvigatellarga umuman quvvat bermaslik, ular mikrokontrollerdagi axborot hisobiga o'zi aylanadi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 70,
+      "savol": "Robot tezligini silliq boshqarish (masalan, sekinroq yurish yoki sekin burilish) uchun mikrokontroller tomonidan dvigatel drayveriga qanday turdagi signal yuboriladi?",
+      "variantlar": {
+        "A": "PWM (Pulse Width Modulation - Impuls kenglik modulyatsiyasi) signali",
+        "B": "I2C (Inter-Integrated Circuit) signali",
+        "C": "UART seriyali ma'lumotlar signali",
+        "D": "Analog video signali"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 71,
+      "savol": "IoT (Internet of Things) tushunchasi asosan nimani anglatadi?",
+      "variantlar": {
+        "A": "Turli xil jismoniy qurilmalar, maishiy texnika va datchiklarning internet orqali o'zaro ma'lumot almashish va boshqarilish tizimini.",
+        "B": "Faqatgina kompyuterlar, noutbuklar va smartfonlarni internetga ulash tarmog'ini.",
+        "C": "Tarmoq xavfsizligini ta'minlovchi yangi avlod antivirus dasturini.",
+        "D": "Faqat sanoat korxonalarida ishlatiladigan yopiq lokal aloqa tizimini."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 72,
+      "savol": "IoT arxitekturasining qaysi qatlami (layer) jismoniy olamdan birlamchi ma'lumotlarni yig'ish (masalan, harorat, namlik, harakatni o'lchash) vazifasini bajaradi?",
+      "variantlar": {
+        "A": "Idrok etish/Sensorlar qatlami (Perception / Sensing layer)",
+        "B": "Tarmoq qatlami (Network layer)",
+        "C": "Ma'lumotlarni qayta ishlash qatlami (Processing layer)",
+        "D": "Ilova qatlami (Application layer)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 73,
+      "savol": "IoT arxitekturasidagi \"Tarmoq qatlami\" (Network layer) ning asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Sensorlardan olingan ma'lumotlarni bulutli serverlarga (Cloud) yoki boshqa qurilmalarga Wi-Fi, Bluetooth, 5G yoki LoRa kabi texnologiyalar orqali uzatish.",
+        "B": "Barcha IoT qurilmalarini uzluksiz elektr quvvati bilan ta'minlash.",
+        "C": "Olingan ma'lumotlarni foydalanuvchiga faqat vizual (grafik) interfeysda ko'rsatish.",
+        "D": "Qurilma xotirasidagi keraksiz ma'lumotlarni avtomatik ravishda o'chirib tashlash."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 74,
+      "savol": "Quyidagilardan qaysi biri IoT qurilmalari o'rtasida ma'lumot almashish uchun maxsus ishlab chiqilgan, kam energiya va internet trafigi talab qiluvchi yengil protokol hisoblanadi?",
+      "variantlar": {
+        "A": "MQTT (Message Queuing Telemetry Transport)",
+        "B": "FTP (File Transfer Protocol)",
+        "C": "HTTP (Hypertext Transfer Protocol)",
+        "D": "POP3 (Post Office Protocol)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 75,
+      "savol": "Katta miqyosdagi IoT tizimlarida (masalan, \"Aqlli shahar\" loyihalarida) minglab sensorlardan keladigan katta hajmdagi ma'lumotlarni (Big Data) saqlash, chuqur tahlil qilish va murakkab qarorlar qabul qilish asosan qayerda amalga oshiriladi?",
+      "variantlar": {
+        "A": "Bulutli platformalarda (Cloud Computing) yoki tarmoq chekkasidagi hisoblash (Edge Computing) markazlarida.",
+        "B": "Faqatgina foydalanuvchining smartfon xotirasida.",
+        "C": "Bevosita har bir sensorning o'zida (datchik mikrokontrollerida).",
+        "D": "Oddiy uy Wi-Fi routerining ichki xotirasida."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 76,
+      "savol": "IoT tizimlarida Simsiz Sensor Tarmoqlari (WSN) deganda asosan nima tushuniladi?",
+      "variantlar": {
+        "A": "Jismoniy muhitni (harorat, namlik, tebranish) kuzatish va ma'lumotlarni markaziy tugunga uzatish uchun hudud bo'ylab tarqatilgan simsiz datchiklar (tugunlar) to'plami.",
+        "B": "Faqat simli internet orqali kompyuterlarni bog'lovchi markazlashtirilgan tizim.",
+        "C": "Uyali aloqa operatorlarining 5G tayanch stansiyalarini bir-biriga ulash texnologiyasi.",
+        "D": "Faqat kosmik stansiyalarda ishlatiladigan yopiq harbiy aloqa protokoli."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 77,
+      "savol": "Odatda IoT tarmog'idagi bitta standart sensor tuguni (Sensor node) qanday asosiy qismlardan tashkil topadi?",
+      "variantlar": {
+        "A": "Datchik, mikrokontroller (ma'lumotni ishlash uchun), radio modul (transiver) va quvvat manbaidan (batareya).",
+        "B": "Datchik, monitor, klaviatura va Wi-Fi routerdan.",
+        "C": "Faqat datchik va katta hajmli qattiq diskdan (HDD).",
+        "D": "Datchik va to'g'ridan-to'g'ri 220V elektr tarmog'i ulagichidan."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 78,
+      "savol": "Sensor tarmoqlarida qaysi topologiya eng ishonchli va nosozliklarga chidamli hisoblanadi (bunda bitta tugun o'chib qolsa ham, ma'lumotlar boshqa tugunlar orqali manzilga yetib boradi)?",
+      "variantlar": {
+        "A": "To'r (Mesh) topologiyasi.",
+        "B": "Yulduz (Star) topologiyasi",
+        "C": "Chiziqli (Bus) topologiyasi",
+        "D": "Halqa (Ring) topologiyasi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 79,
+      "savol": "Sensor tarmoqlarida \"Shlyuz\" (Gateway) qurilmasining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Mahalliy datchiklar tarmog'idan (masalan, Zigbee, BLE, LoRa orqali) ma'lumotlarni yig'ib, ularni global internetga (Bulutli serverlarga) o'tkazib beruvchi \"ko'prik\" vazifasini bajarish.",
+        "B": "Faqat tarmoqdagi xatolarni qidirish va viruslarni tozalash.",
+        "C": "Sensorlardan kelayotgan ma'lumotlarni xotiradan avtomatik o'chirib tashlash.",
+        "D": "Sensorlarni to'g'ridan-to'g'ri batareyasiz ishlashini ta'minlash."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 80,
+      "savol": "Uzoq hududlarda yoki ochiq tabiatda o'rnatiladigan simsiz sensor tarmoqlarining eng katta muammosi va cheklovi nima hisoblanadi?",
+      "variantlar": {
+        "A": "Quvvat manbai (batareya) cheklanganligi sababli, ma'lumot uzatishda energiyani maksimal darajada tejash muammosi.",
+        "B": "Qurilmalarning IP manzillari yetishmasligi.",
+        "C": "Sensorlarning juda katta va og'ir bo'lib ketishi.",
+        "D": "Ma'lumotlarni qayta ishlash uchun albatta kuchli kompyuter va Windows OS kerakligi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 81,
+      "savol": "Bulutli texnologiyalarining (Cloud computing) o'rnatilgan tizimlar va IoT tarmog'idagi asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Qurilmalar va datchiklardan kelayotgan katta hajmdagi ma'lumotlarni markazlashgan holda saqlash, qayta ishlash va chuqur tahlil qilish.",
+        "B": "Mikrokontrollerlarni bevosita elektr quvvati bilan ta'minlash.",
+        "C": "Jismoniy datchiklardan butunlay voz kechish imkonini berish.",
+        "D": "Qurilmalar uchun faqat mahalliy Wi-Fi router vazifasini bajarish."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 82,
+      "savol": "O'rnatilgan tizimlardan bulutli serverlarga ma'lumotlarni tez va kam internet trafigi sarflab jo'natish uchun eng ko'p qaysi yengil protokoldan foydalaniladi?",
+      "variantlar": {
+        "A": "MQTT (Message Queuing Telemetry Transport)",
+        "B": "FTP (File Transfer Protocol)",
+        "C": "HTTP (Hypertext Transfer Protocol)",
+        "D": "SMTP (Simple Mail Transfer Protocol)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 83,
+      "savol": "Bulutli texnologiyalar va IoT tizimlarida \"Edge Computing\" (Chekka/Chegaraviy hisoblash) atamasi nimani anglatadi?",
+      "variantlar": {
+        "A": "Kechikishni (latency) va internet trafigini kamaytirish maqsadida, ma'lumotlarni bulutga jo'natishdan oldin mahalliy shlyuzda (Gateway) yoki qurilmaning o'zida dastlabki qayta ishlash va filtrlash.",
+        "B": "Barcha ma'lumotlarni hech qanday o'zgarishsiz to'g'ridan-to'g'ri markaziy bulutga yuborish.",
+        "C": "Faqatgina smartfonlar uchun mo'ljallangan maxsus bulutli xotira turi.",
+        "D": "Datchiklarni faqat bino yoki xonaning chekkalariga o'rnatish qoidasi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 84,
+      "savol": "Quyidagilardan qaysi biri o'rnatilgan tizimlarni boshqarish va IoT ma'lumotlarini qabul qilish uchun keng qo'llaniladigan mashhur bulutli platforma (Cloud platform) hisoblanadi?",
+      "variantlar": {
+        "A": "AWS IoT Core (Amazon) yoki Google Cloud IoT",
+        "B": "Adobe Illustrator",
+        "C": "Microsoft Excel",
+        "D": "Linux Kali OS"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 85,
+      "savol": "O'rnatilgan tizimlarni bulutli serverlarga ulashda tarmoq xavfsizligi bo'yicha yuzaga keladigan eng katta muammolardan biri nima?",
+      "variantlar": {
+        "A": "Kam quvvatli mikrokontrollerlarda kuchli shifrlash (encryption) algoritmlarini ishlatish qiyinligi sababli, ma'lumotlarning tutilib qolishi yoki ruxsatsiz kirishlar (kiberhujumlar) xavfi.",
+        "B": "Bulutli xotiraning bir necha soniyada to'lib qolishi.",
+        "C": "Qurilmalarning juda tez ishlab ketishi natijasida serverlarning yonib ketish xavfi.",
+        "D": "Datchiklarning faqat kunduzi yorug'likda ishlashi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 86,
+      "savol": "Zamonaviy avtomobillarda dvigatel, tormoz yoki xavfsizlik yostiqchalarini boshqarish uchun javobgar bo'lgan asosiy elektron mikrokontroller moduli (miya) qanday nomlanadi?",
+      "variantlar": {
+        "A": "ECU  (Electronic Control Unit)",
+        "B": "CPU (Central Processing Unit)",
+        "C": "GPU (Graphics Procesing Unit)",
+        "D": "SSD  (Solid State Drive)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 87,
+      "savol": "Avtomobil ichidagi turli xil boshqaruv bloklari (ECU) va datchiklar o'zaro ishonchli va tashqi shovqinlarsiz ma'lumot almashishi uchun asosan qaysi aloqa protokolidan foydalaniladi?",
+      "variantlar": {
+        "A": "CAN (Controller Area Network).",
+        "B": "HTTP (Hypertext Transfer Protocol)",
+        "C": "SPI (Serial Peripheral Interface)",
+        "D": "FTP (File Transfer Protocol)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 88,
+      "savol": "Tormoz tizimini bloklanib qolishdan asrovchi va sirpanchiq yo'llarda haydovchiga xavfsiz to'xtashga yordam beruvchi avtomobilga o'rnatilgan muhim tizim qanday qisqartma bilan ataladi?",
+      "variantlar": {
+        "A": "ABS (Anti–lock Braking System).",
+        "B": "GPS (Global Positioning System)",
+        "C": "USB (Universal Serial Bus)",
+        "D": "NFS (Network File System)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 89,
+      "savol": "Xavfsizlik yostiqchalari (Airbag) yoki ABS kabi hayot-mamot masalasiga javobgar tizimlarda oddiy operatsion tizimlar (Windows, Android) emas, balki RTOS (Real-Time Operating System) ishlatilishining eng asosiy sababi nima?",
+      "variantlar": {
+        "A": "RTOS ma'lumotlarni qat'iy vaqt oralig'ida (kechikishlarsiz, datchik signal bergan millisoniyadanoq) kafolatli qayta ishlash va kerakli reaksiyani ta'minlagani uchun.",
+        "B": "RTOS displeylarda chiroyliroq 3D grafik interfeys bera olgani uchun.",
+        "C": "RTOS mutlaqo bepul va ochiq kodli bo'lgani uchun.",
+        "D": "RTOS avtomobil akkumulyatoridan umuman energiya sarflamagani uchun."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 90,
+      "savol": "Avtomobil tizimidagi xatolarni (masalan, \"Check Engine\" chirog'i yonganda) o'qish, diagnostika qilish va datchiklar holatini maxsus skaner orqali ko'rish uchun mo'ljallangan universal standart port nima deb ataladi?",
+      "variantlar": {
+        "A": "OBD-II (On-Board Diagnostics) porti",
+        "B": "USB Type-C porti",
+        "C": "HDMI porti",
+        "D": "Ethernet (LAN) porti"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 91,
+      "savol": "\"Aqlli shahar\" (Smart City) konsepsiyasining eng asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Axborot va kommunikatsiya texnologiyalari (AKT) hamda IoT datchiklaridan foydalanib, shahar infratuzilmasini samarali boshqarish va aholi turmush tarzini yaxshilash.",
+        "B": "Shahardagi barcha avtomobillarni taqiqlab, faqat velosipedlarga ruxsat berish.",
+        "C": "Shahar bo'ylab faqat osmono'par binolar qurish va ko'kalamzorlashtirishni to'xtatish.",
+        "D": "Shahardagi barcha xizmatlarni inson ishtirokisiz, to'liq robotlarga topshirish."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 92,
+      "savol": "Aqlli shaharlarda \"Chiqindilarni aqlli boshqarish\" (Smart Waste Management) tizimi qanday ishlaydi?",
+      "variantlar": {
+        "A": "Chiqindi qutilariga to'lish darajasini o'lchaydigan datchiklar o'rnatiladi va maxsus mashinalar faqat to'lgan qutilarni yig'ish uchun eng qisqa marshrut bo'yicha harakatlanadi.",
+        "B": "Axlat qutilari har soatda, bo'sh bo'lsa ham majburiy tarzda tozalanadi.",
+        "C": "Chiqindilar to'g'ridan-to'g'ri yer osti trubalari orqali okeanga oqizib yuboriladi.",
+        "D": "Chiqindilarni saralash to'liq insonlar zimmasiga yuklatiladi va kameralar orqali jarima yoziladi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 93,
+      "savol": "Aqlli shaharda o'rnatilgan o'n minglab kameralar, svetoforlar va datchiklardan keladigan ulkan hajmdagi ma'lumotlar (Big Data) qayerda qabul qilinadi va tahlil qilinadi?",
+      "variantlar": {
+        "A": "Markazlashtirilgan kuchli bulutli serverlarda (Cloud) va Backend ma'lumotlar bazalarida.",
+        "B": "Datchiklarning o'zidagi kichik xotira kartalarida (MicroSD).",
+        "C": "Har bir shahar aholisining shaxsiy smartfonida qismlarga bo'linib saqlanadi.",
+        "D": "Shahar hokimligidagi oddiy kompyuterlarning qattiq diskida (HDD)."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 94,
+      "savol": "\"Aqlli avtoturargoh\" (Smart Parking) tizimi haydovchilarga qanday qulaylik yaratadi?",
+      "variantlar": {
+        "A": "Asfalt ostidagi datchiklar yoki kameralar orqali bo'sh joylarni aniqlab, haydovchilarga mobil ilova orqali eng yaqin bo'sh joyni ko'rsatadi va vaqtni tejaydi.",
+        "B": "Mashinalarni bir-birining ustiga avtomatik ko'tarib qo'yuvchi mexanizmlarni ishga tushiradi.",
+        "C": "Faqat qimmatbaho avtomobillar uchun shaharning markazidan bepul joy ajratib beradi.",
+        "D": "Avtoturargohda mashinani yuvish xizmatini avtomatik ishga tushiradi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 95,
+      "savol": "Aqlli shahar bo'ylab tarqoq joylashgan kam quvvatli datchiklarni (masalan, suv va gaz hisoblagichlarni) uzoq masofadan internetga ulash uchun ko'pincha qaysi tarmoq texnologiyalaridan foydalaniladi?",
+      "variantlar": {
+        "A": "LoRaWAN, NB-IoT kabi kam energiya sarflovchi uzoq masofali tarmoqlar va 5G.",
+        "B": "Faqat qisqa masofali Wi-Fi routerlar.",
+        "C": "USB va HDMI kabellari.",
+        "D": "Bluetooth va infraqizil (IR) nurlar."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 96,
+      "savol": "O'rnatilgan tizimlarda (Embedded Systems) kuchli xavfsizlik va shifrlash tizimlarini joriy etishdagi eng asosiy qiyinchilik (muammo) nima?",
+      "variantlar": {
+        "A": "Xotira, hisoblash quvvati va energiya (batareya) resurslarining cheklanganligi sababli kompyuterlardagi kabi murakkab kriptografik algoritmlarni ishlatish qiyinligi.",
+        "B": "Qurilmalarning internetga umuman ulanmasligi.",
+        "C": "Xakerlarning bunday kichik qurilmalarga umuman qiziqmasligi.",
+        "D": "Qurilmalarda ortiqcha operativ xotira (RAM) mavjudligi."
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 97,
+      "savol": "Xavfsizlik zaifliklarini bartaraf etish uchun qurilma dasturiy ta'minotini (proshivkasini) masofadan turib internet orqali xavfsiz yangilash texnologiyasi qanday ataladi?",
+      "variantlar": {
+        "A": "FOTA (Firmware Over-The-Air).",
+        "B": "DDoS (Distributed Denial of Service)",
+        "C": "SQL Injection",
+        "D": "JTAG Debugging"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 98,
+      "savol": "O'rnatilgan tizimlarda kriptografik kalitlarni xavfsiz saqlash va shifrlash amallarini dasturiy emas, balki apparat darajasida bajarish uchun qaysi maxsus mikrosxemadan foydalaniladi?",
+      "variantlar": {
+        "A": "TPM (Trusted Platform Module) yoki Secure Element (SE)",
+        "B": "ADC (Analog-to-Digital Converter)",
+        "C": "PWM (Pulse Width Modulation) kontrolleri",
+        "D": "HC-SR04 ultratovush moduli"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 99,
+      "savol": "Xaker tomonidan qurilmaning quvvat sarfini, elektromagnit nurlanishini o'lchash yoki kuchlanishni o'ynatish (glitching) orqali qurilma ichidagi maxfiy kalitlarni o'g'irlashga qaratilgan hujum turi nima deb ataladi?",
+      "variantlar": {
+        "A": "Yon-kanal hujumlari (Side-Channel Attacks / Physical Attacks)",
+        "B": "Kross-sayt skripting (XSS)",
+        "C": "Ijtimoiy muhandislik (Phishing)",
+        "D": "O'rtadagi odam hujumi (Man-in-the-Middle)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 100,
+      "savol": "Qurilma yoqilganda (ishga tushganda) uning xotirasidagi dasturiy ta'minotni tekshiruvchi va faqatgina ishlab chiqaruvchi tomonidan tasdiqlangan (kriptografik imzolangan) asl dastur ishlashini kafolatlovchi himoya mexanizmi nima deb ataladi?",
+      "variantlar": {
+        "A": "Secure Boot (Xavfsiz yuklanish).",
+        "B": "Fast Boot (Tezkor yuklanish)",
+        "C": "Safe Mode (Xavfsiz rejim)",
+        "D": "Auto-connect (Avtomatik ulanish)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 101,
+      "savol": "​Mikrokontroller dasturlashda volatile kalit so'zi nima uchun kerak?",
+      "variantlar": {
+        "A": "O'zgaruvchini optimallashdan himoya qilish uchun",
+        "B": "Xotirani tejash uchun",
+        "C": "Dasturni tezlashtirish uchun",
+        "D": "O'zgaruvchini o'zgarmas qilish uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 102,
+      "savol": "Robot g'ildiraklarini boshqarishda qo'llaniladigan L298N moduli nima?",
+      "variantlar": {
+        "A": "Motor drayveri modul",
+        "B": "Mikrokontroller",
+        "C": "Sensor",
+        "D": "Bluetooth modul"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 103,
+      "savol": "IoT arxitekturasining eng quyi (birinchi) qatlami qaysi?",
+      "variantlar": {
+        "A": "Perception (Sensor) layer",
+        "B": "Application layer",
+        "C": "Network layer",
+        "D": "Cloud layer"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 104,
+      "savol": "Avtomobil ichidagi bloklar (ECU) o'zaro qaysi standart protokol bilan bog'lanadi?",
+      "variantlar": {
+        "A": "CAN",
+        "B": "HTTP",
+        "C": "FTP",
+        "D": "SMTP"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 105,
+      "savol": "Aqlli shahar tizimida chiqindi qutilarining to'lganligini qaysi sensor aniqlaydi?",
+      "variantlar": {
+        "A": "Ultratovushli masofa sensori",
+        "B": "Namlik sensori",
+        "C": "Gaz sensori",
+        "D": "Termometr"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 106,
+      "savol": "IoT qurilmalari uchun eng tejamkor va yengil aloqa protokoli qaysi?",
+      "variantlar": {
+        "A": "MQTT (Message Queuing Telemetry Transport)",
+        "B": "TCP (Transmission Control Protocol)",
+        "C": "POP3 (Post Office Protocol version 3)",
+        "D": "SSH (Secure Shell)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 107,
+      "savol": "Mikrokontrollerga faqat tasdiqlangan dasturni yuklashni ta'minlovchi tizim?",
+      "variantlar": {
+        "A": "Secure Boot",
+        "B": "Firewall",
+        "C": "Antivirus",
+        "D": "BIOS"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 108,
+      "savol": "Aqlli svetoforlarda mashinalar navbatini aniqlashda nima ishlatiladi?",
+      "variantlar": {
+        "A": "Induktiv halqa (asfalt ostida)",
+        "B": "Barometr",
+        "C": "Yorug'lik sensori",
+        "D": "Namlik sensori"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 109,
+      "savol": "Simsiz sensor tarmoqlarida (WSN) ma'lumotni internetga chiquvchi \"ko'prik\" nima?",
+      "variantlar": {
+        "A": "Gateway (Shlyuz)",
+        "B": "Repeater",
+        "C": "Switch",
+        "D": "Hub"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 110,
+      "savol": "Avtomobillarda tormozlanish xavfsizligini ta'minlovchi tizim qaysi?",
+      "variantlar": {
+        "A": "ABS",
+        "B": "GPS",
+        "C": "ECU",
+        "D": "OBD-II"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 111,
+      "savol": "Qurilma quvvat sarfini tahlil qilib kalitlarni o'g'irlash qanday hujum turi?",
+      "variantlar": {
+        "A": "DDoS",
+        "B": "Side-channel (Yon-kanal) hujumi",
+        "C": "Phishing",
+        "D": "SQL injection"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 112,
+      "savol": "IoT ma'lumotlarini bulutga yubormasdan, qurilmaning o'zida qayta ishlash nima deyiladi?",
+      "variantlar": {
+        "A": "Edge computing",
+        "B": "Cloud computing",
+        "C": "Deep learning",
+        "D": "Big Data"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 113,
+      "savol": "Robot masofasini o'lchashda HC-SR04 datchigi qanday to'lqinlardan foydalanadi?",
+      "variantlar": {
+        "A": "Ultratovush",
+        "B": "Infraqizil nur",
+        "C": "Radio to'lqin",
+        "D": "Lazer"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 114,
+      "savol": "Avtomobil nosozliklarini aniqlash uchun skaner ulanadigan port nomi?",
+      "variantlar": {
+        "A": "OBD-II",
+        "B": "HDMI",
+        "C": "USB",
+        "D": "Ethernet"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 115,
+      "savol": "Aqlli uyda chiroqlarni masofadan smartfon orqali boshqarishda qaysi modul qulay?",
+      "variantlar": {
+        "A": "Wi-Fi (ESP8266/ESP32)",
+        "B": "Gyroskop",
+        "C": "Akselerometr",
+        "D": "Akkumulyator"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 116,
+      "savol": "Bir-biri bilan to'g'ridan-to'g'ri bog'langan sensorlar tarmog'i topologiyasi?",
+      "variantlar": {
+        "A": "Mesh (To'r)",
+        "B": "Star (Yulduz)",
+        "C": "Bus (Shin)",
+        "D": "Ring (Halqa)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 117,
+      "savol": "O'rnatilgan tizimlarda vaqtni aniq boshqaruvchi operatsion tizim?",
+      "variantlar": {
+        "A": "RTOS",
+        "B": "Windows 11",
+        "C": "macOS",
+        "D": "Ubuntu"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 118,
+      "savol": "Aqlli qishloq xo'jaligida tuproq holatini bilish uchun qaysi sensor kerak?",
+      "variantlar": {
+        "A": "Namlik va sho'rlanish sensori",
+        "B": "Mikrofon",
+        "C": "Kamera",
+        "D": "Spidometr"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 119,
+      "savol": "Qurilma proshivkasini masofadan (simsiz) yangilash texnologiyasi?",
+      "variantlar": {
+        "A": "FOTA",
+        "B": "SATA",
+        "C": "P2P",
+        "D": "RAM"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 120,
+      "savol": "IoT qurilmalarida ma'lumotlarni shifrlash uchun maxsus chip qanday ataladi?",
+      "variantlar": {
+        "A": "TPM (yoki Secure Element)",
+        "B": "GPU",
+        "C": "Sound card",
+        "D": "Cooler"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 121,
+      "savol": "Mikrokontroller dasturlashda volatile kalit so'zining vazifasi nima?",
+      "variantlar": {
+        "A": "Kompilyatorni o'zgaruvchini optimallashtirishdan to'xtatish",
+        "B": "O'zgaruvchini faqat o'qiladigan qilish",
+        "C": "O'zgaruvchini operativ xotiradan o'chirish",
+        "D": "Dastur kodini siqish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 122,
+      "savol": "Robototexnikada L298N moduli nima uchun ishlatiladi?",
+      "variantlar": {
+        "A": "DC motorlar yo'nalishi va tezligini boshqarish uchun",
+        "B": "Wi-Fi ulanish uchun",
+        "C": "Masofani o'lchash uchun",
+        "D": "Ovoz yozish uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 123,
+      "savol": "IoT (Narsalar interneti) arxitekturasining 3-qatlami (Processing layer) nima qiladi?",
+      "variantlar": {
+        "A": "Ma'lumotni tahlil qiladi va saqlaydi",
+        "B": "Ma'lumotni datchikdan o'qiydi",
+        "C": "Faqat elektr quvvatini boshqaradi",
+        "D": "Qurilmani jismoniy himoya qiladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 124,
+      "savol": "Avtomobil ichidagi ECU bloklari aloqasi uchun eng ishonchli protokol qaysi?",
+      "variantlar": {
+        "A": "CAN-bus",
+        "B": "HTTP",
+        "C": "Bluetooth",
+        "D": "SPI"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 125,
+      "savol": "Aqlli shaharda ko'chalarni yoritish tizimi qaysi datchik yordamida avtomatlashadi?",
+      "variantlar": {
+        "A": "Foto-rezistor (LDR)",
+        "B": "Namlik datchigi",
+        "C": "Gaz datchigi",
+        "D": "Akselerometr"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 126,
+      "savol": "IoT uchun eng kam energiya sarflovchi \"yengil\" xabar almashish protokoli?",
+      "variantlar": {
+        "A": "MQTT",
+        "B": "FTP",
+        "C": "Telnet",
+        "D": "SMTP"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 127,
+      "savol": "\"Secure Boot\" texnologiyasining asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "Faqat tasdiqlangan va xavfsiz proshivkani ishga tushirish",
+        "B": "Qurilmani tezroq yoqish",
+        "C": "Batareya quvvatini tejash",
+        "D": "Wi-Fi parolini shifrlash"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 128,
+      "savol": "Aqlli svetoforlarda tirbandlikni aniqlashning eng samarali usuli?",
+      "variantlar": {
+        "A": "Asfalt ostidagi induktiv halqa datchigi",
+        "B": "Haroratni o'lchash",
+        "C": "Shovqin darajasini tekshirish",
+        "D": "Namlikni o'lchash"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 129,
+      "savol": "Simsiz sensor tarmoqlarida (WSN) ma'lumotlarni markazga yig'uvchi tugun?",
+      "variantlar": {
+        "A": "Gateway (Shlyuz)",
+        "B": "Sensor node",
+        "C": "Router",
+        "D": "Switch"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 130,
+      "savol": "Avtomobil tormoz tizimida g'ildirak sirpanib ketishini oldini oluvchi blok?",
+      "variantlar": {
+        "A": "ABS (Anti-lock Braking System)",
+        "B": "GPS",
+        "C": "SRS (Airbag)",
+        "D": "OBD-II"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 131,
+      "savol": "Qurilmaning elektromagnit nurlanishi orqali parolni bilib olish qanday hujum?",
+      "variantlar": {
+        "A": "Side-channel hujumi",
+        "B": "Phishing",
+        "C": "Bruteforce",
+        "D": "Trojan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 132,
+      "savol": "\"Edge Computing\"ning asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "Ma'lumotni bulutga yubormasdan, joyida qayta ishlab kechikishni kamaytirish",
+        "B": "Ma'lumotlarni faqat qog'ozda saqlash",
+        "C": "Internet tezligini oshirish",
+        "D": "Qurilma narxini arzonlashtirish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 133,
+      "savol": "HC-SR04 ultratovush datchigi masofani qanday aniqlaydi?",
+      "variantlar": {
+        "A": "Tovush to'lqinining borib-kelish vaqti orqali",
+        "B": "Yorug'lik tezligi orqali",
+        "C": "Magnit maydoni orqali",
+        "D": "Ranglarni farqlash orqali"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 134,
+      "savol": "Avtomobil diagnostikasi uchun ishlatiladigan universal port nomi?",
+      "variantlar": {
+        "A": "OBD-II",
+        "B": "USB-C",
+        "C": "HDMI",
+        "D": "VGA"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 135,
+      "savol": "ESP8266 yoki ESP32 modullarining asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Qurilmani Wi-Fi tarmog'iga ulash",
+        "B": "Faqat ovoz chiqarish",
+        "C": "Motorlarni aylantirish",
+        "D": "GPS koordinatalarini olish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 136,
+      "savol": "Har bir tugun boshqa barcha tugunlar bilan bog'lanadigan tarmoq turi?",
+      "variantlar": {
+        "A": "Mesh (To'r)",
+        "B": "Star (Yulduz)",
+        "C": "Bus (Shina)",
+        "D": "Ring (Halqa)"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 137,
+      "savol": "O'rnatilgan tizimlarda vazifalarni millisoniyalarda bajaruvchi OT?",
+      "variantlar": {
+        "A": "RTOS (Real-Time OS)",
+        "B": "Windows 10",
+        "C": "Android",
+        "D": "ChromeOS"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 138,
+      "savol": "Aqlli qishloq xo'jaligida o'simlikning suvsizlanganini qaysi datchik aytadi?",
+      "variantlar": {
+        "A": "Tuproq namligi datchigi (Soil Moisture)",
+        "B": "Barometr",
+        "C": "Gyroskop",
+        "D": "Mikrofon"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 139,
+      "savol": "FOTA (Firmware Over-The-Air) nima uchun kerak?",
+      "variantlar": {
+        "A": "Dasturni masofadan simsiz yangilash uchun",
+        "B": "Qurilmani zaryadlash uchun",
+        "C": "Qurilmani jismonan sovutish uchun",
+        "D": "Radio kanallarini eshitish uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 140,
+      "savol": "Kriptografik kalitlarni apparat darajasida himoyalovchi chip?",
+      "variantlar": {
+        "A": "TPM (Trusted Platform Module)",
+        "B": "GPU",
+        "C": "RAM",
+        "D": "BIOS chip"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 141,
+      "savol": "Robot qo'lini aniq burchak ostida (masalan, 45 gradus) burish uchun nima kerak?",
+      "variantlar": {
+        "A": "Servo motor",
+        "B": "DC motor",
+        "C": "LED chiroq",
+        "D": "Rele"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 142,
+      "savol": "I2C aloqa protokolida ma'lumot uzatish uchun nechta asosiy sim kerak?",
+      "variantlar": {
+        "A": "2 ta (SDA va SCL)",
+        "B": "1 ta",
+        "C": "8 ta",
+        "D": "10 ta"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 143,
+      "savol": "Aqlli uy tizimida xonada odam borligini aniqlovchi datchik qaysi?",
+      "variantlar": {
+        "A": "PIR sensor",
+        "B": "Namlik sensor",
+        "C": "Gaz sensor",
+        "D": "Bosim sensor"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 144,
+      "savol": "\"Aqlli shahar\"da avtobuslar qayerda kelayotganini ko'rsatuvchi texnologiya?",
+      "variantlar": {
+        "A": "GPS va GPRS",
+        "B": "Bluetooth",
+        "C": "QR-kod",
+        "D": "FM radio"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 145,
+      "savol": "Mikrokontrollerni tashqi xavfli kuchlanishdan himoyalovchi qurilma?",
+      "variantlar": {
+        "A": "Optopara (Opto-isolator)",
+        "B": "Tranzistor",
+        "C": "Rezistor",
+        "D": "Kondensator"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 146,
+      "savol": "IoT tizimida ma'lumotlar xavfsizligi uchun qo'llaniladigan shifrlash standarti?",
+      "variantlar": {
+        "A": "AES-128 / AES-256",
+        "B": "MP3",
+        "C": "JPEG",
+        "D": "MPEG"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 147,
+      "savol": "Avtomobilning xavfsizlik yostiqchalari (Airbag) qaysi datchikdan signal oladi?",
+      "variantlar": {
+        "A": "Akselerometr (urilish datchigi)",
+        "B": "Termometr",
+        "C": "Yomg'ir datchigi",
+        "D": "Namlik datchigi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 148,
+      "savol": "\"Smart Grid\" tizimi nimani aqlli boshqarish uchun xizmat qiladi?",
+      "variantlar": {
+        "A": "Elektr energiyasi tarmog'ini",
+        "B": "Suv oqimini",
+        "C": "Yo'l harakatini",
+        "D": "Internet tezligini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 149,
+      "savol": "O'rnatilgan tizimlarda \"Watchdog Timer\" nima uchun kerak?",
+      "variantlar": {
+        "A": "Dastur qotib qolsa, tizimni qayta yuklash (reset) uchun",
+        "B": "Vaqtni ko'rsatish uchun",
+        "C": "Budilnik vazifasini bajarish uchun",
+        "D": "Ekran yorug'ligini boshqarish uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 150,
+      "savol": "Bulutli platformalarda (AWS/Azure/Google Cloud) IoT Dashboard nima?",
+      "variantlar": {
+        "A": "Qurilmadan kelgan ma'lumotlarni grafik ko'rinishida ko'rsatuvchi panel",
+        "B": "Qurilmani jismoniy korpusi",
+        "C": "Batareya zaryadlovchi qurilma",
+        "D": "Internet kabeli"
+      },
+      "togri_javob": "A"
+    }
+  ]
+}

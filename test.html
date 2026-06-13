@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+  <div class="top-header">
+    <a href="index.html" class="brand-logo">EpicMineTest</a>
+  </div>
+
+  <div class="quiz-container">
+    
+    <div class="left-side">
+      <div class="question-block">
+        <div class="question-text" id="questionText">Yuklanmoqda...</div>
+        <div class="answers-list" id="answersList"></div>
+      </div>
+
+      <div class="navigation-block">
+        <button class="btn btn-prev" id="btnPrev">Orqaga</button>
+        <button class="btn btn-next" id="btnNext">Oldinga</button>
+      </div>
+    </div>
+
+    <div class="matrix-block">
+      <div class="matrix-title" id="matrixTitle">Savollar</div>
+      <div class="matrix-grid" id="matrixGrid"></div>
+      
+      <div class="submit-block">
+        <button class="btn-submit" id="btnSubmit" disabled>Yakunlash</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="savol.js"></script>
+</body>
+</html>

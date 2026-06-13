@@ -1,0 +1,1326 @@
+{
+  "Fan": "Multiagent tizimlar",
+  "Discrption": "Multiagent_testlar_javobli faylidagi qalin (bold) qilib belgilangan to'g'ri javobli testlar",
+  "test_savollari": [
+    {
+      "id": 1,
+      "savol": "Agentning eng muhim belgilaridan biri qaysi?",
+      "variantlar": {
+        "A": "Faqat hisob-kitob qilishi",
+        "B": "Faqat tashqi buyruqni bajarishi",
+        "C": "Mustaqil qaror qabul qilishi",
+        "D": "Faqat ma’lumot saqlashi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 2,
+      "savol": "Obyektga nisbatan agentning asosiy farqi nimada?",
+      "variantlar": {
+        "A": "Agent dasturdan tashqarida ishlamaydi",
+        "B": "Agent muhitni sezadi va mustaqil harakat qiladi",
+        "C": "Agent faqat ma’lumot saqlaydi",
+        "D": "Agent faqat metodlardan iborat"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 3,
+      "savol": "Quyidagilardan qaysi biri agentning asosiy xususiyati emas?",
+      "variantlar": {
+        "A": "Avtonomlik",
+        "B": "Proaktivlik",
+        "C": "Statiklik",
+        "D": "Reaktivlik"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 4,
+      "savol": "Ekspert tizimining asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Muhitni sezish va boshqarish",
+        "B": "Tarmoq tugunlarini ulash",
+        "C": "Faqat sensor ma’lumotini yig‘ish",
+        "D": "Bilim asosida xulosa chiqarish"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 5,
+      "savol": "Taqsimlangan tizim nimani anglatadi?",
+      "variantlar": {
+        "A": "Bir nechta tugun yoki modullarda ishlovchi tizimni",
+        "B": "Faqat bilim bazasidan iborat tizimni",
+        "C": "Faqat robot tizimini",
+        "D": "Faqat bitta kompyuterda ishlovchi tizimni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 6,
+      "savol": "Reaktiv agent nima qiladi?",
+      "variantlar": {
+        "A": "Faqat oldindan rejalashtiradi",
+        "B": "Muhitdagi o‘zgarishlarga javob beradi",
+        "C": "Faqat buyruq kutadi",
+        "D": "Hech qanday aloqa qilmaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 7,
+      "savol": "Proaktiv agentning belgisi qaysi?",
+      "variantlar": {
+        "A": "Faqat signal saqlaydi",
+        "B": "Maqsad sari oldindan reja bilan harakat qiladi",
+        "C": "Vaziyatga umuman javob bermaydi",
+        "D": "Faqat passiv kuzatadi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 8,
+      "savol": "Ko‘p agentli tizimlarda agentlar nima qilishi mumkin?",
+      "variantlar": {
+        "A": "Hamkorlik, muzokara va vazifa taqsimoti",
+        "B": "Faqat fayl saqlaydi",
+        "C": "Faqat markaziy buyruq kutadi",
+        "D": "Faqat yolg‘iz ishlaydi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 9,
+      "savol": "Agent tizimlari qaysi sohada marshrut tanlash va muvofiqlashtirishda ishlatiladi?",
+      "variantlar": {
+        "A": "Tibbiyot",
+        "B": "Elektron kutubxona",
+        "C": "Logistika",
+        "D": "Ta’lim"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 10,
+      "savol": "Agent tizimlarining afzalliklaridan biri qaysi?",
+      "variantlar": {
+        "A": "Modullilik va moslashuvchanlik",
+        "B": "Kommunikatsiya xarajati",
+        "C": "Qarorlar ziddiyati",
+        "D": "Muvofiqlashtirish murakkabligi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 11,
+      "savol": "Intellektual agentning eng to‘g‘ri ta’rifi qaysi?",
+      "variantlar": {
+        "A": "Faqat ma’lumot saqlab, so‘rov kutuvchi passiv tizim",
+        "B": "Faqat buyruq bajarib, natija chiqaruvchi oddiy tizim",
+        "C": "Muhitni sezib, qaror qabul qiluvchi faol tizim",
+        "D": "Faqat signal uzatib, aloqa bajaruvchi yordamchi tizim"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 12,
+      "savol": "Agentning klassik ishlash sikli qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Yuklash, tekshirish, nusxalash, yuborish ketma-ketligi",
+        "B": "Saqlash, uzatish, qayta ishlash, o‘chirish ketma-ketligi",
+        "C": "Sezish, tushunish, qaror, harakat ketma-ketligi",
+        "D": "Qabul qilish, bosib chiqarish, yopish, saqlash ketma-ketligi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 13,
+      "savol": "Quyidagilardan qaysi biri agentning asosiy funksional moduliga kiradi?",
+      "variantlar": {
+        "A": "Monitor moduli, audio moduli, video moduli",
+        "B": "Sezish moduli, bilim bazasi, qaror moduli",
+        "C": "Printer moduli, skaner moduli, fayl moduli",
+        "D": "Drayver moduli, arxiv moduli, format moduli"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 14,
+      "savol": "Reaktiv agentning asosiy xususiyati qaysi javobda to‘g‘ri ko‘rsatilgan?",
+      "variantlar": {
+        "A": "Muhit hodisasiga tezkor javob berishga yo‘naltiriladi",
+        "B": "Faqat foyda funksiyasini optimallashtirib qaror qiladi",
+        "C": "Uzoq muddatli strategik rejalashga asoslanib ishlaydi",
+        "D": "Faqat bilim bazasini yangilash bilan shug‘ullanib boradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 15,
+      "savol": "Ko‘p yadroli protsessor mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Bitta yadroda bir nechta xotira moduli joylashadi",
+        "B": "Bitta tizimda bir nechta alohida kompyuter ulanadi",
+        "C": "Bitta chipda bir nechta mustaqil yadro joylashadi",
+        "D": "Bitta protsessorda faqat bitta oqim doimiy ishlaydi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 16,
+      "savol": "Flynn klassifikatsiyasiga ko‘ra zamonaviy parallel tizimlar ko‘proq qaysi turga mansub?",
+      "variantlar": {
+        "A": "Ko‘p buyruq, ko‘p ma’lumot oqimli MIMD turiga",
+        "B": "Bitta buyruq, bitta ma’lumot oqimli SISD turiga",
+        "C": "Bitta buyruq, ko‘p ma’lumot oqimli SIMD turiga",
+        "D": "Ko‘p buyruq, bitta ma’lumot oqimli MISD turiga"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 17,
+      "savol": "NUMA arxitekturasining asosiy belgisi qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Yaqin xotiraga tez, uzoq xotiraga sekin murojaat",
+        "B": "Har bir yadro uchun faqat tashqi xotiradan foydalanish",
+        "C": "Xotiradan umuman foydalanmasdan faqat keshda ishlash",
+        "D": "Barcha xotiraga mutlaqo bir xil tez murojaat qilish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 18,
+      "savol": "Parallel agent tizimlarida sinxronlashning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Faqat xotira hajmini doimiy ravishda oshirib borish",
+        "B": "Faqat tizimning tashqi ko‘rinishini chiroyli tashkil qilish",
+        "C": "Umumiy resurslarda ziddiyat va to‘qnashuvni kamaytirish",
+        "D": "Faqat internet uzatish tezligini avtomatik boshqarish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 19,
+      "savol": "Ko‘pprotsessorli va klasterli muhitlarda agentlararo aloqa odatda qanday tashkil etiladi?",
+      "variantlar": {
+        "A": "Faqat bitta markaziy protsessor buyrug‘i bilan boshqariladi",
+        "B": "Faqat lokal fayllarni navbat bilan o‘qish orqali bajariladi",
+        "C": "Faqat umumiy registrlar va kesh xotirasi orqali yuritiladi",
+        "D": "Maxsus xabar almashish mexanizmlari orqali tashkil etiladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 20,
+      "savol": "Parallel agent tizimida yuklama balanslash nimani anglatadi?",
+      "variantlar": {
+        "A": "Barcha agentlarga bir xil nom va rol biriktirishni",
+        "B": "Barcha hisoblashni bitta markaziy agentga yuklashni",
+        "C": "Ish yukini agentlar orasida muvozanatli taqsimlashni",
+        "D": "Barcha agentlarni faqat bir vaqtda ishga tushirishni"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 21,
+      "savol": "Intellektual agentning oddiy dasturdan asosiy farqi nimada?",
+      "variantlar": {
+        "A": "Faqat oldindan yozilgan kodni takrorlaydi",
+        "B": "Muhitni kuzatib, qaror qabul qila oladi",
+        "C": "Faqat ma’lumotlarni saqlash bilan cheklanadi",
+        "D": "Faqat foydalanuvchi buyruqlarini bajaradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 22,
+      "savol": "Mantiqiy fikrlovchi agentlarda mantiqdan foydalanishning asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Dastur interfeysini bezash uchun",
+        "B": "Tasvirlarni avtomatik ravishda bo‘yash uchun",
+        "C": "Faqat xotira hajmini oshirish uchun",
+        "D": "Qarorlarni asoslash va tekshirish uchun"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 23,
+      "savol": "Agentning qaysi xususiyati muhitdagi o‘zgarishlarga javob qaytarishni bildiradi?",
+      "variantlar": {
+        "A": "Avtonomlik tashqi xotiraga ulanib turishi",
+        "B": "Reaktivlik muhitga mos javob berishi",
+        "C": "Ijtimoiylik faqat guruh bo‘lib ishlashi",
+        "D": "Proaktivlik doimiy reja tuzish qobiliyati"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 24,
+      "savol": "Bilim bazasining mantiqiy agent faoliyatidagi o‘rni nima?",
+      "variantlar": {
+        "A": "Kompyuter tezligini oshiruvchi ichki modul",
+        "B": "Agent qarorlari uchun asos bo‘luvchi tuzilma",
+        "C": "Faqat grafik oynalarni saqlash vositasi",
+        "D": "Faqat dastur kodini himoyalash qismi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 25,
+      "savol": "Inferensiya tushunchasi agent tizimida nimani anglatadi?",
+      "variantlar": {
+        "A": "Tashqi qurilmalarni avtomatik yangilash jarayoni",
+        "B": "Barcha xabarlarni o‘chirib tashlash usuli",
+        "C": "Tasodifiy qarorlarni navbat bilan tanlash",
+        "D": "Mavjud bilimlardan yangi xulosa chiqarish"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 26,
+      "savol": "Agentga yo‘naltirilgan dasturlash g‘oyasini keng targ‘ib qilgan olim kim?",
+      "variantlar": {
+        "A": "Alan Turing klassik hisoblash muallifi",
+        "B": "Yoav Shoham agent dasturlash targ‘ibotchisi",
+        "C": "Marvin Minsky neyron tarmoqlar muallifi",
+        "D": "John McCarthy ekspert tizimlar asoschisi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 27,
+      "savol": "AGENT0 modelining ilmiy ahamiyati nimada?",
+      "variantlar": {
+        "A": "Agentni mental holat bilan izohlagan",
+        "B": "Obyekt tushunchasini butunlay bekor qilgan",
+        "C": "Faqat apparat vositalarni boshqarib bergan",
+        "D": "Faqat ma’lumotlar bazasini almashtirgan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 28,
+      "savol": "AGENT0 modelida xabarlar qanday rol bajaradi?",
+      "variantlar": {
+        "A": "Tizim ranglarini o‘zgartirib turibdi faqat",
+        "B": "Faqat matn uzatish uchun xizmat qiladi",
+        "C": "Dastur oynasini yopib ochishga yordam beradi",
+        "D": "Ichki majburiyat va qarorni shakllantiradi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 29,
+      "savol": "Agentni loyihalashda birinchi muhim bosqich qaysi?",
+      "variantlar": {
+        "A": "Darhol dastur kodini yozishni boshlash",
+        "B": "Faqat tashqi dizaynni ishlab chiqish",
+        "C": "Tayyor shablonni hech tekshirmay ko‘chirish",
+        "D": "Muhit va vazifalarni formal tavsiflash"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 30,
+      "savol": "Mantiqiy agentlarning asosiy cheklovlaridan biri qaysi?",
+      "variantlar": {
+        "A": "Ular bilim bazasidan foydalana olmaydi",
+        "B": "Faqat bitta harakatni bajarishi mumkin",
+        "C": "Inferensiya real vaqtda qimmat bo‘lishi",
+        "D": "Ular umuman xabar almasha olmaydi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 31,
+      "savol": "Ko‘p agentli tizimning asosiy mazmuni nimada namoyon bo‘ladi?",
+      "variantlar": {
+        "A": "Bir nechta agent umumiy muhitda hamkorlik qiladi",
+        "B": "Faqat bitta agent barcha vazifani o‘zi bajaradi",
+        "C": "Tizim faqat ma’lumotlarni saqlash uchun ishlaydi",
+        "D": "Bitta dastur barcha qarorni markazda boshqaradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 32,
+      "savol": "Ko‘p agentli tizimlarda koordinatsiyaning asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Agentlar o‘rtasida tasodifiy xabarlar uzatishdir",
+        "B": "Faqat bitta resursni cheksiz taqsimlashdir",
+        "C": "Har bir agentni butunlay mustaqil qoldirishdir",
+        "D": "Agentlar ishini uyg‘un va mos boshqarishdir"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 33,
+      "savol": "Ko‘p agentli tizimlarda semantik moslik nima uchun muhim hisoblanadi?",
+      "variantlar": {
+        "A": "Xabarlarni faqat tezroq uzatish imkonini beradi",
+        "B": "Tushunchalarni bir xil ma’noda talqin qilishga xizmat qiladi",
+        "C": "Tizimdagi barcha agentlarni bitta turga keltiradi",
+        "D": "Faqat apparat qurilmalarni almashtirishni osonlashtiradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 34,
+      "savol": "Ontologiyaning agent tizimlaridagi asosiy roli nimadan iborat?",
+      "variantlar": {
+        "A": "Faqat foydalanuvchi parollarini saqlashga xizmat qiladi",
+        "B": "Faqat terminlarni alifbo tartibida joylashtiradi",
+        "C": "Umumiy semantik bilim modelini shakllantiradi",
+        "D": "Tizim interfeysining tashqi ko‘rinishini belgilaydi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 35,
+      "savol": "Ontologiyaning asosiy elementlari qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Sinflar, instansiyalar, xossalar va munosabatlar",
+        "B": "Belgilar, shriftlar, ranglar va sahifalar",
+        "C": "Fayllar, oynalar, tugmalar va protsessorlar",
+        "D": "Serverlar, printerlar, modemlar va monitorlar"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 36,
+      "savol": "RDF tilining asosiy ifodalash modeli qanday tuzilmaga asoslanadi?",
+      "variantlar": {
+        "A": "Jadval, ustun va satrlar tuzilishiga",
+        "B": "Faqat sonli massivlar tizimiga",
+        "C": "Buyruq, blok va sikl ketma-ketligiga",
+        "D": "Subyekt, predikat va obyekt uchligiga"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 37,
+      "savol": "OWL tilining RDF ga nisbatan kuchli tomoni nimada?",
+      "variantlar": {
+        "A": "Faqat dastur tezligini oshirishga xizmat qiladi",
+        "B": "Murakkab ontologik cheklovlarni ifodalay oladi",
+        "C": "U faqat matnli izohlarni chiroyli ko‘rsatadi",
+        "D": "Faqat uchliklarni oddiy grafda saqlaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 38,
+      "savol": "KIF tilining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Rasmlarni siqilgan formatda tez uzatish",
+        "B": "Ma’lumotlar bazasini grafik tarzda chizish",
+        "C": "Bilimlarni formal mantiqiy shaklda almashish",
+        "D": "Faqat internet sahifalarni bezatib ko‘rsatish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 39,
+      "savol": "Agentlararo muloqotning qaysi qatlami ontologiyalarga ehtiyoj tug‘diradi?",
+      "variantlar": {
+        "A": "Faqat elektr impulslar almashish qatlami",
+        "B": "Faqat texnik signal uzatish qatlami",
+        "C": "Asosan semantik ma’no uyg‘unligi qatlami",
+        "D": "Asosan grafik interfeysni chizish qatlami"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 40,
+      "savol": "Ko‘p agentli tizimlarda RDF, OWL va KIF dan birgalikda foydalanishning amaliy natijasi nima?",
+      "variantlar": {
+        "A": "Faqat xotira sarfini cheksiz oshiradi",
+        "B": "Barcha semantik munosabatlarni bekor qiladi",
+        "C": "Bilim almashish va inferensiyani kuchaytiradi",
+        "D": "Tizimni faqat bir agentga bog‘lab qo‘yadi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 41,
+      "savol": "Ko‘p agentli tizimlarda aloqa tilining asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Faqat dastur oynalarining rangini boshqarish uchun",
+        "B": "Agent xabarining tuzilishi va ma’nosini belgilash",
+        "C": "Tarmoq kabeli ulanishini nazorat qilib turish",
+        "D": "Kompyuter xotirasini avtomatik ravishda kengaytirish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 42,
+      "savol": "Protokol tushunchasi ko‘p agentli tizimlarda nimani bildiradi?",
+      "variantlar": {
+        "A": "Agent ekranidagi belgilar o‘lchamini boshqarish",
+        "B": "Xabarlar almashishning tartibi va qoidalar majmui",
+        "C": "Faqat fayl nomlarini standart shaklda yozish usuli",
+        "D": "Kompyuterning elektr quvvatini tekshirish vositasi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 43,
+      "savol": "Agentlararo xabarning pragmatik qatlami nimani ifodalaydi?",
+      "variantlar": {
+        "A": "Xabar hajmini siqish algoritmini tanlashni",
+        "B": "Tizimning apparat qismlariga berilgan buyruqlarni",
+        "C": "Faqat xabarning grammatik yozilish qoidalarini",
+        "D": "Xabardan ko‘zlangan niyat va kutilgan natijani"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 44,
+      "savol": "Nutq aktlari nazariyasiga ko‘ra agent xabari qanday rol bajaradi?",
+      "variantlar": {
+        "A": "Mazmun bilan birga ijtimoiy amal ham bajaradi",
+        "B": "Faqat kodni kompilyatsiya qilish uchun yuboriladi",
+        "C": "Faqat texnik signal sifatida ishlatiladi doim",
+        "D": "Faqat oddiy matnli ma’lumot uzatib turadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 45,
+      "savol": "KQML tilida performativ nimani ko‘rsatadi?",
+      "variantlar": {
+        "A": "Agentning jismoniy joylashgan manzilini ko‘rsatadi",
+        "B": "Dastur oynasidagi menyular tartibini belgilaydi",
+        "C": "Tizim xotirasining bo‘sh qismini aniqlab beradi",
+        "D": "Xabarning qanday maqsadda yuborilganini bildiradi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 46,
+      "savol": "ACL yondashuvining muhim jihati nimada ko‘rinadi?",
+      "variantlar": {
+        "A": "Xabarni agentning ichki holati bilan bog‘laydi",
+        "B": "Tarmoq tezligini doimiy ravishda oshirib boradi",
+        "C": "Matnli fayllarni avtomatik ravishda tarjima qiladi",
+        "D": "Faqat tashqi qurilmalarni sinashga mo‘ljallangan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 47,
+      "savol": "FIPA-ACL ning amaliy ustunligi nimada?",
+      "variantlar": {
+        "A": "Xabar maydonlari va protokollarni standartlashtiradi",
+        "B": "Faqat tasvir fayllarini tez uzatishga xizmat qiladi",
+        "C": "Kompyuterning tashqi qurilmalarini almashtiradi",
+        "D": "Barcha agentlarni bitta dasturga birlashtiradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 48,
+      "savol": "Ontologiyaning agent kommunikatsiyasidagi asosiy roli nima?",
+      "variantlar": {
+        "A": "Faqat xabarlarni shifrlangan holda saqlab turish",
+        "B": "Agentlarning fizik tezligini oshirib yuborish",
+        "C": "Tushunchalarni umumiy semantik asosda talqin qilish",
+        "D": "Dastur oynalarini chiroyli ko‘rinishga keltirish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 49,
+      "savol": "Contract Net Protocol odatda qaysi vazifa uchun qo‘llanadi?",
+      "variantlar": {
+        "A": "Kompyuter protsessorini sovitishni boshqarishda",
+        "B": "Vazifalarni taklif asosida agentlarga taqsimlashda",
+        "C": "Faqat bitta agentni markazga ulab turishda",
+        "D": "Faqat rasmlarni arxiv ichida joylashtirish uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 50,
+      "savol": "Koordinatsiya protokollarining asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "Ziddiyat va to‘qnashuvlarni kamaytirib ishni uyg‘unlash",
+        "B": "Faqat statik ma’lumotlarni nusxalab saqlash",
+        "C": "Tizimdagi barcha xabarlarni o‘chirib tashlash",
+        "D": "Har bir agentni butunlay yolg‘iz qoldirib qo‘yish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 51,
+      "savol": "Ko‘p agentli tizimlarda aloqa tilining asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Kompyuter xotirasini avtomatik ravishda kengaytirish",
+        "B": "Faqat dastur oynalarining rangini boshqarish uchun",
+        "C": "Tarmoq kabeli ulanishini nazorat qilib turish",
+        "D": "Agent xabarining tuzilishi va ma’nosini belgilash"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 52,
+      "savol": "Protokol tushunchasi ko‘p agentli tizimlarda nimani bildiradi?",
+      "variantlar": {
+        "A": "Xabarlar almashishning tartibi va qoidalar majmui",
+        "B": "Kompyuterning elektr quvvatini tekshirish vositasi",
+        "C": "Agent ekranidagi belgilar o‘lchamini boshqarish",
+        "D": "Faqat fayl nomlarini standart shaklda yozish usuli"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 53,
+      "savol": "Agentlararo xabarning pragmatik qatlami nimani ifodalaydi?",
+      "variantlar": {
+        "A": "Faqat xabarning grammatik yozilish qoidalarini",
+        "B": "Tizimning apparat qismlariga berilgan buyruqlarni",
+        "C": "Xabar hajmini siqish algoritmini tanlashni",
+        "D": "Xabardan ko‘zlangan niyat va kutilgan natijani"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 54,
+      "savol": "Nutq aktlari nazariyasiga ko‘ra agent xabari qanday rol bajaradi?",
+      "variantlar": {
+        "A": "Mazmun bilan birga ijtimoiy amal ham bajaradi",
+        "B": "Faqat kodni kompilyatsiya qilish uchun yuboriladi",
+        "C": "Faqat oddiy matnli ma’lumot uzatib turadi",
+        "D": "Faqat texnik signal sifatida ishlatiladi doim"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 55,
+      "savol": "KQML tilida performativ nimani ko‘rsatadi?",
+      "variantlar": {
+        "A": "Tizim xotirasining bo‘sh qismini aniqlab beradi",
+        "B": "Agentning jismoniy joylashgan manzilini ko‘rsatadi",
+        "C": "Xabarning qanday maqsadda yuborilganini bildiradi",
+        "D": "Dastur oynasidagi menyular tartibini belgilaydi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 56,
+      "savol": "ACL yondashuvining muhim jihati nimada ko‘rinadi?",
+      "variantlar": {
+        "A": "Tarmoq tezligini doimiy ravishda oshirib boradi",
+        "B": "Faqat tashqi qurilmalarni sinashga mo‘ljallangan",
+        "C": "Matnli fayllarni avtomatik ravishda tarjima qiladi",
+        "D": "Xabarni agentning ichki holati bilan bog‘laydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 57,
+      "savol": "FIPA-ACL ning amaliy ustunligi nimada?",
+      "variantlar": {
+        "A": "Barcha agentlarni bitta dasturga birlashtiradi",
+        "B": "Faqat tasvir fayllarini tez uzatishga xizmat qiladi",
+        "C": "Kompyuterning tashqi qurilmalarini almashtiradi",
+        "D": "Xabar maydonlari va protokollarni standartlashtiradi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 58,
+      "savol": "Ontologiyaning agent kommunikatsiyasidagi asosiy roli nima?",
+      "variantlar": {
+        "A": "Faqat xabarlarni shifrlangan holda saqlab turish",
+        "B": "Agentlarning fizik tezligini oshirib yuborish",
+        "C": "Dastur oynalarini chiroyli ko‘rinishga keltirish",
+        "D": "Tushunchalarni umumiy semantik asosda talqin qilish"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 59,
+      "savol": "Contract Net Protocol odatda qaysi vazifa uchun qo‘llanadi?",
+      "variantlar": {
+        "A": "Kompyuter protsessorini sovitishni boshqarishda",
+        "B": "Faqat bitta agentni markazga ulab turishda",
+        "C": "Faqat rasmlarni arxiv ichida joylashtirish uchun",
+        "D": "Vazifalarni taklif asosida agentlarga taqsimlashda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 60,
+      "savol": "Koordinatsiya protokollarining asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "Ziddiyat va to‘qnashuvlarni kamaytirib ishni uyg‘unlash",
+        "B": "Har bir agentni butunlay yolg‘iz qoldirib qo‘yish",
+        "C": "Tizimdagi barcha xabarlarni o‘chirib tashlash",
+        "D": "Faqat statik ma’lumotlarni nusxalab saqlash"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 61,
+      "savol": "Ko‘p agentli tizimlarda o‘zaro ta’sirning asosiy mazmuni nimada?",
+      "variantlar": {
+        "A": "Har bir agent doim butunlay yolg‘iz ishlaydi",
+        "B": "Bir agent qarori boshqalarga ham ta’sir ko‘rsatadi",
+        "C": "Tizim faqat bitta resurs bilan cheklanadi",
+        "D": "Barcha qarorlar markaziy modulda saqlanadi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 62,
+      "savol": "Ko‘p agentli muhitda muhokama odatda nima uchun boshlanadi?",
+      "variantlar": {
+        "A": "Faqat xabarlar hajmini kattalashtirish uchun",
+        "B": "Lokal bilimlarni umumiy qarorga aylantirish uchun",
+        "C": "Faqat agentlar sonini sun’iy ko‘paytirish uchun",
+        "D": "Tizim xotirasini bo‘sh holda saqlash uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 63,
+      "savol": "Argumentatsiyaga asoslangan muhokamaning muhim afzalligi nimada?",
+      "variantlar": {
+        "A": "Barcha agentlarni bir xil rolga aylantiradi",
+        "B": "Muhokamani mazmunsiz ravishda cho‘zib yuboradi",
+        "C": "Qarorlarni dalillar asosida tushuntirib beradi",
+        "D": "Faqat xabarlar sonini keskin oshirib yuboradi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 64,
+      "savol": "Lokal yechim va global yechim o‘rtasidagi farq nimada?",
+      "variantlar": {
+        "A": "Lokal foyda doim global foydaga teng emas",
+        "B": "Lokal yechim tizim natijasiga ta’sir qilmaydi",
+        "C": "Ular barcha vaziyatlarda mutlaqo bir xil",
+        "D": "Global yechim faqat bitta agentga tegishli"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 65,
+      "savol": "Kelishuv tushunchasi ko‘p agentli tizimlarda nimani bildiradi?",
+      "variantlar": {
+        "A": "Resurslarni tasodifiy tarzda taqsimlashni",
+        "B": "Xabarlarni faqat arxivga saqlab qo‘yishni",
+        "C": "Agentlarning maqbul umumiy pozitsiyaga kelishini",
+        "D": "Barcha agentlarning tizimdan chiqib ketishini"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 66,
+      "savol": "Nizo yoki konfliktning asosiy sabablaridan biri qaysi?",
+      "variantlar": {
+        "A": "Har bir agentning bir xil fikrda bo‘lishi",
+        "B": "Resurs cheklovi va maqsadlar mos kelmasligi",
+        "C": "Tizimda faqat bitta vazifa mavjud bo‘lishi",
+        "D": "Agentlarning hech qanday aloqa qilmasligi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 67,
+      "savol": "Muzokara usulining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Taklif va qarshi taklif bilan maqbul nuqta topish",
+        "B": "Faqat bitta agentning fikrini majburiy qabul qilish",
+        "C": "Barcha resurslarni navbatsiz ravishda bo‘lishish",
+        "D": "Har qanday kelishuvni darhol bekor qilib yuborish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 68,
+      "savol": "CDPS yondashuvining asosiy bosqichlari qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Kodlash, bezash va tasvirlarni ranglash bosqichlari",
+        "B": "Dekompozitsiya, taqsimlash va integratsiya bosqichlari",
+        "C": "O‘chirish, saqlash va nusxa ko‘chirish bosqichlari",
+        "D": "Faqat kuzatish va kutishdan iborat bosqichlar"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 69,
+      "savol": "CDPS odatiy parallel hisoblashdan nimasi bilan farq qiladi?",
+      "variantlar": {
+        "A": "U faqat markaziy buyruqlar bilan qat’iy ishlaydi",
+        "B": "Agentlar o‘rtasida doimiy moslashuv va aloqa bo‘ladi",
+        "C": "Tizimda umuman muvofiqlashtirish talab qilinmaydi",
+        "D": "Barcha vazifalar har doim mutlaqo mustaqil bo‘ladi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 70,
+      "savol": "CDPS samaradorligini baholashda qaysi mezonlar muhim?",
+      "variantlar": {
+        "A": "Faqat agentlarning tashqi ko‘rinishi va nomi",
+        "B": "Faqat bitta lokal foyda ko‘rsatkichi",
+        "C": "Faqat xabarlar soni va belgilar uzunligi",
+        "D": "Sifat, vaqt va resurs mezonlari birgalikda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 71,
+      "savol": "Hisoblashga asoslangan ijtimoiy tanlovning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Kompyuter xotirasini samarali ravishda taqsimlash",
+        "B": "Individual afzalliklarni jamoaviy qarorga aylantirish",
+        "C": "Faqat siyosiy saylovlarni qo‘lda hisoblab chiqish",
+        "D": "Faqat texnik qurilmalarni markaziy tarzda boshqarish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 72,
+      "savol": "Ovoz berish protokoli deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Faqat ma’lumotlarni vaqtincha saqlash jadvali",
+        "B": "Tarmoq orqali xabar yuborishning texnik yo‘li",
+        "C": "Ovozlarni qayta ishlab g‘olibni aniqlash qoidasi",
+        "D": "Saylovchilarning shaxsiy fayllarini himoya usuli"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 73,
+      "savol": "Plurality tizimining asosiy xususiyati qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Har saylovchi barcha nomzodlarni teng belgilaydi",
+        "B": "Har saylovchi faqat bitta variantni tanlaydi",
+        "C": "Har saylovchi barcha variantlarga ball taqsimlaydi",
+        "D": "Har saylovchi juft taqqoslashlar asosida qaraydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 74,
+      "savol": "Borda count tizimining plurality dan asosiy farqi nimada?",
+      "variantlar": {
+        "A": "Faqat bitta nomzodga ovoz beriladi doim",
+        "B": "Faqat juft-juft taqqoslash natijasi olinadi",
+        "C": "Tasodifiy ravishda g‘olib avtomatik tanlanadi",
+        "D": "Variantlarga tartib asosida ballar beriladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 75,
+      "savol": "Condorcet yondashuvining asosiy g‘oyasi nimaga tayanadi?",
+      "variantlar": {
+        "A": "Har variantga teng miqdorda ball berish",
+        "B": "Faqat eng oxirgi o‘rinlarni hisoblash usuli",
+        "C": "Variantlarni juft-juft taqqoslab g‘olibni topish",
+        "D": "Faqat birinchi o‘rinlar sonini sanab chiqish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 76,
+      "savol": "Approval voting tizimining amaliy qulayligi nimada?",
+      "variantlar": {
+        "A": "Bir nechta variantni ma’qullash imkonini beradi",
+        "B": "Har bir variantni juft tahlil qilishni talab etadi",
+        "C": "Hisoblash uchun juda murakkab formulalar talab qiladi",
+        "D": "Faqat bitta variantni tanlashga majbur qiladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 77,
+      "savol": "Strategik manipulyatsiya deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Faqat texnik xatolar sabab noto‘g‘ri sanash",
+        "B": "Saylov natijasini keyinroq qayta e’lon qilish",
+        "C": "Haqiqiy afzallikni yashirib foydali ovoz berish",
+        "D": "Ovozlarni oddiy va samimiy tarzda bildirish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 78,
+      "savol": "Koalitsion manipulyatsiya individual manipulyatsiyadan nimasi bilan farq qiladi?",
+      "variantlar": {
+        "A": "Unda faqat bitta ishtirokchi mustaqil qaror qiladi",
+        "B": "Unda faqat texnik operatorlar ovozlarni sanaydi",
+        "C": "Unda hech qanday strategik maqsad mavjud bo‘lmaydi",
+        "D": "Unda bir nechta ishtirokchi kelishib harakat qiladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 79,
+      "savol": "Hisoblash murakkabligi manipulyatsiyaga qarshi qanday rol o‘ynashi mumkin?",
+      "variantlar": {
+        "A": "Har qanday manipulyatsiyani to‘liq yo‘q qiladi",
+        "B": "Saylovchilarning haqiqiy afzalligini bekor qiladi",
+        "C": "Foydali strategiyani topishni qiyinlashtirishi mumkin",
+        "D": "Barcha protokollarni bir xil holga keltiradi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 80,
+      "savol": "Ko‘p agentli tizimlarda ijtimoiy tanlov mexanizmlari ko‘proq nima uchun kerak bo‘ladi?",
+      "variantlar": {
+        "A": "Kompyuterlarni tarmoqqa ulash tezligini oshirish uchun",
+        "B": "Resurs va strategiyalar bo‘yicha kollektiv qaror uchun",
+        "C": "Faqat apparat qurilmalarni navbat bilan yoqish uchun",
+        "D": "Matnli fayllarni alifbo bo‘yicha saralash uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 81,
+      "savol": "Koalitsiya tushunchasi qaysi javobda to‘g‘ri ifodalangan?",
+      "variantlar": {
+        "A": "Bir nechta ishtirokchining umumiy foyda uchun birlashuvi",
+        "B": "Tizimdagi resurslarni tasodifiy ravishda taqsimlash",
+        "C": "Har bir ishtirokchining butunlay yakka holda ishlashi",
+        "D": "Faqat bitta agentning barcha vazifani bajarishi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 82,
+      "savol": "Koalitsion o‘yinlar nazariyasining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Faqat texnik qurilmalar ishlashini nazorat qilib turish",
+        "B": "Birlashuv qiymati va taqsimot barqarorligini tahlil qilish",
+        "C": "Kompyuter tarmoqlarini avtomatik sozlashni tashkil etish",
+        "D": "Agentlarning tashqi ko‘rinishini standart shaklda belgilash"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 83,
+      "savol": "Xarakteristik funksiya v(S) nimani bildiradi?",
+      "variantlar": {
+        "A": "Har bir agentning shaxsiy parolini saqlab turadi",
+        "B": "Tizimdagi barcha xabarlarning umumiy sonini ko‘rsatadi",
+        "C": "Muayyan koalitsiyaning umumiy qiymatini bildiradi",
+        "D": "Kompyuter xotirasining band qismini ifodalaydi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 84,
+      "savol": "Koalitsiya tuzishning asosiy motivi sifatida nima ko‘rsatilgan?",
+      "variantlar": {
+        "A": "Har bir agentning mustaqilligini kamaytirib yuborish",
+        "B": "Birlashish natijasidagi sinergik foyda ortishi",
+        "C": "Resurslardan foydalanishni butunlay cheklab qo‘yish",
+        "D": "Faqat aloqa xarajatlarini sun’iy ravishda oshirish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 85,
+      "savol": "Superadditivlik sharti nimani anglatadi?",
+      "variantlar": {
+        "A": "Koalitsiya qiymati faqat bitta agentga bog‘liq bo‘ladi",
+        "B": "Har bir kichik koalitsiya doim katta koalitsiyadan ustun",
+        "C": "Har qanday bo‘linish birlashishdan doim foydaliroq bo‘ladi",
+        "D": "Birlashgan qiymat alohida qiymatlar yig‘indisidan kam emas"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 86,
+      "savol": "Yadro (The Core) tushunchasining asosiy mohiyati nimada?",
+      "variantlar": {
+        "A": "Ajralib chiqishga rag‘bat bermaydigan barqaror taqsimot",
+        "B": "Faqat eng katta koalitsiyaning tashqi nomlanishi",
+        "C": "Agentlarning vaqtincha saqlanadigan texnik ro‘yxati",
+        "D": "Barcha agentlarga teng ulushni majburiy berish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 87,
+      "savol": "Shapley qiymati qaysi g‘oyaga asoslanadi?",
+      "variantlar": {
+        "A": "Koalitsiyani tasodifiy ravishda guruhlarga ajratish",
+        "B": "O‘rtacha marginal hissa asosida ulush taqsimlash",
+        "C": "Barcha agentlarga doim bir xil ulush ajratish",
+        "D": "Faqat eng kuchli agentga yuqori qiymat berish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 88,
+      "savol": "Yadro va Shapley qiymati o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Yadro barqarorlikka, Shapley esa adolatga urg‘u beradi",
+        "B": "Yadro faqat xarajatni, Shapley faqat vaqtni o‘lchaydi",
+        "C": "Yadro koalitsiyani bo‘ladi, Shapley uni bekor qiladi",
+        "D": "Yadro faqat nazariy, Shapley faqat texnik tushunchadir"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 89,
+      "savol": "Individual ratsionallik talabi nimani bildiradi?",
+      "variantlar": {
+        "A": "Agent doim eng katta koalitsiyaga kirishi shart",
+        "B": "Har bir agent faqat teng qiymat olishi kerak",
+        "C": "Agent yolg‘iz oladigan qiymatdan kam ulush olmasligi",
+        "D": "Agent koalitsiyadan mustaqil ravishda chiqib ketadi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 90,
+      "savol": "Koalitsiya tuzilmasini yaratishda xarajatlar nega hisobga olinadi?",
+      "variantlar": {
+        "A": "Sof foyda haqiqiy samaradorlikni aniqlash uchun",
+        "B": "Agentlarning barcha qarorlarini bekor qilish uchun",
+        "C": "Faqat koalitsiyalar sonini sun’iy ravishda kamaytirish uchun",
+        "D": "Har qanday katta koalitsiyani majburiy tanlash uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 91,
+      "savol": "Cheklangan resurslarni taqsimlash muammosining asosiy sababi nimada?",
+      "variantlar": {
+        "A": "Tizimda umuman hech qanday talab mavjud bo‘lmaydi",
+        "B": "Resurslar cheksiz, talab esa doim juda kam bo‘ladi",
+        "C": "Resurs tanqis, talab esa bir vaqtda ko‘p bo‘ladi",
+        "D": "Faqat bitta agent barcha resursni boshqarib turadi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 92,
+      "savol": "Auksion mexanizmining ikki asosiy qatlami qaysilar?",
+      "variantlar": {
+        "A": "Taqsimot qoidasi va to‘lov qoidasi birgaligi",
+        "B": "Faqat nazorat qoidasi va yozish qoidasi",
+        "C": "Faqat audit qoidasi va saqlash qoidasi",
+        "D": "Tarmoq qoidasi va uzatish qoidasi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 93,
+      "savol": "Auksion nazariyasida “qiymat” va “taklif” o‘rtasidagi farq nimada?",
+      "variantlar": {
+        "A": "Qiymat faqat g‘olibga tegishli, taklif esa yo‘q",
+        "B": "Qiymat ichki baho, taklif esa bildirilgan narx",
+        "C": "Qiymat tashqi narx, taklif esa yashirin foyda",
+        "D": "Ikkalasi ham doim bir xil tushunchani bildiradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 94,
+      "savol": "Inglizcha auksionning asosiy ishlash tamoyili qaysi?",
+      "variantlar": {
+        "A": "Narx pasayib boradi, birinchi qabul qilgan yutadi",
+        "B": "Har kim bitta yashirin taklif yuborib ketadi",
+        "C": "G‘olib ikkinchi eng yuqori narxni to‘laydi",
+        "D": "Narx oshib boradi, oxirgi yuqori taklif yutadi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 95,
+      "savol": "Gollandcha auksionning muhim xususiyati nimada?",
+      "variantlar": {
+        "A": "Narx pastdan ko‘tarilib boradi va cho‘ziladi",
+        "B": "G‘olib ikkinchi eng baland narxni to‘laydi",
+        "C": "Takliflar faqat yozma ravishda qabul qilinadi",
+        "D": "Narx yuqoridan tushadi, birinchi rozilik g‘olib"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 96,
+      "savol": "Birinchi narxli yashirin auksionda g‘olib qanday to‘lov qiladi?",
+      "variantlar": {
+        "A": "Eng yuqori taklif bergan ikkinchi narxni to‘laydi",
+        "B": "G‘olib hech qanday to‘lov qilmaydi umuman",
+        "C": "Barcha ishtirokchilar teng miqdorda to‘lov qiladi",
+        "D": "Eng yuqori taklif bergan o‘z taklifini to‘laydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 97,
+      "savol": "Ikkinchi narxli yashirin auksionning nazariy afzalligi nimada?",
+      "variantlar": {
+        "A": "Haqiqiy qiymatni bildirish oqilona strategiya bo‘ladi",
+        "B": "Barcha ishtirokchilar teng foyda oladi",
+        "C": "Har doim eng yuqori daromadni kafolatlaydi",
+        "D": "Hisoblash uchun umuman qoidalar talab qilmaydi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 98,
+      "savol": "Alohida elementlar uchun auksionlarning asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "Faqat kombinatsion lotlar uchun mos bo‘ladi",
+        "B": "Hisoblash, audit va tushuntirish jarayoni soddaroq",
+        "C": "Ular har doim global maksimumni beradi",
+        "D": "Sinergiyani to‘liq va bexato hisoblab beradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 99,
+      "savol": "Alohida lot auksionlarining asosiy cheklovi nimada?",
+      "variantlar": {
+        "A": "Narx va sifatni birga baholab bo‘lmaydi",
+        "B": "Tizimni avtomatlashtirish mutlaqo imkonsiz bo‘ladi",
+        "C": "Har bir lot bo‘yicha g‘olibni topib bo‘lmaydi",
+        "D": "Birgalikdagi sinergik qiymat doim ham ushlanmaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 100,
+      "savol": "Baholangan taklif modeli qachon qo‘llanadi?",
+      "variantlar": {
+        "A": "Ishtirokchilar soni faqat bittaga teng bo‘lganda",
+        "B": "Auksionda umuman hech qanday raqobat bo‘lmaganda",
+        "C": "Faqat narx yagona mezon bo‘lib qolganda",
+        "D": "Narx bilan birga sifat ham muhim bo‘lganda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 101,
+      "savol": "Ko‘p agentli tizimlarda muzokaraning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Faqat xabar uzatish tezligini oshirib borish",
+        "B": "Barcha agentlarni bitta buyruqqa bo‘ysundirish",
+        "C": "Turli manfaatlarni kelishuv nuqtasiga yaqinlashtirish",
+        "D": "Qarorlarni faqat markaziy agentga topshirish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 102,
+      "savol": "Navbat bilan taklif berish protokolining mohiyati nimada?",
+      "variantlar": {
+        "A": "Muzokarani butunlay vositachisiz to‘xtatib qo‘yish",
+        "B": "Bitta agentning yakuniy qarorini darhol qabul qilish",
+        "C": "Faqat oldindan yozilgan narxni tasdiqlab qo‘yish",
+        "D": "Taklif va qarshi taklif bilan kelishuv izlash"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 103,
+      "savol": "Ushbu protokolda rezervatsiya qiymati nimani bildiradi?",
+      "variantlar": {
+        "A": "Agentning barcha takliflarni qabul qilish majburiyatini",
+        "B": "Muzokaradagi barcha xabarlarning umumiy sonini",
+        "C": "Agent qabul qiladigan eng past maqbul natijani",
+        "D": "Faqat birinchi taklifning tashqi ko‘rinish shaklini"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 104,
+      "savol": "Diskontlash tushunchasi muzokarada nimani anglatadi?",
+      "variantlar": {
+        "A": "Faqat oxirgi taklifni hisobga olish zarurligini",
+        "B": "Har bir yangi taklifning narxini ikki barobar oshirishni",
+        "C": "Muzokarani cheksiz davom ettirish imkoniyatini",
+        "D": "Vaqt o‘tishi bilan foydaning kamayib borishini"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 105,
+      "savol": "Birinchi taklif berishning strategik ahamiyati nimada?",
+      "variantlar": {
+        "A": "U keyingi muhokama uchun boshlang‘ich nuqta beradi",
+        "B": "U barcha kelajak takliflarini avtomatik bekor qiladi",
+        "C": "U qarshi tomonni doimiy ravishda yutqaztiradi",
+        "D": "U muzokarani darhol yakunlab qo‘yadi har doim"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 106,
+      "savol": "Qarshi taklifning muhim vazifasi qaysi?",
+      "variantlar": {
+        "A": "Faqat vaqtni cho‘zish uchun yuboriladi doim",
+        "B": "Faqat oldingi taklifni texnik jihatdan nusxalaydi",
+        "C": "Murosa chegaralari haqida axborot signalini beradi",
+        "D": "Muzokaradagi barcha parametrlarni bekor qiladi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 107,
+      "savol": "Adaptiv strategiyaning asosiy xususiyati nimada ko‘rinadi?",
+      "variantlar": {
+        "A": "Har qanday vaziyatda bir xil taklifni beradi",
+        "B": "Qarshi tomon xatti-harakatiga qarab moslashadi",
+        "C": "Muzokarada vaqt omilini umuman hisoblamaydi",
+        "D": "Faqat boshlang‘ich narxni qat’iy ushlab turadi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 108,
+      "savol": "Muqobil variantlarning mavjudligi agent pozitsiyasiga qanday ta’sir qiladi?",
+      "variantlar": {
+        "A": "Muzokarani mutlaqo ma’nosiz holatga aylantiradi",
+        "B": "Uni barcha takliflarni darhol qabul qilishga majbur etadi",
+        "C": "Unga muzokarada kuchliroq strategik mavqe beradi",
+        "D": "Agentning rezervatsiya qiymatini bekor qilib yuboradi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 109,
+      "savol": "Ko‘p atributli muzokara nima sababdan murakkabroq hisoblanadi?",
+      "variantlar": {
+        "A": "Qarshi tomonning xatti-harakati umuman hisoblanmaydi",
+        "B": "Bir nechta parametr umumiy foyda bilan baholanadi",
+        "C": "Faqat bitta narx ustida gaplashish talab qilinadi",
+        "D": "Barcha takliflar oldindan o‘zgarmas bo‘lib qoladi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 110,
+      "savol": "Navbat bilan taklif berish protokolining amaliy afzalligi nimada?",
+      "variantlar": {
+        "A": "Barcha agentlar uchun bitta qat’iy narx belgilaydi",
+        "B": "Markazlashmagan muhitda moslashuvchan kelishuv beradi",
+        "C": "Faqat ikki xabar bilan yakuniy qaror chiqaradi",
+        "D": "Strategik xatti-harakatlarni to‘liq yo‘q qilib yuboradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 111,
+      "savol": "Ko‘p agentli tizimlarda epistemik mantiqning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Kompyuter xotirasini taqsimlab boshqarish",
+        "B": "Tizimdagi barcha xabarlarni saqlab borish",
+        "C": "Agentlarning bilim va bilmaslik holatini ifodalash",
+        "D": "Faqat dastur bajarilish tezligini oshirib borish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 112,
+      "savol": "Klassik mantiqdan epistemik mantiqning asosiy farqi nimada?",
+      "variantlar": {
+        "A": "U barcha mantiqiy operatorlarni bekor qiladi",
+        "B": "U faqat texnik protokollarni tavsiflab beradi",
+        "C": "U fakt bilan birga agent bilishini ham ko‘rsatadi",
+        "D": "U faqat rost va yolg‘on qiymatni inkor qiladi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 113,
+      "savol": "Knf ifodasi qanday ma’noni bildiradi?",
+      "variantlar": {
+        "A": "f mulohaza vaqt bo‘yicha o‘zgarmas bo‘ladi",
+        "B": "f mulohaza barcha agentlarga teng taalluqli",
+        "C": "i-agent f mulohazani rad etishini bildiradi",
+        "D": "i-agent f mulohazani bilishini anglatadi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 114,
+      "savol": "Bilim va ishonch o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Bilim rost bo‘lishi, ishonch esa yanglish bo‘lishi mumkin",
+        "B": "Bilim subyektiv, ishonch esa doim obyektiv bo‘ladi",
+        "C": "Ishonch faqat bitta agentga, bilim esa hammasiga tegishli",
+        "D": "Ular har qanday tizimda mutlaqo bir xil tushuncha"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 115,
+      "savol": "Umumiy bilim tushunchasining muhim belgisi qaysi?",
+      "variantlar": {
+        "A": "Faqat barcha agentlar xabarni bir marta ko‘radi",
+        "B": "Bir agent bilsa, bu avtomatik umumiy bilim bo‘ladi",
+        "C": "Hamma agentlar bir xil vazifani bajaradi",
+        "D": "Hamma biladi va boshqalar ham bilishini biladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 116,
+      "savol": "Tarqoq bilim ko‘p agentli tizimlarda nimani anglatadi?",
+      "variantlar": {
+        "A": "Alohida bilimlar birlashganda umumiy yechim hosil bo‘ladi",
+        "B": "Bilimlar tizimdan butunlay o‘chirib tashlanadi",
+        "C": "Barcha agentlar faqat taxmin bilan ishlaydi",
+        "D": "Har bir agent barcha bilimni to‘liq yakka biladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 117,
+      "savol": "Kripke modeli epistemik modellashtirishda nima uchun muhim?",
+      "variantlar": {
+        "A": "U vaqt cheklovlarini avtomatik bekor qiladi",
+        "B": "U agent ajrata oladigan holatlarni formal ko‘rsatadi",
+        "C": "U barcha agentlarni bir xil bilimli qiladi",
+        "D": "U faqat dastur kodini vizual tahlil qiladi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 118,
+      "savol": "BDI modelidagi belief, desire va intention qaysi javobda to‘g‘ri berilgan?",
+      "variantlar": {
+        "A": "Ishonch, maqsad va bajarishga tanlangan reja",
+        "B": "Sensor, aktuator va aloqa kanali",
+        "C": "Bilim, kod va bajarilgan yakuniy natija",
+        "D": "Xabar, buyruq va tizim resurslari"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 119,
+      "savol": "Nima uchun intention desire bilan aynan bir xil emas?",
+      "variantlar": {
+        "A": "Desire va intention har doim bir xil operator",
+        "B": "Intention faqat tasodifiy qarorlar bilan belgilanadi",
+        "C": "Desire faqat tashqi muhit, intention esa ichki xotira",
+        "D": "Desire istak, intention esa amaliy tanlangan yo‘nalish"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 120,
+      "savol": "Epistemik va BDI yondashuvlarining birgalikdagi foydasi nimada?",
+      "variantlar": {
+        "A": "Bilim va ichki motivatsiyani birgalikda tushuntiradi",
+        "B": "Tizimdagi noaniqlikni butunlay yo‘q qiladi",
+        "C": "Barcha agentlarni bir xil qarorga majbur qiladi",
+        "D": "Faqat mantiqiy formulalar sonini oshirib yuboradi"
+      },
+      "togri_javob": "A"
+    }
+  ]
+}

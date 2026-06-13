@@ -1,0 +1,842 @@
+/* ==========================================================================
+   1. ОБЩИЕ СТИЛИ И СБРОС НАСТРОЕК
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Более современный шрифт */
+}
+
+body {
+  background: radial-gradient(circle at top, #25262e 0%, #141519 100%); /* Красивый глубокий фон */
+  color: #e2e8f0;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Главный контейнер приложения */
+.quiz-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ==========================================================================
+   2. ЛЕВАЯ СТОРОНА: БЛОК ВОПРОСОВ И КНОПКИ НАВИГАЦИИ
+   ========================================================================== */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Черный стильный блок для вопроса */
+.question-block {
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  padding: 35px;
+  border-radius: 14px;
+  min-height: 440px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Текст самого вопроса */
+.question-text {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-left: 4px solid #cc1818; /* Красивая полоса слева от вопроса */
+  padding-left: 15px;
+}
+
+/* Список вариантов ответов */
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+/* Элемент (строка) ответа */
+.answer-option {
+  display: flex;
+  align-items: center;
+  background-color: #23252e;
+  padding: 16px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #2e323d;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+/* Эффект наведения на вариант ответа */
+.answer-option:hover {
+  background-color: #2b2e3a;
+  border-color: #4a5164;
+  transform: translateX(4px); /* Легкое смещение вправо при наведении */
+}
+
+/* Стилизация круглого радио-инпута */
+.answer-option input[type="radio"] {
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+  accent-color: #cc1818;
+  cursor: pointer;
+}
+
+/* Текст внутри варианта */
+.answer-option span {
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+/* Блок с нижними кнопками (Назад / Вперед) */
+.navigation-block {
+  display: flex;
+  gap: 15px;
+}
+
+/* Базовый стиль кнопок */
+.btn {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка Назад (Серая) */
+.btn-prev {
+  background-color: #333742;
+  border: 1px solid #454b59;
+}
+
+.btn-prev:hover {
+  background-color: #424857;
+  transform: translateY(-2px);
+}
+
+/* Кнопка Вперед (Красная) */
+.btn-next {
+  background-color: #cc1818;
+}
+
+.btn-next:hover {
+  background-color: #e51a1a;
+  box-shadow: 0 6px 15px rgba(204, 24, 24, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. ПРАВАЯ СТОРОНА: КРАСНЫЙ БЛОК МАТРИЦЫ С ПОЛЗУНКОМ
+   ========================================================================== */
+.matrix-block {
+  background: linear-gradient(145deg, #cc1818, #990f0f); /* Приятный дорогой градиент матрицы */
+  padding: 25px 20px;
+  border-radius: 14px;
+  align-self: start;
+  box-shadow: 0 10px 35px rgba(204, 24, 24, 0.25);
+  
+  /* Идеальное выравнивание высоты в один уровень с левым блоком (440px + 20px gap + 51px кнопки = ~511px) */
+  height: 511px;
+  max-height: 511px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Название предмета сверху матрицы */
+.matrix-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-shrink: 0; /* Не сжимается */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Сетка с квадратными кнопками вопросов */
+/* Qizil matritsa ichidagi savollar katakchalari sig'adigan hudud */
+/* Savollar soni 64 dan oshganda JavaScript orqali qo'shiladigan maxsus klass */
+/* Standart matritsa hududi */
+.matrix-grid {
+  display: grid;
+  /* 4 ta ustun yoki ekranga qarab moslashuvchan */
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); 
+  gap: 10px;
+}
+
+/* Savollar 64 dan oshganda ishga tushadigan qism */
+.matrix-grid.has-scroll {
+  max-height: 380px;      /* Blok balandligini cheklaymiz */
+  overflow-y: auto;       /* Faqat tepadan pastga polzunok chiqadi */
+  overflow-x: hidden;     /* Yon tomonga polzunok chiqishini mutlaqo taqiqlaymiz */
+  padding-right: 8px;     /* Polzunok kataklarga yopishib qolmasligi uchun */
+}
+
+/* Индивидуальный квадратик вопроса */
+.matrix-item {
+  aspect-ratio: 1;
+  background-color: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Наведение на квадратик */
+.matrix-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* СОСТОЯНИЕ 1: На вопрос дали ответ (Красивый зеленый) */
+/* Matritsada xato javobni qizil qilish */
+.matrix-item.wrong {
+  background-color: #280000 !important;
+  border-color: #280000 !important;
+  color: white !important;
+}
+/* To'g'ri javob yashil (oldingi holat) */
+.matrix-item.answered {
+  background-color: #2e7d32 !important;
+  border-color: #4caf50;
+  color: white !important;
+}
+
+/* СОСТОЯНИЕ 2: Текущий активный вопрос на экране (Яркий чистый белый с неоновым свечением) */
+.matrix-item.active {
+  background-color: #ffffff !important;
+  color: #cc1818 !important;
+  border-color: #ffffff !important;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+  z-index: 2;
+}
+
+/* Если активный вопрос одновременно уже отвечен (Зеленые бортики) */
+.matrix-item.active.answered {
+  border: 3px solid #4caf50 !important;
+}
+
+/* ==========================================================================
+   4. КРАСИВЫЙ КАСТОМНЫЙ СКРОЛЛБАР ДЛЯ МАТРИЦЫ
+   ========================================================================== */
+.matrix-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.matrix-grid::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.matrix-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+}
+
+.matrix-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Блок кнопки "Завершить" */
+.submit-block {
+  margin-top: 20px;
+  text-align: center;
+  flex-shrink: 0; /* Не сжимается */
+}
+
+/* Сама кнопка "Завершить" */
+.btn-submit {
+  width: 100%;
+  background-color: #1b5e20;
+  border: 1px solid #2e7d32;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Наведение на активную кнопку завершения */
+.btn-submit:hover:not(:disabled) {
+  background-color: #2e7d32;
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Выключенное состояние (пока не ответили на все вопросы) */
+.btn-submit:disabled {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ==========================================================================
+   5. АДАПТИВНОСТЬ ДЛЯ БОЛЬШИХ ЭКРАНОВ (ПК)
+   ========================================================================== */
+@media (min-width: 992px) {
+  .quiz-container {
+    grid-template-columns: 1fr 380px; /* На компьютерах делим на две колонки */
+  }
+  
+  .matrix-block {
+    display: flex; /* Показываем матрицу только на больших экранах */
+  }
+}
+
+/* ==========================================================================
+   6. BOSH SAHIFA (INDEX.HTML) UCHUN QO'SHIMCHA STILLAR
+   ========================================================================== */
+
+/* Markazlashtirilgan asosiy konteyner */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header dizayni */
+.main-header {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Qidiruv paneli (Search Box) */
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  gap: 12px;
+  background-color: #1b1c21;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #2d3139;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  background-color: #23252e;
+  border: 1px solid #2e323d;
+  padding: 14px 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-box input[type="text"]:focus {
+  outline: none;
+  border-color: #cc1818;
+  box-shadow: 0 0 10px rgba(204, 24, 24, 0.3);
+}
+
+.search-box .btn {
+  flex: none;
+  width: 130px;
+  padding: 0 15px;
+}
+
+/* Fanlar ro'yxati (Grid Tizimi) */
+.content-area {
+  width: 100%;
+}
+
+.fanlar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Har bir fanning kartochkasi (Subject Card) */
+.subject-card {
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  border-radius: 14px;
+  padding: 25px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Kartochkaga sichqoncha kelgandagi effekt */
+.subject-card:hover {
+  transform: translateY(-5px);
+  border-color: #cc1818;
+  box-shadow: 0 10px 25px rgba(204, 24, 24, 0.25);
+  background: linear-gradient(145deg, #1b1c21 0%, #23252e 100%);
+}
+
+.subject-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.subject-card:hover .subject-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.subject-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.subject-desc {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Yuklanmoqda, Xatolik va Topilmadi matnlari */
+.loading-text, .error-text, .no-result {
+  grid-column: 1 / -1;
+  font-size: 18px;
+  color: #94a3b8;
+  padding: 40px 0;
+  font-weight: 500;
+}
+
+.error-text {
+  color: #cc1818;
+}
+/* ==========================================================================
+   7. REJIMLAR VA SOZLAMALAR SAHIFASI (MENU.HTML) STILLARI
+   ========================================================================== */
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 850px) {
+  .menu-container {
+    grid-template-columns: 1fr 1fr; /* Chap va o'ng blok yonma-yon bo'ladi */
+  }
+}
+
+/* CHAP BLOK: Yashil rangga urg'u berilgan test kartochkalari */
+.test-types-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.test-card {
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  border-left: 5px solid #2e7d32; /* Sokin yashil rangli chet */
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.test-card:hover {
+  transform: translateX(6px);
+  border-color: #2e7d32;
+  background: linear-gradient(145deg, #1b1c21 0%, #22252f 100%);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
+}
+
+.card-icon {
+  font-size: 35px;
+  background-color: rgba(46, 125, 50, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  color: #4caf50;
+}
+
+.card-info h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* O'NG BLOK: To'q qizil rangli sozlamalar bloki */
+.settings-block {
+  background: linear-gradient(145deg, #cc1818, #990f0f);
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(204, 24, 24, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.settings-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 15px;
+}
+
+/* Polzunok (Double Range Slider) dizayni */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slider-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.range-slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  margin: 15px 0;
+}
+
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.range-slider-wrapper input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  pointer-events: none;
+  background: none;
+  outline: none;
+  z-index: 2;
+  margin: 0;
+}
+
+/* Polzunokning dumaloq tugmalari (Thumbs) */
+.range-slider-wrapper input[type="range"]::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  transition: transform 0.1s ease;
+}
+
+.range-slider-wrapper input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Uchta kiritish maydoni dizayni (Inputs row) */
+.inputs-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
+}
+
+.input-group input {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 12px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Kiritish joylarining chetlari uchun maxsus qizil urg'ular */
+.group-start input { border-left: 3px solid #ff4d4d; }
+.group-savols input { border-left: 3px solid #4caf50; }
+.group-end input { border-left: 3px solid #ff4d4d; }
+
+/* Ochib yonadigan chiroyli switch tugmasi (Toggle Switch) */
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.toggle-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: .3s;
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider-round {
+  background-color: #2e7d32; /* Yoqilganda chiroyli yashil rang */
+}
+
+input:checked + .slider-round:before {
+  transform: translateX(24px);
+}
+/* ==========================================================================
+   TEZKOR TEST MODE UCHUN YANGI TUGMA STILLARI (savol2.js uchun)
+   ========================================================================== */
+
+/* Variant tugmasining umumiy ko'rinishi */
+.fast-answer-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+/* Sichqoncha ustiga kelganda */
+.fast-answer-btn:hover:not(:disabled) {
+  background-color: #252731;
+  border-color: #4f5666;
+}
+
+/* Variant harflari (A, B, C, D) nishoni */
+.fast-answer-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 15px;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+/* TO'G'RI JAVOB - YASHIL RANG */
+.fast-answer-btn.correct {
+  background-color: #1b5e20 !important;
+  border-color: #4caf50 !important;
+  color: #ffffff !important;
+}
+.fast-answer-btn.correct .fast-answer-badge {
+  background-color: #4caf50 !important;
+  color: #ffffff !important;
+}
+
+/* NOTO'G'RI JAVOB - QIZIL RANG */
+.fast-answer-btn.wrong {
+  background-color: #b71c1c !important;
+  border-color: #f44336 !important;
+  color: #ffffff !important;
+}
+.fast-answer-btn.wrong .fast-answer-badge {
+  background-color: #f44336 !important;
+  color: #ffffff !important;
+}
+
+/* Bloklangan holatda xiralashmasligi uchun */
+.fast-answer-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+.answers-list button.selected {
+  background-color: #4caf50; /* Tanlangan javob rangi */
+  color: white;
+}
+/* ==========================================================================
+   6. ENG TEPA CHETDAGI BRAND LOGOTIP STILI (EpicMineTest)
+   ========================================================================== */
+.top-header {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 100;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Эффект свечения при наведении мыши (в тон вашей кнопке Yakunlash) */
+.brand-logo:hover {
+  color: #cc1818; 
+  text-shadow: 0 0 15px rgba(204, 24, 24, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Адаптивность для мобильных устройств (чтобы логотип не перекрывал интерфейс) */
+@media (max-width: 992px) {
+  body {
+    padding-top: 80px; /* Добавляем отступ сверху, чтобы контейнер не упирался в логотип */
+  }
+  .top-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем логотип на маленьких экранах */
+    text-align: center;
+    width: 100%;
+  }
+}

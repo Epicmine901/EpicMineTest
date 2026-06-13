@@ -1,0 +1,1106 @@
+{
+  "Fan": "Inson va Kompyuterning o'zaro ta'siri",
+  "Discrption": "qlist faylidagi barcha test savollari",
+  "test_savollari": [
+    {
+      "id": 1,
+      "savol": "Inson-Kompyuter aloqasi bu-…..",
+      "variantlar": {
+        "A": "dasturiy tizimlarni tahlil qilish va loyihalash",
+        "B": "tadqiqot,odamlar va kompyuterlar orasidagi o’zaro rivojlanish evolyutsiyasidir.",
+        "C": "insondan foydalanish uchun mo’ljallangan interfaol kompyuter",
+        "D": "turli xil mahsulotlar va xizmatlar orqali odamlar o’rtasidagi aloqa"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 2,
+      "savol": "Interfeysni ishlab chiqishda nechta asosiy bosqichdan foydalaniladi?",
+      "variantlar": {
+        "A": "5 ta",
+        "B": "7 ta",
+        "C": "3 ta",
+        "D": "4 ta"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 3,
+      "savol": "Kod nima?",
+      "variantlar": {
+        "A": "dasturlash tiliga mos simvollar ketma ketligi",
+        "B": "dasturlash tillarida tuzilgan ixtiyoriy dastur matnini bir shakldan boshqasiga o’tkazish",
+        "C": "dasturlash tilini yaratish va testlash",
+        "D": "dasturlash tilini loyihalash jarayoni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 4,
+      "savol": "Translyatorlarning nechi xil ko’rinishi mavjud?",
+      "variantlar": {
+        "A": "4 xil",
+        "B": "5 xil",
+        "C": "3 xil",
+        "D": "2 xil"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 5,
+      "savol": "Dasturlash tilida yozilgan kod matnini qandaydir bajariluvchi faylga tarjima qiluvchi dastur nima deyiladi?",
+      "variantlar": {
+        "A": "interpretator",
+        "B": "kompilyator",
+        "C": "translyator",
+        "D": "interfeys"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 6,
+      "savol": "FLUXUS ni tashkil etuvchi asosiy g’oyalar nechta?",
+      "variantlar": {
+        "A": "10 ta",
+        "B": "14 ta",
+        "C": "12 ta",
+        "D": "9 ta"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 7,
+      "savol": "Dugbas Engelbart tomonidan nechinchi yilda dastlabki prototiplash sichqon kompyuterni yanada interaktiv qilish uchun vosita sifatida o’ylab topgan?",
+      "variantlar": {
+        "A": "1965",
+        "B": "1970",
+        "C": "1963",
+        "D": "1960"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 8,
+      "savol": "Adobe Photoshop qanday dastur?",
+      "variantlar": {
+        "A": "rasmlarni tahrirlash dasturi",
+        "B": "videolar tahrirlash dasturi",
+        "C": "logotip yaratuvchi dastur",
+        "D": "tipografiya va matn terish dasturi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 9,
+      "savol": "Nega interfaol dizaynsiz interaktiv dizayn mavjud bo’la olmaydi?",
+      "variantlar": {
+        "A": "interfaol dizaynsiz o’zaro aloqa dizayni mavjud emasligi",
+        "B": "foydalanuvchida uni ishlatish uchun platforma mavjud emasligi",
+        "C": "Foydalanuvchida uni ishlatish uchun interfeys mavjud emasligi uchun",
+        "D": "foydalanuvchida uni ishlatish uchun dastur yo’qligi uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 10,
+      "savol": "Grafik dizaynlari tomonidan ishlatiladigan deyarli barcha mashhur va standart dasturlar Adobe System Insorparated tomonidan yaratilgan va undan nechinchi yil boshlaridan beri foydalaniladi?",
+      "variantlar": {
+        "A": "1992 yil",
+        "B": "1995 yil",
+        "C": "1990 yil",
+        "D": "1991 yil"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 11,
+      "savol": ". Interfaol dizayn nechta asosiy tarkibiy qismlardan iborat?",
+      "variantlar": {
+        "A": "6 ta",
+        "B": "4 ta",
+        "C": "8 ta",
+        "D": "10 ta"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 12,
+      "savol": "FLUXUS qanday tashkilot?",
+      "variantlar": {
+        "A": "Zamonaviy san’at tashkiloti",
+        "B": "turli mamlakatlarning ko’plab rassomlaridan tashkil topgan erkin xalqaro tashkilot",
+        "C": "Badiiy uslubdan tashkil topgan tashkilot",
+        "D": "dizaynerlardan tashkil topgan tashkilot"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 13,
+      "savol": "Foydalanuvchi bilan tizim orasidagi bog’liqlik necha qadamdan iborat?",
+      "variantlar": {
+        "A": "5 qadam",
+        "B": "8 qadam",
+        "C": "7 qadam",
+        "D": "10 qadam"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 14,
+      "savol": "Loyihalash nechta etapdan tashkil topgan?",
+      "variantlar": {
+        "A": "8ta",
+        "B": "6 ta",
+        "C": "11 ta",
+        "D": "10 ta"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 15,
+      "savol": "“Harakatlarni amalga oshirish”  foydalanuvchi va tizim orasidagi nechinchi qadam hisoblanadi?",
+      "variantlar": {
+        "A": "4",
+        "B": "7",
+        "C": "3",
+        "D": "6"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 16,
+      "savol": "Qo’llanish sohasiga qarab axborot tizimlari nechta sinfga ajratiladi?",
+      "variantlar": {
+        "A": "6 ta",
+        "B": "8 ta",
+        "C": "9 ta",
+        "D": "4 ta"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 17,
+      "savol": "”Olingan sharxlar va takliflarni hisobga olgan holda prototipni qayta loyihalash” prototiplash jarayonining nechinchi bosqichi?",
+      "variantlar": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 18,
+      "savol": "Loyihalash etaplarining 3 chi qadami holati?",
+      "variantlar": {
+        "A": "Glossariyni yaratish",
+        "B": "Alohida qism(blok)larni qurish",
+        "C": "Umumiy strukturani loyihalash",
+        "D": "foydalanuvchi ssenariylarini yaratish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 19,
+      "savol": "”Yangi tizimni idrok etish” foydalanuvchi bilan tizim orasidagi nechinchi qadam?",
+      "variantlar": {
+        "A": "4 qadam",
+        "B": "5 qadam",
+        "C": "6 qadam",
+        "D": "2 qadam"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 20,
+      "savol": "Prototiplash jarayoni nechta bosqichdan iborat?",
+      "variantlar": {
+        "A": "4",
+        "B": "6",
+        "C": "5",
+        "D": "3"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 21,
+      "savol": "”Memex”elektromexanik information tizimni yaratish taklifi bilan chiqqan,lekin uning tahlili inobatga ilmiy maslahatchi kim?",
+      "variantlar": {
+        "A": "Vanevap Bush",
+        "B": "Teogop Nelson",
+        "C": "Engelberg",
+        "D": "Tim Berners"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 22,
+      "savol": "Hozirgi kunda inosn va mashina o’rtasida dialog nechta turga bo’linadi?",
+      "variantlar": {
+        "A": "4 turga",
+        "B": "3 turga",
+        "C": "6 turga",
+        "D": "2 turga"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 23,
+      "savol": "Prototiplar bir biridan qanday farqlanadi?",
+      "variantlar": {
+        "A": "tizim dizayniga qarab",
+        "B": "texnik topshiriqqa qarab",
+        "C": "prototip buyurtmachisiga qarab",
+        "D": "prototip ishlab chiqarayotgan model doirasiga qarab"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 24,
+      "savol": "Prototiplashning nechta asosiy turi mavjud?",
+      "variantlar": {
+        "A": "6ta",
+        "B": "4 ta",
+        "C": "3 ta",
+        "D": "4 ta"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 25,
+      "savol": "Alan Turining va Joseph Wiezenbaumlar inson va mashina o’rtasidagi muloqot haqida ilk fikrlarni nechinchi yillar oralig’ida bildirgan?",
+      "variantlar": {
+        "A": "1955-1965",
+        "B": "1950-1960",
+        "C": "1945-1950",
+        "D": "1940-1945"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 26,
+      "savol": "Dastlabki axborot tizimlari nechinchi yillarda paydo bo’lgan?",
+      "variantlar": {
+        "A": "60 yillarda",
+        "B": "50-yillarda",
+        "C": "75 yillarda",
+        "D": "80 yillarda"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 27,
+      "savol": "Samarali prototiplash necha bosqichli bo’ladi?",
+      "variantlar": {
+        "A": "3 bosqich",
+        "B": "2 bosqich",
+        "C": "1 bosqich",
+        "D": "4 bosqich"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 28,
+      "savol": "Kontent nima?",
+      "variantlar": {
+        "A": "saytdagi so’zlar soni",
+        "B": "sahifa hajmi",
+        "C": "saytdagi matnlar va boshqa ma’lumotlar",
+        "D": "umumiy axborot"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 29,
+      "savol": "SEO ning asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "saytning kelajagini va rivojlanishiga hamda sayt xaridorlari sonini ortishi uchun content tahlil qilish",
+        "B": "saytning sahifalariga mos so’rovlarini aniqlash",
+        "C": "content tarkibini aniqlash",
+        "D": "sayt ma’lumotlarini qidiruv moshinalari uchun imkon qadar moslashtirish"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 30,
+      "savol": "Gipertekst g’oyasi nechinchi yilda kim tomonidan kiritilgan?",
+      "variantlar": {
+        "A": "1945-yil Vanevar Bush",
+        "B": "1950 yil Vashington",
+        "C": "1967-yil John Smith",
+        "D": "1988-yil Bush"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 31,
+      "savol": "Gipertekstga asoslangan 1 chi konferensiya qachon bo’lib o’tdi?",
+      "variantlar": {
+        "A": "1972",
+        "B": "1987",
+        "C": "1975",
+        "D": "1985"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 32,
+      "savol": "HTML ga gipermatnlari  nechta sinfga bo’linadi?",
+      "variantlar": {
+        "A": "4 sinfga",
+        "B": "2 sinfga",
+        "C": "8 sinfga",
+        "D": "5 sinfga"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 33,
+      "savol": "To’liq interfeysni ishlab chiqish sikli necha bosqichdan iborat?",
+      "variantlar": {
+        "A": "8",
+        "B": "9",
+        "C": "7",
+        "D": "10"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 34,
+      "savol": "Jeneva Gernga ishlovchi fizik Tim Berners Li nechanchi yil gipermatn loyihasini taklif qilgan?",
+      "variantlar": {
+        "A": "1987-yilda",
+        "B": "1975-yilda",
+        "C": "1989-yilda",
+        "D": "1988-yilda"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 35,
+      "savol": "HTML yoki gipermatnli hujjatning elementi necha qismdan iborat?",
+      "variantlar": {
+        "A": "3 qism",
+        "B": "5 qism",
+        "C": "4 qism",
+        "D": "2 qism"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 36,
+      "savol": "Informatika fanidan axborotni istalgan shaklga keltirish jarayoni nima deb ataladi?",
+      "variantlar": {
+        "A": "modellash",
+        "B": "prototiplash",
+        "C": "kodlash",
+        "D": "dasturlash"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 37,
+      "savol": "To’liq interfeysni ishlab chiqish sikli 4-bosqichi to’g’ri ko’rsatilgan javobni toping?",
+      "variantlar": {
+        "A": "Interfeys prototipini yaratish",
+        "B": "interfeys",
+        "C": "uslubni aniqlash",
+        "D": "dizayn konsepsiyasi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 38,
+      "savol": "“Interfeysning animatsiyasi” to’liq interfeysni ishlab chiqish siklining  nechinchi bosqichi?",
+      "variantlar": {
+        "A": "9 bosqich",
+        "B": "8 bosqich",
+        "C": "6 bosqich",
+        "D": "7 bosqich"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 39,
+      "savol": "Nechinchi yilda gipermatn g’oyasi ZOG nomini olgan atom avianosesi “Karl Vinston”ning ichki tartib information tizimida o’z aksini topdi?",
+      "variantlar": {
+        "A": "1987",
+        "B": "1968",
+        "C": "1975",
+        "D": "1965"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 40,
+      "savol": "XX asrning 80 yillari axboerot asri uchun  qanday xarakterlanadi?",
+      "variantlar": {
+        "A": "bir qancha fan sohalari bo’yicha maxsus dasturlarni yaratish uchun katta hajmli yuqori sifatli maxsus bilimlarni qo’llash bilan",
+        "B": "masalalarni yechish metodlarini yechish metodlarini izlash bilan",
+        "C": "Universal dasturlardan foydalanish bilan",
+        "D": "axborotlarni tasavvur qilishning umumiy metodlarini"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 41,
+      "savol": "Ralf Lengler va Marten Eppler nazorat qilish uchun tasvirlash  usullarining davriy jadvalida 100 ta tasvirlash texnikasininechinchi yilda tizimlashtirgan?",
+      "variantlar": {
+        "A": "2010 yil",
+        "B": "2008 yil",
+        "C": "2007 yil",
+        "D": "2004yil"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 42,
+      "savol": "Axborotni kodlash-bu…..",
+      "variantlar": {
+        "A": "ma’lum bir algoritmni ma’lum bir dasturlash tilida amalga oshirish",
+        "B": "ma’lumotlarning o’zi emas balki ketma-ket ma’lumotlar orasidagi farq sifatida ma’lumotlarni berish usuli",
+        "C": "ma’lumotdan bevosita foydalanish uchun qulay bo’lgan shakldan signalni uzatish,saqlash yoki avtomatik qayta ishlash uchun qulay shaklga o’tkazish jarayoni",
+        "D": "nan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 43,
+      "savol": "TEXTURA nima?",
+      "variantlar": {
+        "A": "qaysi shrift qanday tanlandi uning hajmi va o’lchamlari tekisligi, rangi hamda oralig’ini o’lchaydi",
+        "B": "sirtqi qanaqa ko’rsatilishi, sezilishiyoki qanday ko’rinishda paydo bo’lishini ko’rsatadi",
+        "C": "U o’zida 3 o’lchamlik obyektlarni kiritadi va ularning sig’im, massasini o’lchaydi",
+        "D": "U ranglar teoriyasi taqiqoti, qanday qilib foydalanuvchilarga qaysi yo’llar bilan ta’sir o’tkazishini o’rganadi."
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 44,
+      "savol": "Delta kodlash-bu….",
+      "variantlar": {
+        "A": "ma’lumotlarning o’zi emas, balki ketam-ket ma’lumotlar orasidagi farq signalida ma’lumotlarni berish usuli",
+        "B": "ma’lumotlarni bevosita foydalanish uchun qulay bo’lgan shakldan signalni uzatish",
+        "C": "ma’lum bir algoritmni ma’lum bir dasturlash tilida amalga oshirish",
+        "D": "bir xil qiymat bilan tiklash imkoniyati bilan qiymatlarni kodlash"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 45,
+      "savol": "Axborot me’morchiligiga kim asos solgan?",
+      "variantlar": {
+        "A": "Ralf Lengler",
+        "B": "Martin Epper",
+        "C": "Richard Saul Vurman",
+        "D": "Teador Helsen"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 46,
+      "savol": "FM radiostansiyalari uzatadigan eng yuqori ovoz chastotasi nechi gers?",
+      "variantlar": {
+        "A": "10",
+        "B": "15",
+        "C": "16",
+        "D": "9"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 47,
+      "savol": "PCM ya’ni puls kod modulyatsiyasi nima?",
+      "variantlar": {
+        "A": "ovoz signalining to’lqini",
+        "B": "ovoz tebranishi",
+        "C": "ovoz chastotasi",
+        "D": "olingan sonlar oqimi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 48,
+      "savol": "Grang fortopianinaning eng past notasi nechi gers?",
+      "variantlar": {
+        "A": "25",
+        "B": "27",
+        "C": "20",
+        "D": "15"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 49,
+      "savol": "”Uslubni aniqlash” to’liq interfeysni ishlab chiqish siklini nechinchi bosqichi?",
+      "variantlar": {
+        "A": "8",
+        "B": "7",
+        "C": "5",
+        "D": "6"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 50,
+      "savol": "Interfeys bu-……",
+      "variantlar": {
+        "A": "har qanday ekrandagi axborot yoki interaktiv",
+        "B": "maqsadga erishishda zarur bo’lgan fayllar to’plami",
+        "C": "axborotning kirish qismi",
+        "D": "kompyuter texnikasi vositasida ma’lumotlarni qayta ishlash tizimi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 51,
+      "savol": "Dasturiy ta’minot-bu…..",
+      "variantlar": {
+        "A": "axborot tizimi funksionla vazifalarni hal etishni avtomatlashtirish uchun mo’ljallangan dasturiy mahsulotlar  yig’indisidir",
+        "B": "ma’lumotlarni qayta ishlash tizimini fadiyat ko’rsatishi",
+        "C": "kompyuter texnikasi vositasida ma’lumotlarni qayta ishlash tizimini yaratish va foydalanish dasturiy vositalarini yig’indisi",
+        "D": "axborot tizimini yaratish va faoliyat ko’rsatishini tartibga soluvchi huquqiy me’yorlar yig’indisi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 52,
+      "savol": "Ergonomika qanday fan?",
+      "variantlar": {
+        "A": "kompyuter grafikasini o’rganadigan fan",
+        "B": "inson mashina muhitining muvofiqligini o’rganadigan fan",
+        "C": "Dasturlash tizimini o’rganadigan fan",
+        "D": "an’anaviy ma’noda – ish majburiyatlarini,ishlarni,obyektlar va mehnat obyektlarini,shuningdek, xodimning jismoniy va xavfsiz ishlashi uchun kompyuter dasturlarini sozlash fani"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 53,
+      "savol": "Xalqaro ergonomika Assotsiatsiyasi tomonidan ergonomikaning kengroq ta’rifi nechinchi yil qabul qilingan?",
+      "variantlar": {
+        "A": "2010 yil",
+        "B": "2009 yil",
+        "C": "2012 yil",
+        "D": "2011 yil"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 54,
+      "savol": "Yaxshi ergonomic dizaynning nechta muhim xususiyati bor?",
+      "variantlar": {
+        "A": "8 ta",
+        "B": "9 ta",
+        "C": "10 ta",
+        "D": "12 ta"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 55,
+      "savol": "Gipomneziya qanday kasallik?",
+      "variantlar": {
+        "A": "xotira yuqolishi",
+        "B": "xotira va bir tomonlama kuchayishi",
+        "C": "X soxta xotira",
+        "D": "xotira susayishi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 56,
+      "savol": "Psixologiyada xotiralar qanday farqlanadi?",
+      "variantlar": {
+        "A": "shartli va shartsiz",
+        "B": "ixtiyoriy va ixtiyorsiz",
+        "C": "kuchli va kuchsiz",
+        "D": "farqlanmaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 57,
+      "savol": "Amneziya qanday kasallik?",
+      "variantlar": {
+        "A": "xotira susayishi",
+        "B": "xotiraning tiklanishi",
+        "C": "xotira yuqolishi",
+        "D": "xotira shikastlanishi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 58,
+      "savol": "Xotirasiz inson “abadiy gudaklik holatida”qolgan bular edi deb kim aytgan?",
+      "variantlar": {
+        "A": "I.M.Sechenov",
+        "B": "S.L.Rubenshteyn",
+        "C": "F.T.Nelson",
+        "D": "A.D.Enjilbard"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 59,
+      "savol": "“Eksperimentalizm” FLUXUS ni tashkil etuvchi asosiy g’oyaning nechinchi bosqichi?",
+      "variantlar": {
+        "A": "6 bosqich",
+        "B": "7 bosqich",
+        "C": "4 bosqich",
+        "D": "11 bosqich"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 60,
+      "savol": "Harakat xotirasi deb nimaga aytiladi?",
+      "variantlar": {
+        "A": "boshdan kechirilgan sezgi va emotsional holatga",
+        "B": "turli harakatlar yoki tuzilmalarni esda olib qolish saqlash va eslash",
+        "C": "ma’lum faoliyatni bajarishda namoyon bo’ladigan holatga",
+        "D": "tasavvurlar, tabiat va hayot manzaralari, shuningdek, ovoz,hid,ta’mlarga niosbatan bo’lgan xotira"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 61,
+      "savol": "Ma’lum bir faoliyatni bajarishda namoyon bo’ladigan, shu faoliyatga qisqa muddatli va uzqo muddatli xotiradan kelayotgan axborotni saqlashga binoan xizmat ko’rsatuvchi joriy faoliyatni bajarish uchun zarur bo’lgan xotira turi bu……?",
+      "variantlar": {
+        "A": "obrazli",
+        "B": "harakat xotirasi",
+        "C": "operativ",
+        "D": "emotsional xotira"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 62,
+      "savol": "”Xotirasiz daqiqa mavjudotlari bo’lar edik.O’tmishimiz kelajak uchun o’lik bo’lardi.Hozirgi zamon kechmishiga ko’ra o’tmishda badar yo’qolardi” deb kim aytgan?",
+      "variantlar": {
+        "A": "S.L.Rubenshteyn",
+        "B": "V.Bush",
+        "C": "T.Berners",
+        "D": "M.Sechenov"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 63,
+      "savol": "Kompyuterdan foydalanishda monitordan nechi sm uzoqlikda bo’lish kerak?",
+      "variantlar": {
+        "A": "40-45 sm",
+        "B": "50-60 sm",
+        "C": "70-80 sm",
+        "D": "30-40 sm"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 64,
+      "savol": "Qurilmalarning markaziy protsessorga nisbatan joylashishiga qarab qanday qurilmalarga ajratamiz?",
+      "variantlar": {
+        "A": "katta va kichik",
+        "B": "yuqori va pastki",
+        "C": "ajratilmaydi",
+        "D": "tashqi va ichki"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 65,
+      "savol": "”Glossariyni yaratish” loyihalash etapining nechinchi bosqichi?",
+      "variantlar": {
+        "A": "3 bosqich",
+        "B": "4 bosqich",
+        "C": "5 bosqich",
+        "D": "6 bosqich"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 66,
+      "savol": "FLUXUS ni tashkil etuvchi 12 ta asosiy g’oyalarning ikkinchisi qanday nomlanadi?",
+      "variantlar": {
+        "A": "oddiylik",
+        "B": "o’ynoqilik",
+        "C": "o’ziga xoslik",
+        "D": "san’at va xayotning birligi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 67,
+      "savol": "Dasturlash tilida yozilgan dastur kodi matnini mashina tiliga tarjima qiluvchi va bir vaqtning o’zida uni bajaruvchi dastur nima deyiladi?",
+      "variantlar": {
+        "A": "Interpretator",
+        "B": "kompilyator",
+        "C": "translyator",
+        "D": "interfeys"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 68,
+      "savol": "”Tizim holatini talqin qilish”foydalanuvchi bilan tizim orasidagi bog’liqlik qadamining nechinchi bosqichi?",
+      "variantlar": {
+        "A": "7 bosqich",
+        "B": "3 bosqich",
+        "C": "4 bosqich",
+        "D": "6 bosqich"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 69,
+      "savol": "Grafika bilan ishlovchilarga qanday ko’zaynaklar to’g’ri keladi?",
+      "variantlar": {
+        "A": "tonirovkali ko’zoynaklar",
+        "B": "ranglar uzatmasini yaxshilovchi ko’zaynoklar",
+        "C": "linzalar",
+        "D": "och rangdagi ko’zoynaklar"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 70,
+      "savol": "Monitor yorug’ligi yuqori bo’lganda yorug’lik darajasi tez-tez o’zgarib turadigan sharoitda qanday ko’zoynaklar qo’llaniladi?",
+      "variantlar": {
+        "A": "och rangdagi linzalar",
+        "B": "rangla uzatmasini yaxshilovchi",
+        "C": "yorug’lik qimirlashiga qarshi",
+        "D": "polaroid ko’zoynaklar"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 71,
+      "savol": "Ko’rish organida uzoqlikni yoki  yaqinni ko’ra olmaslik singari anomaliyalar bo’lganlar uchun qanday ko’zoynak tavsiya qilinadi?",
+      "variantlar": {
+        "A": "deoptriyasiz",
+        "B": "tonirovkali",
+        "C": "dioptriyali",
+        "D": "linzali"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 72,
+      "savol": "Hisoblash tizimi tarkibi nima deb ataladi?",
+      "variantlar": {
+        "A": "tipografiya",
+        "B": "konfigurasiya",
+        "C": "interfeys",
+        "D": "kompilyator"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 73,
+      "savol": "Ma’lumulotlar bazalarini boshqarish tizimlarining asosiy funksiyalari nechta?",
+      "variantlar": {
+        "A": "5 ta",
+        "B": "2 ta",
+        "C": "4 ta",
+        "D": "3 ta"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 74,
+      "savol": "Dasturiy ta’minot yoki Software bu-…….?",
+      "variantlar": {
+        "A": "kompyuterda ma’lum bir turdagi vazifasini bajarish uchun ishlab chiqilgan vosita",
+        "B": "hisoblash tizimi tarkibi",
+        "C": "dasturiy tizimlarni tahlil qilish va loyihalash",
+        "D": "dasturlash tilini loyihalash jarayoni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 75,
+      "savol": "“Software” ingliz tilidan tarjima qilganda qanday ma’noni bildiradi.",
+      "variantlar": {
+        "A": "tayyor mahsulot",
+        "B": "yaratilgan obyekt",
+        "C": "dasturiy ta’minot",
+        "D": "junatilgan mahsulot"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 76,
+      "savol": "Dasturlash tillarida tuzilgan ixtiyoriy dastur matnini bir shakldan boshqasiga o’tkazish va tarjima qilish nima deyiladi?",
+      "variantlar": {
+        "A": "interpretator",
+        "B": "translatsiya",
+        "C": "kompilyator",
+        "D": "prototip"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 77,
+      "savol": "”Muayyan harakatlarni aniqlash”foydalanuvchi bilan tizim orasidagi bog’liqlik qadamining nechinchisi?",
+      "variantlar": {
+        "A": "3",
+        "B": "6",
+        "C": "7",
+        "D": "2"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 78,
+      "savol": "”To`liq interfeys ishlab chiqish siklining 5- bosqichi nimadan iborat?",
+      "variantlar": {
+        "A": "maxsus senariylar",
+        "B": "dizayn tushunchasi",
+        "C": "stilistik ta’rif",
+        "D": "animatsiya interfeysi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 79,
+      "savol": "Matn protsessorlarining redaktorlardan farqi nima?",
+      "variantlar": {
+        "A": "amaliy dasturiy vositalarni sinflarga ajratadi",
+        "B": "ular matnni kirgizib taxrirlabgina qolmay balki uni formatlaydi",
+        "C": "qo’shimcha funksiyalarni kiritadi",
+        "D": "to’g’ri javob yuq"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 80,
+      "savol": "Antropiyani kodlash deb nimaga aytiladi?",
+      "variantlar": {
+        "A": "ma’lum bir algoritmni ma’lum bir dasturlash tilida amalga oshirish uchun dastur kodini yozish jarayoni",
+        "B": "ma’lumotlarning o’zi emas, balki ketma-ket ma’lumotlar orasidagi farq sifatida ma’lumotlarni bersih usuli",
+        "C": "kodlangan ketma-ketlikda elementlarning paydo bo’lishi ehtimolini o’rtacha hisobiga ma’lumotlarning imkoniyati bilan qiymatlarni kodlash",
+        "D": "ma’lumotlar nazariyasi bo’limi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 81,
+      "savol": "Vizual dizayn nimaga qarab ishlatiladi?",
+      "variantlar": {
+        "A": "obyektlarga",
+        "B": "animatsiyalarga",
+        "C": "ssenariylarga",
+        "D": "elementlarga"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 82,
+      "savol": "Vizual dizayn nimaga qarab ishlatiladi?",
+      "variantlar": {
+        "A": "obyektlarga",
+        "B": "animatsiyalarga",
+        "C": "ssenariylarga",
+        "D": "elementlarga"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 83,
+      "savol": "Apparat va dasturiy ta’minot, shu jumladan ma’lumotlarni uzatish kanallariga orqali amalga oshiriladigan operatsiyalar top’plamiga nima deyiladi?",
+      "variantlar": {
+        "A": "axborotni qayta ishlash",
+        "B": "interfeys",
+        "C": "dasturlash",
+        "D": "dispers tuzlishi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 84,
+      "savol": "Yaxshi ergonomik dizaynning 4 chi muhim xususiyatini toping?",
+      "variantlar": {
+        "A": "haptic",
+        "B": "color",
+        "C": "simplicity",
+        "D": "ADA Complience"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 85,
+      "savol": "”Left-handness”yaxshi ergonomic dizaynning nechanchi muhim xususiyati?",
+      "variantlar": {
+        "A": "9",
+        "B": "7",
+        "C": "6",
+        "D": "3"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 86,
+      "savol": "FLUXUS ni tashkil etuvchi asosiy g’oyalarning 9 chisini toping?",
+      "variantlar": {
+        "A": "globalizm",
+        "B": "imkoniyat",
+        "C": "Exemplativizm",
+        "D": "oddiylik"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 87,
+      "savol": "”Harakatlarni umumiy yo’nalishini aniqlash” foydalanuvchi bilan tizim orasidagi bog’liqlik qadamining nechanchisi?",
+      "variantlar": {
+        "A": "5",
+        "B": "4",
+        "C": "2",
+        "D": "6"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 88,
+      "savol": "Axborot tizimlarining qanday turlari mavjud?",
+      "variantlar": {
+        "A": "shartli va shartsiz",
+        "B": "loyihalangan va loyihalashtirilgan",
+        "C": "to’g’ri javob yuq",
+        "D": "avtomatlashtirilgan va avtomatik"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 89,
+      "savol": "Boshqaruv tizimiming ikkala komponenti qanday aloqalar bilan bog’liq?",
+      "variantlar": {
+        "A": "to’g’ri va aks",
+        "B": "chegaralangan aloqalar bilan",
+        "C": "ovozli aloq bilan",
+        "D": "virtual aloqa bilan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 90,
+      "savol": "Nechanchi yillar boshlarida axborot tizimlari qarorlarni qo’llab quvvatlash va tezlashtiruvchi jarayonga ega bo’lgan nazorat boshqaruvi vositalari sifatida foydalanila boshladi?",
+      "variantlar": {
+        "A": "60-65 yillarda",
+        "B": "90-95 yillarda",
+        "C": "70-80-yillarda",
+        "D": "65-67yillarda"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 91,
+      "savol": "Loyihalashtirishni avtomatlashtirishning axborot tizimlari nima uchun mo’ljallangan?",
+      "variantlar": {
+        "A": "Shaxslar funksiyalarini avtomatlashtirish uchun",
+        "B": "yangi texnika ishlab chiqaruvchilar va muhandis loyihachilar mehnatini avtomatlashtirish uchun",
+        "C": "turli texnologik jarayonlarni avtomatlashtirish uchun",
+        "D": "ilmiy xodimlar faoliyatini avtomatlashtirish uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 92,
+      "savol": "Tashkilotlarga ko’pgina funksiyalarga ega bo’lgan EHM lar nechanchi yillarda talab etila boshladi?",
+      "variantlar": {
+        "A": "60 yillarda",
+        "B": "80 yillarda",
+        "C": "50 yillarda",
+        "D": "70 yillarda"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 93,
+      "savol": "Inson va kompyuter muloqotini ishlab chiqish va ta’minlash samaradorligini oshirish uchun MQIT ni yaratish va foydalanishning turli bosqichlarida ishlatilgan til vositalari yig’indisidan iborat ta’minot…………",
+      "variantlar": {
+        "A": "bazaviy ta’minot",
+        "B": "xuquqiy ta’minot",
+        "C": "lingvistik ta’minot",
+        "D": "amaliy dasturiy ta’minot"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 94,
+      "savol": "Aqliy yoki ijtimoiy psixologik jarayonning rasmiy \nModeli nima deb ataladi?",
+      "variantlar": {
+        "A": "kognitiv model",
+        "B": "axborot modeli",
+        "C": "konflikt",
+        "D": "muhandislik psixologiyasi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 95,
+      "savol": "”Intellekt” so’zi qaysi tildan olingan?",
+      "variantlar": {
+        "A": "fransuz",
+        "B": "lotin",
+        "C": "ingliz",
+        "D": "rus"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 96,
+      "savol": "To’liq interfeysni ishlab chiqish siklining birinchi bosqichi?",
+      "variantlar": {
+        "A": "interfeys",
+        "B": "uslubni aniqlash",
+        "C": "dizayn konsepsiyasi",
+        "D": "tadqiqot"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 97,
+      "savol": "FlUXUSni tashkil etuvchi asosiy g’oyalarni 11 chisi toping?",
+      "variantlar": {
+        "A": "globalizm",
+        "B": "mavjudlilik",
+        "C": "o’ziga xoslik",
+        "D": "musiqiylik"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 98,
+      "savol": "Ergonomikaning maqsadi?",
+      "variantlar": {
+        "A": "umumiy munosabatlar yaratish",
+        "B": "faktlar va madadlarni uyg’unlashtirish",
+        "C": "mehnat sharoitini ishchi faoliyati bilan uyg’unligini ta’minlash",
+        "D": "to’g’ri javob yuq"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 99,
+      "savol": "“Barcha ekranlarning dizayni” to’liq interfeys ishlab chiqishning nechanchi bosqichi?",
+      "variantlar": {
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "5"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 100,
+      "savol": "Inson Kompyuter fanining maqsadi?",
+      "variantlar": {
+        "A": "kompyuter dasturlarini hayotga tadbiq qilish",
+        "B": "kompyuter va inson o’rtasidagi muloqot va aloqalarni o’rganish",
+        "C": "inson kompyutersiz bajarolmaydigan ishlarni isbotlash",
+        "D": "inson va kompyuter energiyasini tekshirish"
+      },
+      "togri_javob": "B"
+    }
+  ]
+}

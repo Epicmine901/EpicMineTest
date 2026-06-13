@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Sozlamalari - Menu</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <div class="top-header">
+    <a href="index.html" class="brand-logo">EpicMineTest</a>
+  </div>
+  <div class="menu-container">
+    
+    <div class="test-types-block">
+      <div class="test-card" onclick="startQuiz('test.html')">
+        <div class="card-icon">📝</div>
+        <div class="card-info">
+          <h3>Oddiy Test Mode</h3>
+          <p>Klassik rejim: Savollarni ko'rish va variantlarni belgilash.</p>
+        </div>
+      </div>
+
+      <div class="test-card" onclick="startQuiz('test2.html')">
+        <div class="card-icon">⚡</div>
+        <div class="card-info">
+          <h3>Tezkor Test Mode</h3>
+          <p>Ikkinchi rejim: Maxsus interfeys orqali testlarni topshirish.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-block">
+      <h2 id="subjectTitle" class="settings-title">Yuklanmoqda...</h2>
+      
+      <div class="slider-container">
+        <p class="slider-label">Diapazonni tanlang (Polzunok):</p>
+        <div class="range-slider-wrapper">
+          <div class="slider-track" id="sliderTrack"></div>
+          <input type="range" id="sliderStart" min="1" max="100" value="1" step="1">
+          <input type="range" id="sliderEnd" min="1" max="100" value="100" step="1">
+        </div>
+        <div class="slider-values">
+          <span>Boshlanishi: <strong id="valStart">1</strong></span>
+          <span>Tugashi: <strong id="valEnd">100</strong></span>
+        </div>
+      </div>
+
+      <div class="inputs-row">
+        <div class="input-group group-start">
+          <label for="inputStart">Start</label>
+          <input type="number" id="inputStart" min="1" value="1">
+        </div>
+        
+        <div class="input-group group-savols">
+          <label for="inputSavols">Savols</label>
+          <input type="number" id="inputSavols" min="1" value="25">
+        </div>
+
+        <div class="input-group group-end">
+          <label for="inputEnd">End</label>
+          <input type="number" id="inputEnd" min="1">
+        </div>
+      </div>
+
+      <div class="toggle-container">
+        <span class="toggle-label">Ketma-ketlik (Posledovatelnoye):</span>
+        <label class="switch">
+          <input type="checkbox" id="posledovotelnyaToggle">
+          <span class="slider-round"></span>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="read.js"></script>
+  <script>
+    let currentFanId = 0;
+    let maxQuestionsLength = 100;
+
+    // URL parametrdan FanId ni olish
+    const urlParams = new URLSearchParams(window.location.search);
+    currentFanId = parseInt(urlParams.get('FanId'), 10);
+    if (isNaN(currentFanId)) currentFanId = 0;
+
+    // Elementlarni ushlab olish
+    const sliderStart = document.getElementById('sliderStart');
+    const sliderEnd = document.getElementById('sliderEnd');
+    const valStart = document.getElementById('valStart');
+    const valEnd = document.getElementById('valEnd');
+    
+    const inputStart = document.getElementById('inputStart');
+    const inputSavols = document.getElementById('inputSavols');
+    const inputEnd = document.getElementById('inputEnd');
+    const sliderTrack = document.getElementById('sliderTrack');
+    const posledovotelnyaToggle = document.getElementById('posledovotelnyaToggle');
+
+    // JSON dan fanni yuklash va sozlamalarni o'rnatish
+    async function initMenu() {
+      const fullJson = await readJson(currentFanId);
+      if (fullJson) {
+        document.getElementById('subjectTitle').innerText = fullJson.Fan;
+        maxQuestionsLength = fullJson.test_savollari.length;
+        
+        // Default qiymatlarni o'rnatish (start=1, end=length)
+        sliderStart.max = maxQuestionsLength;
+        sliderEnd.max = maxQuestionsLength;
+        sliderEnd.value = maxQuestionsLength;
+        
+        inputStart.max = maxQuestionsLength;
+        inputEnd.max = maxQuestionsLength;
+        inputEnd.value = maxQuestionsLength;
+        
+        // Savollar sonini default 20 yoki undan kam bo'lsa maksimalga tenglash
+        inputSavols.value = Math.min(25, maxQuestionsLength);
+        inputSavols.max = maxQuestionsLength;
+
+        updateSliderUi();
+      } else {
+        document.getElementById('subjectTitle').innerText = "Fan topilmadi!";
+      }
+    }
+
+    // Polzunok liniyasini (track) qizil/yashil rang bilan bo'yash va sinxronlash
+    function updateSliderUi() {
+      let slide1 = parseInt(sliderStart.value);
+      let slide2 = parseInt(sliderEnd.value);
+
+      if (slide1 > slide2) {
+        let tmp = slide1;
+        slide1 = slide2;
+        slide2 = tmp;
+      }
+
+      valStart.innerText = slide1;
+      valEnd.innerText = slide2;
+
+      inputStart.value = slide1;
+      inputEnd.value = slide2;
+
+      // Masofa o'zgarganda "Savols" inputining max qiymatini cheklash
+      const currentRange = slide2 - slide1 + 1;
+      if (parseInt(inputSavols.value) > currentRange) {
+        inputSavols.value = currentRange;
+      }
+
+      // Ikki nuqta orasini chiroyli bo'yash formulasi
+      const percent1 = ((slide1 - 1) / (maxQuestionsLength - 1)) * 100;
+      const percent2 = ((slide2 - 1) / (maxQuestionsLength - 1)) * 100;
+      sliderTrack.style.background = `linear-gradient(to right, rgba(255,255,255,0.2) ${percent1}%, #2e7d32 ${percent1}%, #2e7d32 ${percent2}%, rgba(255,255,255,0.2) ${percent2}%)`;
+    }
+
+    // Polzunok hodisalari
+    sliderStart.addEventListener('input', () => {
+      if (parseInt(sliderStart.value) > parseInt(sliderEnd.value)) {
+        sliderStart.value = sliderEnd.value;
+      }
+      updateSliderUi();
+    });
+    
+    sliderEnd.addEventListener('input', () => {
+      if (parseInt(sliderEnd.value) < parseInt(sliderStart.value)) {
+        sliderEnd.value = sliderStart.value;
+      }
+      updateSliderUi();
+    });
+
+    // Inputlar o'zgarganda polzunokni ham sinxron yangilash
+    inputStart.addEventListener('input', () => {
+      let val = Math.max(1, Math.min(parseInt(inputStart.value) || 1, maxQuestionsLength));
+      sliderStart.value = val;
+      updateSliderUi();
+    });
+
+    inputEnd.addEventListener('input', () => {
+      let val = Math.max(1, Math.min(parseInt(inputEnd.value) || maxQuestionsLength, maxQuestionsLength));
+      sliderEnd.value = val;
+      updateSliderUi();
+    });
+
+    // Test sahifasiga yo'naltirish (Havolani yig'ish)
+    function startQuiz(targetHtmlPage) {
+      const stratVal = inputStart.value;
+      const endVal = inputEnd.value;
+      const savolsVal = inputSavols.value;
+      const posledovotelnyaBool = posledovotelnyaToggle.checked;
+
+      window.location.href = `${targetHtmlPage}?FanId=${currentFanId}&strat=${stratVal}&end=${endVal}&savols=${savolsVal}&posledovotelnya=${posledovotelnyaBool}`;
+    }
+
+    window.onload = initMenu;
+  </script>
+</body>
+</html>

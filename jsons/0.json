@@ -1,0 +1,1656 @@
+{
+  "Fan":"Timsollarni tanib olish",
+  "Discrption":"",
+  "test_savollari": [
+    {
+      "id": 1,
+      "savol": "Timsollarni tanib olish jarayoni eng to‘g‘ri qaysi ta’rif bilan ifodalanadi?",
+      "variantlar": {
+        "A": "Obyektni tarmoq orqali uzatib, xotirada vaqtincha saqlash jarayoni",
+        "B": "Obyektni foydalanuvchi aralashuvisiz tasodifiy guruhlarga bo‘lish jarayoni",
+        "C": "Obyektni faqat geometrik shakliga qarab saqlash va nusxalash jarayoni",
+        "D": "Obyektni belgilari asosida aniqlab, muayyan sinfga ajratish jarayoni"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 2,
+      "savol": "Timsollarni tanib olish tizimlarida texnik ta’minotning asosiy vazifasi nima?",
+      "variantlar": {
+        "A": "Ma’lumotlarni qabul qilish, uzatish, saqlash va qayta ishlashni ta’minlash",
+        "B": "Belgilar o‘rniga tasodifiy parametrlarni tanlab, modelni soddalashtirish",
+        "C": "Ma’lumotlarning semantik bog‘lanishini faqat mantiqiy qoidalar bilan ifodalash",
+        "D": "Tasniflash natijalarini faqat statistik jadval ko‘rinishida chiqarib berish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 3,
+      "savol": "Quyidagilardan qaysi biri timsollarni tanib olish tizimining texnik vositalariga kiradi?",
+      "variantlar": {
+        "A": "Kamera, skaner, mikrofon, sensor, server va ma’lumotlar bazasi",
+        "B": "Morfologiya, sintaksis, semantika, pragmatika va diskurs birligi",
+        "C": "Predikat, aksioma, lemma, teorema, qoidalar va formal grammatika",
+        "D": "Regressiya, klasterlash, semantik tahlil, inferensiya va normalizatsiya"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 4,
+      "savol": "Oldindan ishlov berish bosqichining asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Ma’lumot hajmini oshirib, saqlash jarayonini yanada murakkablashtirish",
+        "B": "Ma’lumot sifatini yaxshilab, keyingi tahlil bosqichiga mos holga keltirish",
+        "C": "Belgilar ajratish bosqichini bekor qilib, tizimni to‘liq soddalashtirish",
+        "D": "Tasniflashsiz turib yakuniy qarorni foydalanuvchiga darhol taqdim etish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 5,
+      "savol": "Belgilarni ajratish bosqichi nima uchun muhim hisoblanadi?",
+      "variantlar": {
+        "A": "U ma’lumotlarni qayta ishlamasdan, bevosita arxivga joylashtirib yuboradi",
+        "B": "U faqat apparat qurilmalarning elektr sarfini kamaytirishga xizmat qiladi",
+        "C": "U obyektning farqlovchi xususiyatlarini aniqlab, tasniflash aniqligini oshiradi",
+        "D": "U barcha ma’lumotlarni bir xil sinfga birlashtirib, tanlashni osonlashtiradi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 6,
+      "savol": "Quyidagi algoritmlardan qaysilari tasniflash bosqichida qo‘llanishi mumkin?",
+      "variantlar": {
+        "A": "Faqat sonlarni qo‘shish, ayirish, ko‘paytirish va bo‘lish amallari",
+        "B": "Faqat matnni tarjima qilish va imlo xatolarini tekshirish usullari",
+        "C": "Bayes klassifikatori, SVM, logistik regressiya va neyron tarmoqlar",
+        "D": "Faqat ma’lumotlarni saqlash va nusxalash uchun xizmat qiluvchi protokollar"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 7,
+      "savol": "Timsollarni tanib olish tizimi arxitekturasida qaysi ketma-ketlik eng to‘g‘ri hisoblanadi?",
+      "variantlar": {
+        "A": "Natija chiqarish, belgi ajratish, yig‘ish, saqlash va tasodifiy tanlash",
+        "B": "Tasniflash, yig‘ish, natija chiqarish, belgi ajratish va silliqlash",
+        "C": "Yig‘ish, oldindan ishlov, belgi ajratish, tasniflash va natija chiqarish",
+        "D": "Skanerlash, arxivlash, o‘chirish, ko‘paytirish va qayta nomlash"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 8,
+      "savol": "Neyron tarmoqlarning timsollarni tanib olishdagi ustun jihati nimada?",
+      "variantlar": {
+        "A": "Faqat apparat darajasida ishlashi va dasturiy muhit talab qilmasligida",
+        "B": "Faqat kichik jadvallar bilan ishlashi va rasmni umuman qabul qilmasligida",
+        "C": "Katta hajmdagi ma’lumotlardan murakkab qonuniyatlarni o‘rganish imkonida",
+        "D": "Belgilarni ajratmasdan, har qanday vazifani qoidasiz bajarishida"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 9,
+      "savol": "Biometrik identifikatsiyada timsollarni tanib olish tizimi asosan nima uchun qo‘llaniladi?",
+      "variantlar": {
+        "A": "Faqat qishloq xo‘jaligi ekinlarining sug‘orish jadvalini tuzish uchun",
+        "B": "Faqat sanoat uskunalarining texnik pasportlarini to‘ldirish uchun",
+        "C": "Faqat audiofayllarni musiqiy janr bo‘yicha arxivlash uchun",
+        "D": "Yuz, barmoq izi va ko‘z qorachig‘i orqali shaxsni aniqlash uchun"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 10,
+      "savol": "Timsollarni tanib olish tizimlarining ta’lim va ofis muhitidagi foydasi nimada?",
+      "variantlar": {
+        "A": "Faqat foydalanuvchi parollarini qo‘lda qayta yozib saqlashda",
+        "B": "Faqat tarmoq kabellarini ulash va elektr quvvatini taqsimlashda",
+        "C": "Hujjatlarni raqamlashtirish, matnni tanish va tasniflashni avtomatlashtirishda",
+        "D": "Faqat kompyuterlarning apparat qismlarini ta’mirlashni tashkil etishda"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 11,
+      "savol": "Predmet sohasi timsollarni tanib olish tizimida nimani anglatadi?",
+      "variantlar": {
+        "A": "Belgilarni qayta ishlovchi dasturiy modullar va interfeyslar yig‘indisini",
+        "B": "Tizim qo‘llaniladigan aniq amaliy muhit va obyektlar majmuasini",
+        "C": "Obyektlar natijalarini saqlash uchun xizmat qiluvchi xotira tuzilmasini",
+        "D": "Tizim ishlashi uchun zarur bo‘lgan faqat texnik qurilmalar to‘plamini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 12,
+      "savol": "Obyektni tavsiflashning asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Uni boshqa obyektlardan ajratish imkonini beruvchi xususiyatlarni aniqlash",
+        "B": "Uni nazorat tanlanmasidan olib, o‘quv tanlanmasiga avtomatik kiritish",
+        "C": "Uni faqat tarmoq orqali uzatish uchun qulay raqamli shaklga aylantirish",
+        "D": "Uni dasturga yuklab, foydalanuvchi interfeysida tasvirlab ko‘rsatish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 13,
+      "savol": "Belgilar tushunchasi eng to‘g‘ri qaysi javobda ifodalangan?",
+      "variantlar": {
+        "A": "Faqat foydalanuvchi tomonidan qo‘lda kiritiladigan vaqtinchalik xizmat maydonlaridir",
+        "B": "Obyektni matematik shaklda ifodalovchi miqdoriy yoki sifat ko‘rsatkichlardir",
+        "C": "Obyekt haqidagi barcha izohlarni matn ko‘rinishida jamlovchi yozuvlardir",
+        "D": "Tizimning faqat apparat qismiga tegishli bo‘lgan fizik parametrlaridir"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 14,
+      "savol": "Atribut bilan belgi o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Atribut faqat sonli bo‘ladi, belgi esa faqat matnli shaklda beriladi",
+        "B": "Atribut modelni o‘qitadi, belgi esa nazorat natijasini chiqarib beradi",
+        "C": "Atribut tasniflaydi, belgi esa faqat obyektni xotirada saqlab turadi",
+        "D": "Atribut umumiy xususiyatni, belgi esa uning matematik ifodasini bildiradi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 15,
+      "savol": "Sinf tushunchasi timsollarni tanib olishda nimani anglatadi?",
+      "variantlar": {
+        "A": "Faqat bitta obyektning barcha atributlari yozilgan ro‘yxatni anglatadi",
+        "B": "Belgilar fazosining tasodifiy tanlangan kichik qismini anglatadi",
+        "C": "O‘xshash xususiyatlarga ega bo‘lgan timsollar guruhini anglatadi",
+        "D": "Tizimdagi barcha texnik vositalar birikmasini anglatadi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 16,
+      "savol": "O‘quv tanlanmasining vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Modelga obyektlar va ularning sinflari orasidagi bog‘lanishni o‘rgatishdan",
+        "B": "Modelni faqat texnik qurilmalarga moslashtirib, tezligini oshirishdan",
+        "C": "Modeldagi barcha xatolarni avtomatik ravishda butunlay yo‘qotishdan",
+        "D": "Model natijalarini foydalanuvchiga yakuniy ko‘rinishda taqdim etishdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 17,
+      "savol": "Nazorat tanlanmasi nima uchun ishlatiladi?",
+      "variantlar": {
+        "A": "Modelning yangi ma’lumotlardagi umumlashtirish qobiliyatini baholash uchun",
+        "B": "Modelning o‘quv jarayonida barcha sinflarni yod olishini kuchaytirish uchun",
+        "C": "Obyekt tavsiflarini dastur xotirasida doimiy ravishda saqlash uchun",
+        "D": "Belgilar sonini sun’iy ravishda ko‘paytirib, hisoblashni murakkablashtirish uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 18,
+      "savol": "80/20 nisbatining amaliy ahamiyati nimada?",
+      "variantlar": {
+        "A": "U nazorat tanlanmasini yo‘q qilib, barcha ma’lumotni o‘quvga yo‘naltiradi",
+        "B": "U faqat kichik hajmdagi ma’lumotlar uchun ishlaydigan vaqtinchalik usuldir",
+        "C": "U barcha sinflarni tengsiz taqsimlab, modelni tezroq ishlashga majbur qiladi",
+        "D": "U o‘qitish va tekshirish jarayonlari orasida maqbul muvozanatni ta’minlaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 19,
+      "savol": "Masofa mezoni timsollarni tanib olishda nimani ifodalaydi?",
+      "variantlar": {
+        "A": "Obyektlar orasidagi farq darajasini sonli ko‘rinishda ifodalashni",
+        "B": "Belgilar sonini kamaytirish uchun ishlatiladigan tasodifiy tanlash usulini",
+        "C": "Tizimning foydalanuvchi bilan ishlash tezligini matematik baholashni",
+        "D": "Obyektlarning tasvir sifatini grafik ko‘rinishda yaxshilash jarayonini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 20,
+      "savol": "Kosinus o‘xshashligi qaysi holatlarda ayniqsa qulay hisoblanadi?",
+      "variantlar": {
+        "A": "Tasvir ranglarini monitor ekranida vizual taqqoslab ko‘rsatish jarayonida",
+        "B": "Apparat vositalarning elektr quvvatini boshqarish va me’yorlash vazifasida",
+        "C": "Nazorat tanlanmasini o‘quv tanlanmasiga qayta taqsimlashjarayonida",
+        "D": "Matnlar va semantik vektorlar orasidagi yo‘nalish o‘xshashligini baholashda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 21,
+      "savol": "Belgilar fazosi deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Obyektlarning sonli belgilar asosida ifodalangan n-o‘lchamli matematik makoni",
+        "B": "Klassifikatsiya natijalari vaqtincha yoziladigan xizmat fayllari tuzilmasi",
+        "C": "Tizimning apparat vositalari joylashgan fizik qurilmalar majmuasi",
+        "D": "Obyektlarning faqat matnli tavsiflari saqlanadigan mantiqiy axborot muhiti"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 22,
+      "savol": "Har bir obyektning belgilar fazosida nuqta sifatida tasvirlanishi nimani anglatadi?",
+      "variantlar": {
+        "A": "Obyekt tizimga faqat foydalanuvchi tomonidan qo‘lda kiritilishini",
+        "B": "Obyekt sonli parametrlar orqali koordinatalar to‘plami sifatida ifodalanishini",
+        "C": "Obyekt tasviri grafik muharrirda alohida rasm ko‘rinishida saqlanishini",
+        "D": "Obyekt faqat bitta belgi yordamida mutlaq ravishda aniqlanishini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 23,
+      "savol": "Belgilarni shakllantirish jarayonining asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Natijalarni foydalanuvchiga grafik bezak bilan taqdim etishni tashkil qilish",
+        "B": "Barcha ma’lumotlarni qayta ishlamasdan bevosita xotirada saqlab qo‘yish",
+        "C": "Xom ma’lumotdan axborotli va o‘lchash mumkin bo‘lgan parametrlarni ajratish",
+        "D": "Faqat texnik qurilmalar ish tezligini oshirish uchun xizmat qilish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 24,
+      "savol": "Quyidagilardan qaysi biri matnli ma’lumotlar uchun belgi shakllantirish usuliga kiradi?",
+      "variantlar": {
+        "A": "Faqat elektr signali amplitudasini davriy ravishda o‘lchash usuli",
+        "B": "Faqat piksel yorqinligini to‘g‘ridan-to‘g‘ri yig‘ish usuli",
+        "C": "TF-IDF koeffitsiyentlari va semantik embeddinglardan foydalanish usuli",
+        "D": "Faqat apparat resurslar hajmini solishtirishga asoslangan usul"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 25,
+      "savol": "Belgilarni tanlash va kamaytirish nima uchun zarur hisoblanadi?",
+      "variantlar": {
+        "A": "Barcha belgilar sonini majburiy ravishda doimiy oshirib borish uchun",
+        "B": "Faqat o‘quv tanlanmasini kengaytirib, nazorat tanlanmasini kamaytirish uchun",
+        "C": "Model natijalari foydalanuvchidan yashirib, ichki xotirada saqlash uchun",
+        "D": "Hisoblash murakkabligini pasaytirish va ortiqcha axborotni kamaytirish uchun"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 26,
+      "savol": "Varians mezoni qaysi holatda foydali belgilarning ajratilishiga yordam beradi?",
+      "variantlar": {
+        "A": "Belgining apparat qurilmaga ulanish tartibini tekshirishda",
+        "B": "Belgining faqat grafik ko‘rinishini ekranda chizib ko‘rsatishda",
+        "C": "Belgining matnli sharhini foydalanuvchi nomi bilan bog‘lashda",
+        "D": "Belgining qiymatlari obyektlar orasida qanchalik o‘zgarishini baholashda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 27,
+      "savol": "Korrelatsiya tahlilining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "O‘zaro kuchli bog‘langan va takroriy axborot beruvchi belgilarni aniqlashdan",
+        "B": "Faqat natijaviy sinf nomlarini avtomatik tarzda almashtirib yozishdan",
+        "C": "Obyektlarni grafik fayl shaklida tashqi xotiraga ko‘chirishdan",
+        "D": "Barcha belgilarni bir xil qiymatga keltirib, ularni o‘zgarmas qilishdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 28,
+      "savol": "PCA usulining asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "Belgilar sonini cheksiz ko‘paytirib, modelni yanada murakkablashtirish",
+        "B": "Har bir obyekt uchun alohida ma’lumotlar bazasi yaratib chiqish",
+        "C": "Asosiy dispersiyani saqlagan holda fazoni kamroq o‘lchamga o‘tkazish",
+        "D": "Faqat nazorat tanlanmasidagi ma’lumotlarni o‘quv to‘plamiga qo‘shish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 29,
+      "savol": "Vektorli tasvirlashning mohiyati nimada?",
+      "variantlar": {
+        "A": "Obyektni faqat matnli tavsif va izohlar orqali umumiy bayon qilishda",
+        "B": "Obyektni foydalanuvchi tanloviga qarab tasodifiy guruhlashda",
+        "C": "Obyektni apparat vositalar ro‘yxatiga alohida element qibly kiritishda",
+        "D": "Obyektni tartiblangan sonli qiymatlar ketma-ketligi ko‘rinishida ifodalashda"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 30,
+      "savol": "Kosinus o‘xshashlik qaysi vaziyatlarda ayniqsa samarali qo‘llaniladi?",
+      "variantlar": {
+        "A": "Belgilar qiymatini apparat xotirasida zaxiralash talab qilinganda",
+        "B": "Vektorlarning yo‘nalish jihatidan o‘xshashligini baholash zarur bo‘lganda",
+        "C": "Ikki nuqta orasidagi mutlaq geometrik masofani topish zarur bo‘lganda",
+        "D": "Faqat koordinatalar modulini qo‘shib chiziqli uzunlikni hisoblashda"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 31,
+      "savol": "Belgilar fazosi deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Obyektlar haqidagi matnli tavsiflarni saqlovchi oddiy axborot maydoni",
+        "B": "Obyektlarni belgilar orqali ifodalovchi ko‘p o‘lchovli matematik makon",
+        "C": "Hisoblash qurilmalari joylashgan texnik vositalar to‘plami va muhiti",
+        "D": "Klassifikatsiya natijalari vaqtincha yoziladigan dasturiy xizmat bo‘limi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 32,
+      "savol": "Obyektni vektor ko‘rinishida ifodalashning mohiyati nimada?",
+      "variantlar": {
+        "A": "Obyektni belgilar qiymatlari ketma-ketligi orqali formal tavsiflashda",
+        "B": "Obyektni foydalanuvchi tanloviga ko‘ra tasodifiy guruhlash jarayonida",
+        "C": "Obyektni tarmoq orqali uzatish uchun matnli kodga aylantirishda",
+        "D": "Obyektni faqat grafik tasvir va bezak elementlari bilan ko‘rsatishda"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 33,
+      "savol": "Sonli belgilarni normallashtirish nima uchun zarur?",
+      "variantlar": {
+        "A": "Belgilarni nazorat tanlanmasidan o‘quv tanlanmasiga qo‘shib yuborish uchun",
+        "B": "Belgilarni matnli ko‘rinishga o‘tkazib, ularni oson saqlash uchun",
+        "C": "Belgilarni bir xil masshtabga keltirib, taqqoslashni adolatli qilish uchun",
+        "D": "Belgilar sonini cheksiz oshirib, modelni yanada murakkab qilish uchun"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 34,
+      "savol": "Mantiqiy belgilar odatda qanday qiymatlarni qabul qiladi?",
+      "variantlar": {
+        "A": "Ikkita diskret qiymatni, ya’ni 0 va 1 ko‘rinishidagi holatlarni",
+        "B": "Faqat musbat haqiqiy sonlarni, ya’ni cheksiz oraliqdagi qiymatlarni",
+        "C": "Matnli va sonli qiymatlarni birgalikda ifodalovchi aralash holatlarni",
+        "D": "Faqat manfiy qiymatlarni ifodalovchi maxsus kodlangan ko‘rsatkichlarni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 35,
+      "savol": "Kategoriyaviy belgilarni matematik ifodalashda qaysi usul ko‘proq tavsiya etiladi?",
+      "variantlar": {
+        "A": "Faqat alifbo bo‘yicha tartiblash usuli, chunki u oddiyroq hisoblanadi",
+        "B": "Belgilarni kodlamasdan bevosita formulalarga qo‘shish usuli",
+        "C": "One-hot encoding usuli, chunki u sun’iy tartib hosil qilmaydi",
+        "D": "Tasodifiy sonlash usuli, chunki u hisoblashni doimo tezlashtiradi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 36,
+      "savol": "Elementar mantiqiy klassifikatorning asosiy xususiyati nimada?",
+      "variantlar": {
+        "A": "U faqat chuqur neyron tarmoqlar yordamida murakkab qarorlar chiqaradi",
+        "B": "U faqat apparat darajasida ishlaydigan maxsus sensorlarga tayanadi",
+        "C": "U barcha sinflarni masofa hisoblamasdan tasodifiy ravishda belgilaydi",
+        "D": "U obyektlarni sodda “agar…, u holda…” qoidalari asosida ajratadi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 37,
+      "savol": "AND, OR va NOT operatorlari klassifikatsiyada qanday vazifa bajaradi?",
+      "variantlar": {
+        "A": "Faqat natijalarni xotirada saqlash va qayta tiklash vazifasini",
+        "B": "Obyektlarni bir sinfdan boshqasiga tasodifiy ko‘chirish vazifasini",
+        "C": "Bir nechta shartlar orasidagi mantiqiy bog‘lanishni ifodalash vazifasini",
+        "D": "Belgilarni geometrik fazoe koordinata sifatida joylashtirish vazifasini"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 38,
+      "savol": "Belgining informativligi nimani anglatadi?",
+      "variantlar": {
+        "A": "Uning sinflarni farqlash va qaror qabul qilishga qo‘shadigan foydasini",
+        "B": "Uning belgilar sonini avtomatik ravishda oshirib borish imkonini",
+        "C": "Uning faqat texnik qurilmada qanday tezlikda qayta ishlanishini",
+        "D": "Uning foydalanuvchi interfeysida qanday rangda aks etishini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 39,
+      "savol": "Entropiya va axborot yutug‘i klassifikatsiyada nima uchun qo‘llaniladi?",
+      "variantlar": {
+        "A": "Belgining grafik ko‘rinishini yanada chiroyli ko‘rsatish uchun qo‘llaniladi",
+        "B": "Belgining apparat xotirada qancha joy egallashini topish uchun qo‘llaniladi",
+        "C": "Belgining faqat sonli yoki matnli ekanini qayd qilish uchun qo‘llaniladi",
+        "D": "Belgining noaniqlikni kamaytirish darajasini baholash uchun qo‘llaniladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 40,
+      "savol": "Belgilarni tanlashของ asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Faqat o‘quv tanlanmasi hajmini oshirib, nazorat qismini kamaytirishdan",
+        "B": "Belgilarni kodlamasdan bevosita matn ko‘rinishida modelga uzatishdan",
+        "C": "Eng foydali belgilarni ajratib, model aniqligi va soddaligini oshirishdan",
+        "D": "Barcha mavjud belgilarni saqlav, hisoblash yukini ko‘paytirib borishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 41,
+      "savol": "Statistik yondashuv timsollarni aniqlashda nimaga asoslanadi?",
+      "variantlar": {
+        "A": "Obyektlarni apparat qurilma turi bo‘yicha saralashga",
+        "B": "Obyektlarni faqat geometrik shakliga qarab guruhlashga",
+        "C": "Obyektlarni belgilariga ko‘ra ehtimollik nuqtai nazaridan baholashga",
+        "D": "Obyektlarni qat’iy qoidalar bilan tasodifiy sinflarga ajratishga"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 42,
+      "savol": "Statistik klassifikatsiyaning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Har bir obyekt uchun alohida ma’lumotlar bazasi yaratishdan",
+        "B": "Klassifikatsiya jarayonini formulalarsiz bajarishdan",
+        "C": "Faqat o‘quv tanlanmasi hajmini cheksiz oshirishdan",
+        "D": "Kuzatilgan belgilar asosida eng ehtimolli sinfni aniqlashdan"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 43,
+      "savol": "Aprior ehtimollik deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Obyekt kuzatilishidan oldin sinfning umumiy uchrash ehtimoli",
+        "B": "Obyekt kuzatilgandan keyin sinfga tegishlilik ehtimoli",
+        "C": "Belgilar orasidagi masofaning o‘rtacha qiymati",
+        "D": "Klassifikatsiya xatoligining yakuniy ko‘rsatkichi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 44,
+      "savol": "Posterior ehtimollik nimani ifodalaydi?",
+      "variantlar": {
+        "A": "Obyektlar orasidagi Evklid masofasining qiymatini",
+        "B": "Belgilar ma’lum bo‘lganda obyektning sinfga tegishlilik ehtimolini",
+        "C": "Belgilar sonining klassifikatsiyaga ta’sir darajasini",
+        "D": "Belgilar noma’lum bo‘lganda sinfning tasodifiy ehtimolini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 45,
+      "savol": "Likelihood funksiyasining klassifikatsiyadagi vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Obyektlarni faqat oldindan berilgan tartibda joylashtirishdan",
+        "B": "Belgilar vektori ma’lum sinfda kuzatilish ehtimolini ifodalashdan",
+        "C": "Sinflarning umumiy sonini statistik ravishda kamaytirishdan",
+        "D": "Klassifikatorning ishlash tezligini grafik ko‘rsatishda ifodalashdan"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 46,
+      "savol": "Maksimal posterior ehtimollik prinsipi qanday qaror qabul qiladi?",
+      "variantlar": {
+        "A": "Belgilari eng ko‘p bo‘lgan obyektni tanlaydi",
+        "B": "Eng katta posterior ehtimollikka ega sinfni tanlaydi",
+        "C": "Eng kichik aprior ehtimollikka ega sinfni tanlaydi",
+        "D": "Tasodifiy ravishda bitta sinfni tanlaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 47,
+      "savol": "Maksimal ehtimollik usuli qaysi holatda ayniqsa qulay qo‘llaniladi?",
+      "variantlar": {
+        "A": "Belgilar soni mutlaqo noma’lum bo‘lganda",
+        "B": "Sinflarning aprior ehtimolliklari teng deb qaralganda",
+        "C": "O‘quv ma’lumotlari umuman mavjud bo‘lmaganda",
+        "D": "Sinflar soni cheksiz katta bo‘lganda"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 48,
+      "savol": "Minimal xatolik ehtimoli mezonining asosiy maqsadi nima?",
+      "variantlar": {
+        "A": "Belgilar sonini maksimal darajada ko‘paytirish",
+        "B": "Umumiy klassifikatsiya xatoligi ehtimolini minimallashtirish",
+        "C": "Barcha sinflarning ehtimollarini tenglashtirish",
+        "D": "Obyektlarni qayta ishlash vaqtini uzaytirish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 49,
+      "savol": "Bayes klassifikatori qanday nazariy asosga tayanadi?",
+      "variantlar": {
+        "A": "Faqat masofa metrikalari va geometrik ajratish usullariga",
+        "B": "Faqat mantiqiy operatorlar va qoidaviy klassifikatorlarga",
+        "C": "Bayes teoremasi va posterior ehtimollikni hisoblash qoidalariga",
+        "D": "Faqat deterministik chegaralar va qat’iy mezonlarga"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 50,
+      "savol": "Statistik klassifikatsiya algoritmlarining to‘g‘ri ketma-ket bosqichi qaysi?",
+      "variantlar": {
+        "A": "Natijani chiqarish, belgilarni yig‘ish, ehtimollikni bekor qilish",
+        "B": "Qaror chiqarish, model qurish, belgilarni yo‘qotish, natija saqlash",
+        "C": "Belgilarni aniqlash, model qurish, posteriorni hisoblash, qaror chiqarish",
+        "D": "Belgilarni tasodifiy tanlash, sinfni belgilash, formulani tuzish"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 51,
+      "savol": "Deterministik klassifikatsiya deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Obyektni ehtimollik qiymatlari orqali taxminiy sinfga kiritish jarayoni",
+        "B": "Obyektni faqat statistik taqsimot asosida baholash jarayoni",
+        "C": "Obyektni tasodifiy ravishda sinflar orasida taqsimlash jarayoni",
+        "D": "Obyektni qat’iy qoidalar asosida aniq bir sinfga ajratish jarayoni"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 52,
+      "savol": "Deterministik va ehtimollik klassifikatorlari o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Deterministik usullar qat’iy qoidaga, ehtimollik usullari esa ehtimolga tayanadi",
+        "B": "Deterministik usullar faqat matn bilan, ehtimollik usullari faqat rasm bilan ishlaydi",
+        "C": "Deterministik usullar xatoliksiz, ehtimollik usullari esa doimo xatoli bo‘ladi",
+        "D": "Deterministik usullar o‘qitilmaydi, ehtimollik usullari esa har doim o‘qitiladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 53,
+      "savol": "k-yaqin qo‘shnilar usulining asosiy g‘oyasi nimadan iborat?",
+      "variantlar": {
+        "A": "Yangi obyekt sinfi qaror daraxtidagi ilk tugun orqali aniqlanadi",
+        "B": "Yangi obyekt sinfi faqat aprior ehtimolliklar asosida aniqlanadi",
+        "C": "Yangi obyekt sinfi oldindan qurilgan regressiya tenglamasi bilan topiladi",
+        "D": "Yangi obyekt sinfi unga eng yaqin joylashgan qo‘shnilar sinfi bilan aniqlanadi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 54,
+      "savol": "kNN algoritmida masofa tushunchasi nima uchun muhim hisoblanadi?",
+      "variantlar": {
+        "A": "U klassifikatorning ehtimollik modelini oldindan qurib beradi",
+        "B": "U obyektlarning faqat xotirada egallagan joyini aniqlab beradi",
+        "C": "U o‘quv tanlanmasidagi sinflar sonini avtomatik kamaytirib beradi",
+        "D": "U obyektlar orasidagi o‘xshashlik darajasini sonli ko‘rinishda baholaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 55,
+      "savol": "Evklid masofasi qanday mazmunni ifodalaydi?",
+      "variantlar": {
+        "A": "Belgilar yig‘indisining sinflar soniga bo‘lingan o‘rtacha qiymatini",
+        "B": "Obyektlarning ehtimollik taqsimotlari orasidagi umumiy farqni",
+        "C": "Belgilar fazosidagi ikki nuqta orasidagi to‘g‘ri chiziqli geometrik masofani",
+        "D": "Faqat koordinatalarning eng katta qiymati orasidagi tafovutni"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 56,
+      "savol": "k parametrining kNN algoritmidagi vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Belgilar fazosining umumiy o‘lcham sonini majburiy aniqlashdan",
+        "B": "Har bir sinf uchun ehtimollik koeffitsiyentini hisoblashdan",
+        "C": "Klassifikatsiyada hisobga olinadigan eng yaqin qo‘shnilar sonini belgilashdan",
+        "D": "Ajratuvchi tekislikning og‘ish burchagini belgilab berishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 57,
+      "savol": "k ning juda kichik qiymati qanday muammoga olib kelishi mumkin?",
+      "variantlar": {
+        "A": "Algoritm ehtimollik hisoblashni to‘liq to‘xtatib qo‘yishi mumkin",
+        "B": "Algoritm belgilar fazosini ikki tekislikka ajratib yuborishi mumkin",
+        "C": "Algoritm barcha sinflarni avtomatik ravishda birlashtirib yuborishi mumkin",
+        "D": "Algoritm shovqinli ma’lumotlarga ortiqcha sezgir bo‘lib qolishi mumkin"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 58,
+      "savol": "Ajratuvchi tekislik asosidagi klassifikatsiyaning asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Har bir obyekt uchun qo‘shnilar sonini alohida hisoblashdan iborat",
+        "B": "Barcha belgilarni normallashtirib yagona intervalga keltirishdan iborat",
+        "C": "Har bir sinfning posterior ehtimolligini maksimal qilishdan iborat",
+        "D": "Belgilar fazosini geometrik chegaralar yordamida sinflarga ajratishdan iborat"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 59,
+      "savol": "Ajratuvchi tekislik asosida qaror qanday qabul qilinadi?",
+      "variantlar": {
+        "A": "Qaror funksiyasi ishorasiga ko‘ra obyektning qaysi tomonda joylashgani aniqlanadi",
+        "B": "Qaror sinflarning aprior ehtimollari tengligi bilan belgilanadi",
+        "C": "Qaror faqat obyektga eng yaqin bitta qo‘shni sinfi bilan belgilanadi",
+        "D": "Qaror belgilar yig‘indisining o‘rtacha qiymati bilan aniqlanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 60,
+      "savol": "kNN va ajratuvchi tekislik usullarining asosiy farqi nimada?",
+      "variantlar": {
+        "A": "kNN normallashtirishsiz ishlamaydi, ajratuvchi tekislik esa belgilarsiz ishlaydi",
+        "B": "kNN qo‘shnilarga tayansa, ajratuvchi tekislik geometrik chegara asosida ishlaydi",
+        "C": "kNN faqat ikki sinfda, ajratuvchi tekislik esa faqat uch sinfda ishlaydi",
+        "D": "kNN ehtimollik usuli, ajratuvchi tekislik esa faqat statistik usul hisoblanadi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 61,
+      "savol": "Sun’iy neyron tarmoqlarining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Ma’lumotlar orasidagi murakkab bog‘lanishlarni o‘rganadigan matematik modeldan",
+        "B": "Faqat sonli jadvallarni saqlash uchun ishlatiladigan dasturiy bazadan",
+        "C": "Tasodifiy qaror chiqaradigan va o‘qitilmaydigan oddiy algoritmdan",
+        "D": "Faqat apparat vositalarini boshqarishga xizmat qiladigan texnik tizimdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 62,
+      "savol": "Sun’iy neyronning asosiy tarkibiy qismlari qaysilar?",
+      "variantlar": {
+        "A": "Kirishlar, og‘irliklar, bias, yig‘uvchi blok va faollashtirish funksiyasi",
+        "B": "Faqat kirish signali, chiqish signali va tarmoq kabeli elementlari",
+        "C": "Matn, jadval, grafik va foydalanuvchi interfeysi komponentlari",
+        "D": "Faqat xotira, protsessor, monitor va tashqi kiritish qurilmalari"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 63,
+      "savol": "Bias parametrining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Qaror chegarasini siljitib, model moslashuvchanligini oshirishdan",
+        "B": "Faqat chiqish qatlamidagi neyronlar sonini kamaytirishdan",
+        "C": "Tarmoqdagi barcha og‘irliklarni bir xil qiymatga keltirishdan",
+        "D": "Kirish ma’lumotlarini tasodifiy ravishda o‘zgartirib yuborishdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 64,
+      "savol": "Faollashtirish funksiyasi nima uchun kerak bo‘ladi?",
+      "variantlar": {
+        "A": "Tarmoqdagi qatlamlar sonini avtomatik ravishda kamaytirish uchun",
+        "B": "Modelga chiziqli bo‘lmagan bog‘lanishlarni o‘rganish imkonini berish uchun",
+        "C": "Barcha kirish signallarini faqat manfiy qiymatga o‘tkazish uchun",
+        "D": "O‘qitish ma’lumotlarini xotirada uzoq vaqt saqlash uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 65,
+      "savol": "Neyron tarmog‘ining asosiy qatlamlari qaysilar hisoblanadi?",
+      "variantlar": {
+        "A": "Kirish qatlami, yashirin qatlamlar va chiqish qatlamidan iborat",
+        "B": "Faqat chiqish qatlami va xatolikni saqlash qatlamidan iborat",
+        "C": "Faqat kirish qatlami va apparat boshqaruv qatlamidan iborat",
+        "D": "Ma’lumotlar bazasi qatlami va foydalanuvchi oynasi qatlamidan iborat"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 66,
+      "savol": "Bir qatlamli perceptron qanday turdagi masalalarni samarali yecha oladi?",
+      "variantlar": {
+        "A": "Faqat regressiya va vaqt qatorlari prognozi masalalarini yecha oladi",
+        "B": "Har qanday murakkab noaniq va ko‘p bosqichli masalalarni yecha oladi",
+        "C": "Faqat klasterlash va guruhlash vazifalarini mustaqil yecha oladi",
+        "D": "Chiziqli ajraluvchi klassifikatsiya masalalarini samarali yecha oladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 67,
+      "savol": "Ko‘p qatlamli perceptronning bir qatlamli perceptrondan asosiy farqi nimada?",
+      "variantlar": {
+        "A": "Og‘irlik koeffitsiyentlaridan umuman foydalanmasligida",
+        "B": "Faqat kirish signallarini kamaytirib, chiqishni o‘zgartirmasligida",
+        "C": "Yashirin qatlamlar yordamida chiziqli bo‘lmagan bog‘lanishlarni o‘rganishida",
+        "D": "Faqat ikki sinfli masalalarda ishlashga mo‘ljallanganligida"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 68,
+      "savol": "Forward propagation jarayoni nimani anglatadi?",
+      "variantlar": {
+        "A": "Ma’lumotlarning kirish qatlamidan chiqish qatlamiga tomon uzatilishini",
+        "B": "Xatolikning chiqish qatlamidan kirish qatlamiga tomon tarqalishini",
+        "C": "Og‘irliklarning tasodifiy qiymatlar bilan qayta almashtirilishini",
+        "D": "Ma’lumotlarning faqat yashirin qatlam ichida saqlanib qolishini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 69,
+      "savol": "Backpropagation algoritmining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Xatolikni kamaytirish uchun og‘irlik koeffitsiyentlarini yangilashdan",
+        "B": "Tarmoqdagi barcha neyronlarni bir xil qiymatda ushlab turishdan",
+        "C": "Chiqish qatlamini olib tashlab, tarmoqni soddalashtirishdan",
+        "D": "Yangiy kirish ma’lumotlarini avtomatik ravishda ko‘paytirib borishdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 70,
+      "savol": "Learning rate parametri o‘qitish jarayonida nimani belgilaydi?",
+      "variantlar": {
+        "A": "Kirish signallarining maksimal sonini va o‘lchamini",
+        "B": "Og‘irliklarning qanchalik katta qadam bilan yangilanish tezligini",
+        "C": "Tarmoqdagi qatlamlar sonining minimal qiymatini",
+        "D": "Chiqish qatlamidagi neyronlarining qat’iy doimiy qiymatini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 71,
+      "savol": "Pretsedentlik tamoyilining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Yangi obyekt sinfini tasodifiy ravishda mavjud sinflardan biriga biriktirish",
+        "B": "Yangi obyekt sinfini oldindan ma’lum obyektlar bilan o‘xshashlik asosida aniqlash",
+        "C": "Yangi obyekt sinfini faqat centroid qiymatlari yordamida ehtimollik bilan topish",
+        "D": "Yangi obyekt sinfini faqat aprior ehtimolliklar yordamida aniqlash"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 72,
+      "savol": "Pretsedent tushunchasi nimani anglatadi?",
+      "variantlar": {
+        "A": "Sinfi oldindan ma’lum bo‘lgan va etalon sifatida xizmat qiluvchi obyektni",
+        "B": "Sinfi noma’lum bo‘lgan va test bosqichida tekshiriladigan yeni obyektni",
+        "C": "Belgilar fazosidagi barcha sinflar uchun umumiy markaziy nuqtani",
+        "D": "Klassifikatsiya natijasida hosil bo‘ladigan yakuniy qaror funksiyasini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 73,
+      "savol": "k-NN algoritmining asosiy qaror prinsipi nimaga tayanadi?",
+      "variantlar": {
+        "A": "Sinflarning oldindan berilgan ehtimolliklarini taqqoslashga",
+        "B": "Har bir sinf uchun bitta centroidni hisoblashga",
+        "C": "Eng yaqin k ta qo‘shni orasida ko‘pchilikni tashkil etgan sinfni tanlashga",
+        "D": "Eng uzoq joylashgan obyektlarning umumiy sinfini aniqlashga"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 74,
+      "savol": "Pretsedentlik usulida obyektlar orasidagi o‘xshashlik odatda qanday aniqlanadi?",
+      "variantlar": {
+        "A": "Masofa funksiyalari yordamida farq darajasini hisoblash orqali aniqlanadi",
+        "B": "Faqat test natijalarining sonini hisoblash orqali aniqlanadi",
+        "C": "Faqat mantiqiy operatorlar yordamida belgilarni solishtirish orqali aniqlanadi",
+        "D": "Sinflarning nomlarini bevosita taqqoslash orqali aniqlanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 75,
+      "savol": "Qisman pretsedentlik tamoyilining asosiy g‘oyasi nimadan iborat?",
+      "variantlar": {
+        "A": "Klassifikatsiyada masofa funksiyalaridan umuman foydalanmaslik",
+        "B": "Yangi obyektni faqat bitta tasodifiy pretsedent bilan solishtirish",
+        "C": "Har bir sinf uchun barcha obyektlarni albatta to‘liq saqlab qolish",
+        "D": "Har bir sinfni alohida obyektlar bilan emas, umumlashtirilgan prototip bilan ifodalash"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 76,
+      "savol": "Centroid tushunchasi qaysi ma’noni anglatadi?",
+      "variantlar": {
+        "A": "Klassifikatsiya xatoligini hisoblaydigan yordamchi parametrni",
+        "B": "Sinf obyektlarining o‘rtacha xususiyatlarini ifodalovchi markaziy nuqtani",
+        "C": "Yangi test obyektining belgilar fazosidagi vaqtinchalik koordinatasini",
+        "D": "Faqat eng uzoq joylashgan obyektlarning umumiy ko‘rsatkichini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 77,
+      "savol": "Pretsedentlik va qisman pretsedentlik usullari orasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Birinchisida barcha obyektlar, ikkinchisida esa sinf markazlari bilan solishtiriladi",
+        "B": "Birinchisi faqat matnlar, ikkinchisi faqat tasvirlar uchun qo‘llaniladi",
+        "C": "Birinchisida centroid kerak, ikkinchisida esa belgilar fazosi kerak emas",
+        "D": "Birinchisi ehtimollik, ikkinchisi esa faqat statistika asosida ishlaydi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 78,
+      "savol": "Qisman pretsedentlik usulining asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "Barcha pretsedentlarni ko‘paytirib, xotira sarfini oshirishida",
+        "B": "Masofa funksiyalarini butunlay bekor qilishida",
+        "C": "Solishtirishlar sonini kamaytirib, klassifikatsiya jarayonini tezlashtirishida",
+        "D": "Har bir yeni obyekt uchun yeni sinf yaratish imkoniyatida"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 79,
+      "savol": "Tanib olishning test algoritmi qaysi vazifani bajaradi?",
+      "variantlar": {
+        "A": "Faqat ma’lumotlarni normallashtirish va filtrlashni amalga oshiradi",
+        "B": "O‘quv tanlanmasini qayta yaratib, barcha sinflarni boshqatdan belgilaydi",
+        "C": "Faqat centroidlarni xotirada saqlash va yangilash bilan shug‘ullanadi",
+        "D": "O‘qitilgan model asosida yeni obyektning qaysi sinfga tegishli ekanini aniqlaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 80,
+      "savol": "Test algoritmi tanib olish tizimining qaysi bosqichida qo‘llaniladi?",
+      "variantlar": {
+        "A": "O‘qitishdan keyingi amaliy klassifikatsiya va tekshirish bosqichida qo‘llaniladi",
+        "B": "Faqat ma’lumotlarni yig‘ish va arxivlash bosqichida qollaniladi",
+        "C": "Belgilarni dastlabki tanlash va kodlash bosqichida qo‘llaniladi",
+        "D": "Faqat nazariy modelni qurishdan oldingi tayyorgarlik bosqichida qo‘llaniladi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 81,
+      "savol": "Baholarni hisoblash deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Kuzatuvlar asosida noma’lum parametrlarning eng yaqin qiymatini aniqlash jarayoni",
+        "B": "Ma’lumotlarni faqat saqlash va keyinchalik qayta nusxalash jarayoni",
+        "C": "Parametrlarni tasodifiy ravishda turli qiymatlarga almashtirish jarayoni",
+        "D": "Model natijalarini grafik ko‘rinishda chizib berish jarayoni"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 82,
+      "savol": "Baholash algoritmlarining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Ma’lumotlarni faqat apparat xotirasiga ko‘chirib joylashtirishdan",
+        "B": "Natijalarni tekshirmasdan bevosita foydalanuvchiga chiqarishdan",
+        "C": "Mavjud ma’lumotlarga tayangan holda noma’lum parametrlarni optimal aniqlashdan",
+        "D": "Barcha parametrlarni o‘lchovsiz holda doimiy qiymat deb qabul qilishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 83,
+      "savol": "Kuzatuv ma’lumotlariga asoslanish prinsipi nimani bildiradi?",
+      "variantlar": {
+        "A": "Baholash faqat nazariy formulalar asosida bajarilishini",
+        "B": "Baholashda real kuzatuvlar mutlaqo ahamiyatsiz ekanligini",
+        "C": "Baholash sifati ishlatilayotgan ma’lumotlarning yetarliligi va sifatiga bog‘liqligini",
+        "D": "Baholash algoritmi ma’lumotlarsiz ham bir xil natija berishini"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 84,
+      "savol": "Nuqtaviy baholash bilan interval baholash o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Birinchisi faqat grafik, ikkinchisi esa faqat sonli natija beradi",
+        "B": "Birinchisi bitta qiymatni, ikkinchisi esa ishonchli oraliqni beradi",
+        "C": "Birinchisi xatolikli, ikkinchisi esa mutlaqo xatosiz hisoblanadi",
+        "D": "Birinchisi regressiyada, ikkinchisi esa klassifikatsiyada ishlatiladi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 85,
+      "savol": "Maksimal ehtimollik usulining asosiy g‘oyasi nimadan iborat?",
+      "variantlar": {
+        "A": "Parametrlar sonini imkon qadar ko‘paytirib borishdan",
+        "B": "Kuzatilgan ma’lumotlarni eng yaxshi tushuntiruvchi parametrni tanlashdan",
+        "C": "Har bir kuzatuvni alohida mustaqil modelga aylantirishdan",
+        "D": "Xatoliklarni e’tiborsiz qoldirib, o‘rtacha qiymatni olishdan"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 86,
+      "savol": "Parametrli modelning umumiy ko‘rinishi qaysi mazmunni ifodalaydi?",
+      "variantlar": {
+        "A": "Model faqat kuzatuvlarsiz ham mustaqil ishlay olishini",
+        "B": "Parametrlar mavjud bo‘lmagan holda tizim to‘liq aniqlanishini",
+        "C": "Chiqish qiymati doimo kirish qiymatiga teng bo‘lishini",
+        "D": "Chiqish natijasi kirish va parametrlar orqali berilgan model funksiyasiga bog‘liqligini"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 87,
+      "savol": "Tanlanma o‘rtacha qiymati nimani ifodalaydi?",
+      "variantlar": {
+        "A": "Modeldagi barcha parametrlarning umumiy sonini ifodalovchi bahoni",
+        "B": "Kuzatuvlar to‘plamining markaziy tendensiyasini ifodalovchi bahoni",
+        "C": "Kuzatuvlar(ning) eng katta va eng kichik farqini ifodalovchi bahoni",
+        "D": "Ma’lumotlarning tasodifiy tanlangan bitta elementini ifodalovchi bahoni"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 88,
+      "savol": "Dispersiya qanday mazmunga ega?",
+      "variantlar": {
+        "A": "Ma’lumotlarning faqat maksimal qiymatini ifodalaydi",
+        "B": "Ma’lumotlarning o‘rtacha qiymat atrofida qanchalik tarqalganini ko‘rsatadi",
+        "C": "Kuzatuvlar sonining umumiy yig‘indisini ko‘rsatadi",
+        "D": "Modeldagi parametrlarning o‘zgarish tezligini bildiradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 89,
+      "savol": "Eng kichik kvadratlar usulining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Kuzatuvlarni sinflarga bo‘lib, har birini alohida saqlashdan",
+        "B": "Parametrlarning mutlaq qiymatlarini maksimal darajaga yetkazishdan",
+        "C": "Model va kuzatuv orasidagi kvadratik og‘ishlar yig‘indisini minimallashtirishdan",
+        "D": "Faqat eng katta xatoni tanlab, qolganlarini bekor qilishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 90,
+      "savol": "Barqaror va ishonchli baholash algoritmi qanday xususiyatga ega bo‘lishi kerak?",
+      "variantlar": {
+        "A": "Har bir yangi ma’lumotda butun modelni to‘liq bekor qilishi kerak",
+        "B": "Kuzatuvlar soni oshgani sari natijani tasodifiylashtirishi kerak",
+        "C": "Faqat juda katta xatoliklarda ishlashi va qolganini inkor etishi kerak",
+        "D": "Ma’lumotlardagi kichik o‘zgarishlarda natijani keskin o‘zgartirmasligi kerak"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 91,
+      "savol": "Klasterizatsiya masalasining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Obyektlarni ehtimollik qiymatlar orqali ketma-ket baholab chiqishdan",
+        "B": "Obyektlarni faqat tayyor sinf nomlari asosida qat’iy taqsimlashdan",
+        "C": "Obyektlarni oldindan berilgan yorliqlarsiz o‘xshashliklariga ko‘ra guruhlashdan",
+        "D": "Obyektlarni tasodifiy tarzda teng hajmli guruhlarga ajratishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 92,
+      "savol": "Nima sababdan klasterizatsiya nazoratsiz o‘qitish turiga kiradi?",
+      "variantlar": {
+        "A": "Chunki unda har bir obyekt uchun majburiy o‘qituvchi signali beriladi",
+        "B": "Chunki unda barcha ma’lumotlar faqat test bosqichida ishlatiladi",
+        "C": "Chunki unda faqat regressiya ko‘rinishidagi natijalar hosil qilinadi",
+        "D": "Chunki unda obyektlar uchun oldindan tayyor sinf yorliqlari mavjud bo‘lmaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 93,
+      "savol": "Belgilar vektori deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Obyektning faqat nomi va sinfini saqlovchi matnli yozuvlar to‘plami",
+        "B": "Obyektning xususiyatlarini ifodalovchi tartiblangan sonli parametrlar to‘plami",
+        "C": "Obyektga tegishli barcha hujjatlarni jamlovchi arxiv papkasi tuzilmasi",
+        "D": "Obyektni grafik shaklda chizish uchun ishlatiladigan koordinatalar jadvali"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 94,
+      "savol": "Klasterlashda masofa va o‘xshashlik tushunchalarining vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Obyektlarning matn uzunligini avtomatik ravishda tenglashtirishdan",
+        "B": "Obyektlarning bir-biriga qanchalik yaqin yoki farqli ekanini aniqlashdan",
+        "C": "Obyektlarning faqat fayl hajmi va saqlash joyini belgilashdan",
+        "D": "Obyektlarning oldindan ma’lum sinf raqamlarini qayta yozishdan"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 95,
+      "savol": "k-means algoritmining asosiy g‘oyasi nimadan iborat?",
+      "variantlar": {
+        "A": "Obyektlarni faqat eng uzoq masofaga ega guruhlarga joylashtirishdan",
+        "B": "Obyektlarni zichlikka qaramasdan tasodifiy nuqtalar bilan bog‘lashdan",
+        "C": "Obyektlarni eng yaqin markazlarga biriktirib, markazlarni qayta hisoblashdan",
+        "D": "Obyektlarni daraxtsimon ko‘rinishda ketma-ket bo‘lib tashlashdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 96,
+      "savol": "k-means algoritmida k parametrining ahamiyati nimada?",
+      "variantlar": {
+        "A": "U oldindan hosil qilinishi kerak bo‘lgan klasterlar sonini belgilaydi",
+        "B": "U Evklid masofasini boshqa mezonga almashtirib yuboradi",
+        "C": "U ma’lumotlardagi barcha belgilar sonini avtomatik kamaytiradi",
+        "D": "U har bir klasterdagi obyektlarning minimal vaznini belgilaydi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 97,
+      "savol": "Iyerarxik klasterlashning agglomerativ ko‘rinishi qanday ishlaydi?",
+      "variantlar": {
+        "A": "Dastlab faqat markazlar tanlanib, keyin obyektlar ularga biriktiriladi",
+        "B": "Dastlab har bir obyekt alohida olinib, eng yaqinlari bosqichma-bosqich birlashtiriladi",
+        "C": "Dastlab shovqin nuqtalar chiqarilib, qolganlari qayta o‘lchanadi",
+        "D": "Dastlab barcha obyektlar bitta klasterga olinib, tasodifiy tarzda ajratiladi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 98,
+      "savol": "DBSCAN algoritmining asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "U iyerarxik daraxt tuzilmasini har doim majburiy yaratadi",
+        "B": "U faqat chiziqli ajraluvchi ma’lumotlarda aniq ishlaydi",
+        "C": "U barcha klasterlar uchun bir xil radiusni avtomatik bekor qiladi",
+        "D": "U klasterlar sonini oldindan bermasdan, shovqinni ham ajrata oladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 99,
+      "savol": "Ichki kompaktlik va tashqi ajraluvchanlik nimani anglatadi?",
+      "variantlar": {
+        "A": "Klaster ichidagilar uzoq, klasterlar orasidagilar esa bir-biriga yaqin bo‘lishini",
+        "B": "Har bir klasterning faqat bitta obyekt bilan ifodalanishini",
+        "C": "Barcha klasterlarning hajmi va shakli mutlaqo teng bo‘lishini",
+        "D": "Klaster ichidagilar yaqin, klasterlar orasidagilar esa bir-biridan uzoq bo‘lishini"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 100,
+      "savol": "Klasterlash natijalarini baholashda elbow usuli qanday vazifani bajaradi?",
+      "variantlar": {
+        "A": "k-means uchun maqbul klasterlar sonini tanlashga yordam beradi",
+        "B": "Har bir klaster uchun masofa formulasini alohida almashtirib beradi",
+        "C": "Iyerarxik klasterlashda dendrogramma o‘rnini to‘liq bosadi",
+        "D": "DBSCAN algoritmida yadro nuqtalarni avtomatik belgilab beradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 101,
+      "savol": "Tanib olish texnologiyalarining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Obyektlarni tasodifiy ravishda guruhlarga ajratib vaqtincha ko‘rsatishdan",
+        "B": "Faqat apparat qurilmalarini boshqarish uchun xizmat qiluvchi koddan",
+        "C": "Ma’lumotlarni faqat xotirada saqlash va nusxalash jarayonini bajarishdan",
+        "D": "Raqamli obyektlarni avtomatik aniqlash, tavsiflash va toifalarga ajratishdan"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 102,
+      "savol": "Zamonaviy tanib olish tizimining umumiy oqimi qaysi ketma-ketlikka mos keladi?",
+      "variantlar": {
+        "A": "Ma’lumotlarni saqlash, arxivlash va sinflarni qo‘lda kiritish",
+        "B": "Ma’lumot yig‘ish, oldindan ishlov, embedding olish, baholash va joylashtirish",
+        "C": "Faqat modelni o‘qitish va darhol yakuniy qaror chiqarish",
+        "D": "Joylashtirish, baholash, ma’lumot yig‘ish, keyin tasodifiy tahlil qilish"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 103,
+      "savol": "Embedding yondashuvi nimani anglatadi?",
+      "variantlar": {
+        "A": "Obyektni faqat tayyor sinf nomiga biriktirish usulini",
+        "B": "Obyektni o‘xshashlik fazosidagi vektor nuqta sifatida ifodalash usulini",
+        "C": "Obyektni faqat matnli tavsif bilan saqlash usulini",
+        "D": "Obyektni apparat xotirasiga siqilgan shaklda joylash usulini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 104,
+      "savol": "TensorFlow freymvorkining asosiy kuchli tomoni nimada?",
+      "variantlar": {
+        "A": "Keng ekotizim va server, mobil hamda veb deployment imkoniyatida",
+        "B": "GPU ni umuman talab qilmaydigan freymvork ekanligida",
+        "C": "Faqat matnli hujjatlar bilan ishlashga moslashganida",
+        "D": "Faqat nazariy tajribalar uchun yaroqli bo‘lishida"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 105,
+      "savol": "PyTorch nima uchun tadqiqot muhitida keng ommalashgan?",
+      "variantlar": {
+        "A": "Dinamik hisoblash grafigi va moslashuvchan tajriba muhiti mavjudligi uchun",
+        "B": "Faqat tayyor modellardan foydalanishga ruxsat bergani uchun",
+        "C": "Mobil ilovalarda yagona majburiy platforma bo‘lgani uchun",
+        "D": "Apache Mahout o‘rnini to‘liq bosgani uchun"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 106,
+      "savol": "Apache Mahout qaysi turdagi vazifalarda ko‘proq foydaliroq hisoblanadi?",
+      "variantlar": {
+        "A": "Faqat biometrik verifikatsiya uchun maxsus mo‘ljallanganida",
+        "B": "Chuqur yuzni tanib olishning asosiy embedding freymvorki sifatida",
+        "C": "Katta ma’lumotli va taqsimlangan mashinaviy o‘qitish vazifalarida",
+        "D": "Faqat konvolyutsion neyron tarmoqlarni mobilga chiqarishda"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 107,
+      "savol": "FaceNet tushunchasi qaysi javobda to‘g‘ri ifodalangan?",
+      "variantlar": {
+        "A": "Faqat veb ilovalar uchun mo‘ljallangan JavaScript kutubxonasi",
+        "B": "Katta ma’lumotlarni qayta ishlovchi taqsimlangan server platformasi",
+        "C": "Yuzni tanib olish uchun embedding asosida ishlovchi kuchli model yondashuvi",
+        "D": "Faqat matnlarni klasterlash uchun ishlab chiqilgan algoritm"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 108,
+      "savol": "Triplet loss algoritmining asosiy maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Sinflar sonini avtomatik ravishda kamaytirib borishdan",
+        "B": "Barcha embeddinglarni bir xil markaz atrofida yig‘ishdan",
+        "C": "Faqat manfiy namunalarni modeldan butunlay chiqarib tashlashdan",
+        "D": "Bir shaxsga tegishli embeddinglarni yaqin, turli shaxsnikini uzoq joylashtirishdan"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 109,
+      "savol": "Tanib olish pipeline ida oldindan ishlov berish nima uchun muhim?",
+      "variantlar": {
+        "A": "Chunki u barcha xatoliklarni nazariy jihatdan nolga tushiradi",
+        "B": "Chunki u modelni o‘qitmasdan ham yakuniy qaror chiqarib beradi",
+        "C": "Chunki u freymvork tanlash zaruratini butunlay bekor qiladi",
+        "D": "Chunki hizalash, normalizatsiya va shovqinni kamaytirish natijani yaxshilaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 110,
+      "savol": "Qaysi holatda TensorFlow, qaysi holatda PyTorch tanlash ma’qulroq bo‘ladi?",
+      "variantlar": {
+        "A": "Deployment uchun TensorFlow, tez tajriba va tadqiqot uchun esa PyTorch",
+        "B": "Har qanday vazifada faqat PyTorch, qolganlari esa ortiqcha hisoblanadi",
+        "C": "Ikkalasi ham faqat Apache Mahout bilan birga ishlatilgandagina foydali",
+        "D": "Har qanday vazifada faqat TensorFlow, qolganlari esa keraksiz hisoblanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 111,
+      "savol": "Tasvirlarni tavsiflash deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Tasvirni ekranda kattalashtirib vizual kuzatish bilan cheklanish",
+        "B": "Tasvirni tasodifiy ravishda bo‘laklarga ajratib qayta yig‘ish",
+        "C": "Tasvirni faqat rangli ko‘rinishda saqlash va arxivga joylashtirish",
+        "D": "Tasvirdagi muhim xususiyatlarni sonli yoki mantiqiy ko‘rinishda ifodalash"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 112,
+      "savol": "Nima sababdan xom piksel qiymatlari tanib olish uchun har doim ham yetarli bo‘lmaydi?",
+      "variantlar": {
+        "A": "Chunki ular doimo faqat bitta obyekt haqida to‘liq axborot beradi",
+        "B": "Chunki ular klassifikator uchun ortiqcha aniq va tushunarli bo‘ladi",
+        "C": "Chunki ular faqat rangsiz tasvirlarda ishlatilishi mumkin bo‘ladi",
+        "D": "Chunki ular mazmuniy va ajratuvchi xususiyatlarni bevosita ifodalamaydi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 113,
+      "savol": "Rang asosidagi tavsiflashning asosiy afzalligi nimada?",
+      "variantlar": {
+        "A": "U obyekt shakli va joylashuvini doimo to‘liq aks ettiradi",
+        "B": "U segmentatsiyasiz ham barcha obyektlarni aniq ajratib beradi",
+        "C": "U sodda hisoblanadi va tasvirning umumiy ko‘rinishini tez ifodalaydi",
+        "D": "U faqat chuqur neyron tarmoqlari bilan birga ishlatiladi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 114,
+      "savol": "Kontur va shakl belgilar qaysi vaziyatlarda ayniqsa muhim hisoblanadi?",
+      "variantlar": {
+        "A": "Obyektning geometrik chegaralari mutlaqo ahamiyatsiz bo‘lgan holatlarda",
+        "B": "Obyektning tashqi tuzilishi farqlovchi belgi bo‘lib xizmat qilgan holatlarda",
+        "C": "Tasvirda faqat rang o‘zgarishlari mavjud bo‘lgan holatlarda",
+        "D": "Ma’lumotlar faqat matnli belgilar bilan ifodalangan holatlarda"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 115,
+      "savol": "Tekstura belgilarining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Tasvirdagi obyekt nomini avtomatik ravishda yozib berishdan",
+        "B": "Rang kanallarini butunlay yo‘q qilib, binar ko‘rinishga o‘tkazishdan",
+        "C": "Tasvir yuzasidagi ichki takrorlanuvchi va statistik strukturalarni ifodalashdan",
+        "D": "Tasvirning faqat tashqi kontur uzunligini hisoblashdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 116,
+      "savol": "Oldindan ishlov berish bosqichi nima uchun muhim hisoblanadi?",
+      "variantlar": {
+        "A": "Chunki u tasvirni segmentatsiyasiz ham to‘liq tanib olishga majbur qiladi",
+        "B": "Chunki u klassifikatorni o‘qitmasdan yakuniy sinfni darhol aniqlab beradi",
+        "C": "Chunki u shovqinni kamaytirib, keyingi segmentatsiya va tavsiflashni yaxshilaydi",
+        "D": "Chunki u barcha belgilarni avtomatik ravishda teng va foydali qiladi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 117,
+      "savol": "Segmentatsiya yoki qiziqarli sohani ajratish bosqichining maqsadi nimadan iborat?",
+      "variantlar": {
+        "A": "Klassifikatsiyani bajarib bo‘lgach natijani xotirada saqlab qolishdan",
+        "B": "Faqat tasvir o‘lchamini o‘zgartirib, belgilarni olib tashlashdan",
+        "C": "Tasvirning barcha piksellarini bir xil qiymatga keltirib qo‘yishdan",
+        "D": "Tahlil uchun zarur bo‘lgan obyekt yoki fragmentni tasvirdan ajratib olishdan"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 118,
+      "savol": "Belgilar vektorini shakllantirish nimani anglatadi?",
+      "variantlar": {
+        "A": "Tasvirni faqat grafik muharrirda qayta chizish jarayonini",
+        "B": "Ajratilgan xususiyatlarni yagona sonli tavsif ko‘rinishiga birlashtirishni",
+        "C": "Barcha piksellarni tartibsiz ravishda jadvalga joylashtirishni",
+        "D": "Tasvirni yangi fayl nomi bilan saqlash jarayonini"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 119,
+      "savol": "Klassik belgilar bilan chuqur o‘rganilgan belgilar o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Birinchisi faqat tasvirga, ikkinchisi esa faqat matnga tegishli bo‘ladi",
+        "B": "Birinchisi qo‘lda tanlanadi, ikkinchisi esa model ichida avtomatik o‘rganiladi",
+        "C": "Birinchisi har doim aniqroq, ikkinchisi esa har doim xatoliroq bo‘ladi",
+        "D": "Birinchisi segmentatsiyasiz ishlaydi, ikkinchisi esa faqat segmentatsiyada ishlaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 120,
+      "savol": "Klassifikatorni tanlangan belgilar tabiatiga mos tanlash nega muhim?",
+      "variantlar": {
+        "A": "Chunki klassifikator turi tasvir sifati va belgilarga umuman bog‘liq bo‘lmaydi",
+        "B": "Chunki belgi turi va ajratuvchanligi modelning yakuniy aniqligiga bevosita ta’sir qiladi",
+        "C": "Chunki barcha klassifikatorlar har qanday belgida bir xil natija beradi",
+        "D": "Chunki faqat klassifikatorning nomi natijaning to‘g‘ri chiqishini ta’minlaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 121,
+      "savol": "Tasvirlarni tanib olish texnologiyasining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Tasvirlarni faqat xotirada saqlash va formatlar bo‘yicha tartiblashdan",
+        "B": "Kamera qurilmasining texnik parametrlarini avtomatik nazorat qilishdan",
+        "C": "Piksellarni tasodifiy ravishda qayta joylashtirib yangi ko‘rinish yaratishdan",
+        "D": "Vizual ma’lumotdan semantik mazmun ajratib, obyektni aniqlash va tasniflashdan"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 122,
+      "savol": "Raqamli tasvirning piksel va kanal modeli qanday tushuniladi?",
+      "variantlar": {
+        "A": "Tasvir faqat geometrik shakllar yig‘indisi sifatida qaraladigan modeldir",
+        "B": "Tasvir faqat kontur koordinatalari orqali beriladigan sodda jadvaldir",
+        "C": "Tasvir piksel qiymatlari va rang kanallari orqali ifodalangan sonli maydondir",
+        "D": "Tasvir faqat matnli tavsif bilan ifodalanuvchi axborot shaklidir"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 123,
+      "savol": "Tasvirni tanib olishning asosiy bosqichlari qaysi ketma-ketlikda bajariladi?",
+      "variantlar": {
+        "A": "Tasvir olish, oldindan ishlov, belgi ajratish, tasniflash va natijani baholash",
+        "B": "Faqat tasvir olish va darhol yakuniy klassifikatsiya qilish",
+        "C": "Avval segmentatsiya, keyin kamera sozlash va oxirida piksel yozish",
+        "D": "Natijani chiqarish, keyin tasvir olish va so‘ng belgilarni kamaytirish"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 124,
+      "savol": "Oldindan qayta ishlash bosqichi nima uchun zarur hisoblanadi?",
+      "variantlar": {
+        "A": "Tasvirdagi barcha belgilarni avtomatik ravishda tenglashtirish uchun",
+        "B": "Tasvirdagi shovqinni kamaytirib, keyingi tahlil uchun qulay muhit yaratish uchun",
+        "C": "Kamera kalibrlashini butunlay bekor qilish uchun",
+        "D": "Modelni o‘qitmasdan turib yakuniy sinfni aniqlash uchun"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 125,
+      "savol": "Belgi ajratish bosqichining asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Kameradan kelgan signalni bevosita arxivga yozishdan",
+        "B": "Obyektni boshqa obyektlardan farqlovchi informativ xususiyatlarni topishdan",
+        "C": "Tasvirni faqat kichik hajmli faylga aylantirib qo‘yishdan",
+        "D": "Tasvirdagi barcha piksellarni bitta qiymatga tenglashtirishdan"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 126,
+      "savol": "Ko‘ruv tizimi deganda nima tushuniladi?",
+      "variantlar": {
+        "A": "Faqat bitta kamera va monitor orasidagi oddiy aloqa vositasi",
+        "B": "Tasvirlarni saqlash uchun ishlatiladigan oddiy xotira qurilmasi",
+        "C": "Faqat grafik tasvirlarni chizishga mo‘ljallangan dasturiy paket",
+        "D": "Tasvirni olish, qayta ishlash, tahlil qilish va qaror uzatishni bajaruvchi majmua"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 127,
+      "savol": "Passiv va faol ko‘ruv tizimlari o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Passiv tizim chuqur o‘qitadi, faol tizim esa faqat klassik usullarni qo‘llaydi",
+        "B": "Faol tizim qo‘shimcha nurlanishdan, passiv tizim esa mavjud yorug‘likdan foydalanadi",
+        "C": "Faol tizim apparatsiz, passiv tizim esa faqat sensor bilan ishlaydi",
+        "D": "Passiv tizim faqat videoda, faol tizim esa faqat rasmlarda ishlaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 128,
+      "savol": "OpenCV kutubxonasining kompyuter ko‘rishdagi asosiy ahamiyati nimada?",
+      "variantlar": {
+        "A": "Tasvirni yuklashdan obyekt topishgacha bo‘lgan ko‘plab amallarni tayyor berishida",
+        "B": "Faqat rangli tasvirlar bilan ishlay oladigan cheklangan kutubxona ekanida",
+        "C": "Faqat apparat kalibrlash uchun mo‘ljallangan servis vositasi bo‘lishida",
+        "D": "Faqat nazariy formulalarni saqlovchi ma’lumotnoma bazasi bo‘lishida"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 129,
+      "savol": "Thresholding usuli qaysi vazifalarda ayniqsa samarali hisoblanadi?",
+      "variantlar": {
+        "A": "Faqat video oqimida harakat trayektoriyasini qurishda samarali bo‘ladi",
+        "B": "Faqat neyron tarmoqdagi og‘irliklarni yangilashda samarali bo‘ladi",
+        "C": "Tasvirni binar ko‘rinishga o‘tkazib, hujjat va kontur ajratishda samarali bo‘ladi",
+        "D": "Faqat rangli tasvirni uch o‘lchovli modellashtirishda samarali bo‘ladi"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 130,
+      "savol": "OpenCV va chuqur o‘qitish modellarini birgalikda ishlatish qanday afzallik beradi?",
+      "variantlar": {
+        "A": "Klassik qayta ishlash va zamonaviy inferensni bitta amaliy pipeline da birlashtiradi",
+        "B": "Barcha tasvirlarni o‘qitishsiz va baholashsiz darhol tanib oladi",
+        "C": "Chuqur modelni butunlay keraksiz qilib, faqat filtrlar bilan ishlashga o‘tadi",
+        "D": "Faqat apparat xarajatlarini nol darajaga tushirib yuboradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 131,
+      "savol": "Video ma’lumotlarda obyektlarni aniqlash nega statik tasvirdagiga nisbatan murakkabroq hisoblanadi?",
+      "variantlar": {
+        "A": "Chunki video tahlilda faqat obyektning rangi emas, uning materiali ham aniqlanadi",
+        "B": "Chunki videoda barcha obyektlar har doim fon bilan to‘liq bir xil ko‘rinishda bo‘ladi",
+        "C": "Chunki videoni qayta ishlashda klassifikatsiya bosqichi umuman ishtirok etmaydi",
+        "D": "Chunki video oqimda fazoviy belgilarga qo‘shimcha ravishda vaqt bo‘yicha bog‘liqlik ham mavjud"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 132,
+      "savol": "Fazoviy axborot deganda video tahlilda nimani tushunish to‘g‘ri bo‘ladi?",
+      "variantlar": {
+        "A": "Kadr ichidagi shakl, kontur, tekstura, rang va chuqur belgilar haqidagi ma’lumotni",
+        "B": "Kadrlar sonining umumiy qiymati va video davomiyligini",
+        "C": "Obyektning vaqt bo‘yicha siljishi, tezligi va yo‘nalishi haqidagi ma’lumotni",
+        "D": "Faqat kameraning texnik parametrlariga oid xizmat ma’lumotini"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 133,
+      "savol": "Kadrlar farqi usulining asosiy mohiyati nimadan iborat?",
+      "variantlar": {
+        "A": "Ketma-ket ikki kadr orasidagi piksel farqini hisoblab, harakatli hududlarni topishdan",
+        "B": "Video oqimdagi barcha kadrlarni avval klasterlab, keyin guruhlashdan",
+        "C": "Har bir kadr uchun alohida centroid hisoblab, sinf markazini topishdan",
+        "D": "Faqat obyektning kontur uzunligini baholab, fonni e’tiborsiz qoldirishdan"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 134,
+      "savol": "Fonni ayirish yondashuvi qaysi sharoitda ayniqsa samarali ishlaydi?",
+      "variantlar": {
+        "A": "Kamera doimiy silkinib turgan va fon murakkab o‘zgaradigan sharoitda",
+        "B": "Har bir kadrda butun sahna bir xil tezlikda harakatlangan holatda",
+        "C": "Kamera statik bo‘lgan va sahna foni nisbatan barqaror saqlanadigan holatda",
+        "D": "Obyektlar juda tez aylangan va rakurs keskin almashgan vaziyatda"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 135,
+      "savol": "Optik oqim yondashuvi video tahlilda qanday afzallik beradi?",
+      "variantlar": {
+        "A": "U faqat obyektning sinfini topadi, lekin harakatni ifodalamaydi",
+        "B": "U harakatning yo‘nalishi va tezligini baholashga yordam beradi",
+        "C": "U videoni siqish artefaktlarini butunlay yo‘q qilib tashlaydi",
+        "D": "U barcha obyektlarni bir xil identifikator bilan belgilaydi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 136,
+      "savol": "Bir bosqichli va ikki bosqichli detektorlar o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Bir bosqichli detektor odatda tezroq, ikki bosqichli detektor esa ko‘pincha aniqroq bo‘ladi",
+        "B": "Ikki bosqichli detektor faqat videoda, bir bosqichli detektor esa faqat rasmda ishlaydi",
+        "C": "Ikki bosqichli detektor klassifikatsiyani bekor qiladi, bir bosqichli detektor esa saqlab qoladi",
+        "D": "Bir bosqichli detektor faqat tracking, ikki bosqichli detektor esa faqat segmentatsiya bajaradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 137,
+      "savol": "Tracking-by-detection yondashuvi nimani anglatadi?",
+      "variantlar": {
+        "A": "Avval detektor obyektni topadi, so‘ng tracker uni vaqt bo‘yicha identifikator bilan olib boradi",
+        "B": "Avval fon modeli quriladi, keyin barcha obyektlar klasterlash orqali ajratiladi",
+        "C": "Avval tracker yeni obyekt sinfini taxmin qiladi, keyin detektor markazni hisoblaydi",
+        "D": "Avval video segmentatsiya qilinadi, keyin faqat statik kadrlar qayta ishlanadi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 138,
+      "savol": "Kalman filter kuzatuv tizimlarida qanday vazifani bajaradi?",
+      "variantlar": {
+        "A": "Obyektning rang histogrammasini chuqur modelga uzatish vazifasini",
+        "B": "Har bir kadrdagi barcha bounding box larni tasodifiy yangilash vazifasini",
+        "C": "Obyektning oldingi holatlaridan kelib chiqib keyingi holatini bashorat qilish vazifasini",
+        "D": "Obyekt identifikatorlarini qoidaviy klassifikatsiya orqali almashtirish vazifasini"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 139,
+      "savol": "IoU mezoni video obyekt tahlilida nimani o‘lchaydi?",
+      "variantlar": {
+        "A": "Video oqimdagi umumiy kadrlar sonining barqarorligini",
+        "B": "Obyektning tezligi bilan yo‘nalishi orasidagi nisbatni",
+        "C": "Trackerning obyektni nechta kadr davomida kuzata olganini",
+        "D": "Bashorat qilingan va haqiqiy chegaralovchi to‘rtburchaklar moslik darajasini"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 140,
+      "savol": "Video obyektlarni aniqlash tizimida aniqlik va tezlik o‘rtasidagi muvozanat nima uchun muhoim?",
+      "variantlar": {
+        "A": "Chunki tizim faqat tez ishlashi kerak, natijaning ishonchliligi ikkinchi darajali",
+        "B": "Chunki video tahlilda faqat aniqlik kerak, real vaqt talabi amalda ahamiyatsiz",
+        "C": "Chunki aniqlik oshgani sari kuzatuv algoritmlariga umuman ehtiyoj qolmaydi",
+        "D": "Chunki amaliy tizimda ishonchli natija va real vaqtga yaqin ishlash birgalikda zarur"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 141,
+      "savol": "Tovushni tanish va nutqni tanish o‘rtasidagi asosiy farq nimada?",
+      "variantlar": {
+        "A": "Tovushni tanish lingvistik mazmunni, nutqni tanish esa faqat texnik signalni aniqlaydi",
+        "B": "Tovushni tanish audio muhit hodisalarini, nutqni tanish esa lingvistik mazmunni aniqlaydi",
+        "C": "Tovushni tanish faqat mikrofon bilan, nutqni tanish esa faqat fayl bilan ishlaydi",
+        "D": "Tovushni tanish statistik, nutqni tanish esa faqat geometrik yondashuvga asoslanadi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 142,
+      "savol": "Nutqni tanib olish tizimining klassik arxitekturasidagi asosiy modullar qaysilar?",
+      "variantlar": {
+        "A": "Sensor drayveri, grafika moduli va neyron kontroller modullari",
+        "B": "Faoll akustik filtr, video modul va segmentator modullari",
+        "C": "Akustik model, talaffuz lug‘ati va til modeli modullari",
+        "D": "Faqat mikrofon, kuchaytirgich va audio arxivlash modullari"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 143,
+      "savol": "Akustik modelning asosiy vazifasi nimadan iborat?",
+      "variantlar": {
+        "A": "Til modelidagi ehtimolliklarni grammatik qoidalarga almashtirishdan",
+        "B": "So‘zlarning yozma shaklini fonemalarga bevosita aylantirib berishdan",
+        "C": "Akustik belgilar bilan fonetik birliklar orasidagi bog‘lanishni modellashtirishdan",
+        "D": "Audio signalni bevosita yakuniy matnga hech bir oraliq bosqichsiz o‘tkazishdan"
+      },
+      "togri_javob": "C"
+    },
+    {
+      "id": 144,
+      "savol": "Talaffuz lug‘atining nutqni tanib olishdagi roli nimada?",
+      "variantlar": {
+        "A": "U mikrofon signalini matndan audio ko‘rinishga o‘tkazadi",
+        "B": "U so‘zning yozma ko‘rinishi bilan fonetik ketma-ketligi orasida ko‘prik vazifasini bajaradi",
+        "C": "U faqat signal amplitudasini normallashtirish uchun ishlatiladi",
+        "D": "U shovqinni kamaytirib, freymlash jarayonini avtomatlashtiradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 145,
+      "savol": "Til modeli nutqni tanib olish tizimida nima uchun kerak bo‘ladi?",
+      "variantlar": {
+        "A": "U faqat mikrofon qurilmasining texnik parametrlarini boshqarish uchun kerak bo‘ladi",
+        "B": "U akustik signalni bevosita spektral komponentalarga ajratish uchun kerak bo‘ladi",
+        "C": "U audio signalning sampling rate qiymatini avtomatik o‘zgartirish uchun kerak bo‘ladi",
+        "D": "U ehtimoliy so‘zlar ketma-ketligidan tilga ko‘ra eng mos variantni tanlash uchun kerak bo‘ladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 146,
+      "savol": "Nima sababdan xom audio signal to‘g‘ridan-to‘g‘ri matnga aylantirilmaydi?",
+      "variantlar": {
+        "A": "Chunki audio signal har doim yozma matn bilan bir xil shaklda saqlanadi",
+        "B": "Chunki avval signal ichidan foydali akustik xususiyatlar ajratilishi kerak bo‘ladi",
+        "C": "Chunki matnga aylantirish uchun faqat grafik tasvirlar talab qilinadi",
+        "D": "Chunki xom signal lingvistik axborotni to‘liq va tayyor holatda beradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 147,
+      "savol": "Voice Activity Detection texnologiyasi qanday amaliy foyda beradi?",
+      "variantlar": {
+        "A": "U sukut va nutqsiz segmentlarni ajratib, ortiqcha hisoblashni kamaytiradi",
+        "B": "U har bir fonemaga mos so‘z chastotasini alohida hisoblab beradi",
+        "C": "U audio oqimni bevosita sintaktik tahlil natijasiga aylantiradi",
+        "D": "U talaffuz lug‘atidagi barcha so‘zlarni grammatik tartibda joylashtiradi"
+      },
+      "togri_javob": "A"
+    },
+    {
+      "id": 148,
+      "savol": "PocketSphinx ning asosiy afzalliklaridan biri qaysi?",
+      "variantlar": {
+        "A": "U faqat katta serverlarda ishlaydigan og‘ir korporativ recognizer hisoblanadi",
+        "B": "U faqat internetga ulangan bulutli arxitektura bilan ishlaydi",
+        "C": "U faqat end-to-end transformer modellarini qo‘llab-quvvatlaydi",
+        "D": "U yengil, offline va resurs tejamkor recognizer sifatida ishlay oladi"
+      },
+      "togri_javob": "D"
+    },
+    {
+      "id": 149,
+      "savol": "Grammar va statistical language model o‘rtasidagi amaliy farq nimada?",
+      "variantlar": {
+        "A": "Grammar akustik modelni almashtiradi, statistik model esa lug‘atni bekor qiladi",
+        "B": "Grammar cheklangan buyruqlar uchun qulay, statistik til modeli esa erkinroq nutq uchun mos",
+        "C": "Grammar faqat audio fayllar uchun, statistik model esa faqat mikrofon oqimi uchun mos",
+        "D": "Grammar signalni freymlarga bo‘ladi, statistik model esa shovqinni filtrlab beradi"
+      },
+      "togri_javob": "B"
+    },
+    {
+      "id": 150,
+      "savol": "CMU Sphinx / PocketSphinx kutubxonalarining zamonaviy cheklovlaridan biri nimada?",
+      "variantlar": {
+        "A": "Ular faqat onlayn rejimda ishlaydi va offline muhitni qo‘llab-quvvatlaydi",
+        "B": "Ular kuchli neyron ASR tizimlariga nisbatan murakkab erkin nutqda pastroq aniqlik ko‘rsatishi mumkin",
+        "C": "Ular faqat videoni qayta ishlaydi va audio bilan ishlay olmaydi",
+        "D": "Ular talaffuz lug‘ati bilan umuman ishlaymadiygand tizimlar hisoblanadi"
+      },
+      "togri_javob": "B"
+    }
+  ]
+}

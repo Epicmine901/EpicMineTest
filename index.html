@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bosh Sahifa - Fanlar Ro'yxati</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <div class="top-header">
+    <a href="index.html" class="brand-logo">EpicMineTest</a>
+  </div>
+  <div class="main-container">
+    <header class="main-header">
+      <h1 class="main-title">Fanlar Akademiyasi</h1>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Fanni nomini yozing..." autocomplete="off">
+        <button id="searchBtn" class="btn btn-next">Qidirish</button>
+      </div>
+    </header>
+
+    <main class="content-area">
+      <div id="fanlarList" class="fanlar-grid">
+        <div class="loading-text">Fanlar yuklanmoqda...</div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Global o'zgaruvchi fanlar ro'yxatini saqlash uchun
+    let allSubjects = [];
+
+    // Fanlarni JSON'dan yuklab olish funksiyasi
+    async function loadSubjects() {
+      try {
+        const response = await fetch('jsons/fanlar.json');
+        if (!response.ok) throw new Error("fanlar.json fayli topilmadi.");
+        
+        allSubjects = await response.json();
+        renderSubjects(allSubjects);
+      } catch (error) {
+        console.error("Xatolik:", error.message);
+        document.getElementById('fanlarList').innerHTML = `<div class="error-text">Ma'lumotlarni yuklab bo'lmadi!</div>`;
+      }
+    }
+
+    // Fanlarni ekranga dinamik chizish funksiyasi
+    function renderSubjects(subjectsList) {
+      const container = document.getElementById('fanlarList');
+      container.innerHTML = ''; // Oldingilarini tozalash
+
+      if (subjectsList.length === 0) {
+        container.innerHTML = `<div class="no-result">Hech qanday fan topilmadi.</div>`;
+        return;
+      }
+
+      subjectsList.forEach(subject => {
+        const card = document.createElement('div');
+        card.className = 'subject-card';
+        
+        // Fanga bosilganda menu.html?FanId=id sahifasiga yuboradi
+        card.onclick = () => {
+          window.location.href = `menu.html?FanId=${subject.id}`;
+        };
+
+        card.innerHTML = `
+          <div class="subject-icon">📚</div>
+          <h3 class="subject-name">${subject.Fan}</h3>
+          <p class="subject-desc">${subject.Discrption || 'Ushbu fan bo\'yicha testlar majmuasi.'}</p>
+        `;
+        
+        container.appendChild(card);
+      });
+    }
+
+    // Dinamik Qidiruv tizimi (Har bir harf yozilganda avtomat yangilanadi)
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const filtered = allSubjects.filter(subject => 
+        subject.Fan.toLowerCase().includes(query)
+      );
+      renderSubjects(filtered);
+    });
+
+    // Qidirish tugmasi bosilgandagi holat
+    document.getElementById('searchBtn').onclick = () => {
+      const query = searchInput.value.toLowerCase().trim();
+      const filtered = allSubjects.filter(subject => 
+        subject.Fan.toLowerCase().includes(query)
+      );
+      renderSubjects(filtered);
+    };
+
+    // Sahifa yuklanganda ishga tushirish
+    window.onload = loadSubjects;
+  </script>
+</body>
+</html>
