@@ -840,3 +840,203 @@ input:checked + .slider-round:before {
     width: 100%;
   }
 }
+/* ==========================================================================
+   8. MOBIL QURILMALAR VA TELEFONLAR UCHUN CSS STIL (RESPONSIVE)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Umumiy sahifa sozlamalari */
+  body {
+    padding: 80px 12px 20px 12px; /* Tepadan logo uchun joy qoldiramiz */
+    align-items: flex-start;
+  }
+
+  /* 1. Quiz va Menu Konteynerlari */
+  .quiz-container, .menu-container {
+    grid-template-columns: 1fr !important; /* Telefonlarda hamma narsa 1 ustun bo'ladi */
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* 2. Savollar bloki (Chap tomon) */
+  .question-block {
+    padding: 20px 15px;
+    min-height: auto; /* Telefon ekranida balandlik moslashuvchan bo'ladi */
+  }
+
+  .question-text {
+    font-size: 18px; /* Telefon uchun matn o'lchami */
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  /* Variantlar uchun */
+  .answer-option {
+    padding: 12px 15px;
+  }
+
+  .answer-option span, .fast-answer-text {
+    font-size: 15px;
+  }
+
+  .fast-answer-btn {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+  }
+
+  .fast-answer-badge {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  /* Navigatsiya tugmalari (Orqaga / Oldinga) */
+  .navigation-block {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  /* 3. Matritsa bloki (O'ng tomon) */
+  .matrix-block {
+    height: auto; /* Avtomatik balandlik */
+    max-height: none;
+    padding: 20px 15px;
+    order: 2; /* Telefon ekranida matritsa pastga tushadi */
+  }
+
+  .matrix-title {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  /* Savollar katakchalari telefon ekraniga moslashadi */
+  .matrix-grid {
+    grid-template-columns: repeat(auto-fit, minmax(38px, 1fr)) !important;
+    gap: 8px;
+  }
+
+  .matrix-grid.has-scroll {
+    max-height: 250px; /* Telefon uchun skroll hududini ixchamlashtiramiz */
+  }
+
+  .matrix-item {
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .submit-block {
+    margin-top: 15px;
+  }
+
+  .btn-submit {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  /* 4. Bosh sahifa (index.html) elementlari */
+  .main-title {
+    font-size: 24px;
+  }
+
+  .search-box {
+    flex-direction: column; /* Qidiruv paneli va tugmasi ustma-ust tushadi */
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .search-box input[type="text"] {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .search-box .btn {
+    width: 100%; /* Tugma to'liq kenglikda */
+    padding: 12px;
+  }
+
+  .fanlar-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Kartochkalar 1 qator bo'ladi */
+    gap: 15px;
+  }
+
+  .subject-card {
+    padding: 20px 15px;
+  }
+
+  /* 5. Sozlamalar sahifasi (menu.html) elementlari */
+  .test-card {
+    padding: 18px;
+    gap: 15px;
+  }
+
+  .card-icon {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .card-info h3 {
+    font-size: 18px;
+  }
+
+  .settings-block {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .inputs-row {
+    gap: 8px; /* Inputlar orasidagi masofa kamayadi */
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* 6. Natija sahifasi (result.html) elementlari */
+  .result-container {
+    padding: 25px 15px;
+  }
+
+  .result-title {
+    font-size: 24px;
+  }
+
+  .score-circle {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .score-circle::before {
+    width: 104px;
+    height: 104px;
+  }
+
+  .score-text {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .stat-value {
+    font-size: 18px;
+  }
+
+  .result-buttons {
+    flex-direction: column; /* Tugmalar ustma-ust joylashadi */
+    gap: 10px;
+  }
+
+  .btn-result {
+    width: 100%;
+    padding: 12px;
+  }
+}
