@@ -221,8 +221,8 @@ body {
 /* СОСТОЯНИЕ 1: На вопрос дали ответ (Красивый зеленый) */
 /* Matritsada xato javobni qizil qilish */
 .matrix-item.wrong {
-  background-color: #280000 !important;
-  border-color: #280000 !important;
+  background-color: #c55b04 !important;
+  border-color: #c55b04 !important;
   color: white !important;
 }
 /* To'g'ri javob yashil (oldingi holat) */
