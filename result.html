@@ -192,7 +192,7 @@
 
   // 4. fanlar.json dan fanning haqiqiy nomini o'qib topish
   try {
-    const response = await fetch('fanlar.json');
+    const response = await fetch('jsons/fanlar.json');
     if (response.ok) {
       const fanlar = await response.json();
       const joriyFan = fanlar.find(f => f.id == fanId);
