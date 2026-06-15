@@ -1040,3 +1040,17 @@ input:checked + .slider-round:before {
     padding: 12px;
   }
 }
+
+.btn, .fast-answer-btn, .answer-option {
+  /* Отключает выделение текста при двойном или быстром тапе */
+  -webkit-user-select: none; /* Safari/Chrome/Opera/Android */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Стандартное свойство */
+
+  /* Убирает стандартную синюю/серую подсветку области при нажатии в Chrome */
+  -webkit-tap-highlight-color: transparent;
+  
+  /* Оптимизирует задержку клика на мобильных (убирает 300мс задержку двойного тапа) */
+  touch-action: manipulation; 
+}
