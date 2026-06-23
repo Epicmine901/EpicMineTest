@@ -260,7 +260,7 @@
       "savol": "Prototiplashning nechta asosiy turi mavjud?",
       "variantlar": {
         "A": "6ta",
-        "B": "4 ta",
+        "B": "2 ta",
         "C": "3 ta",
         "D": "4 ta"
       },
@@ -297,7 +297,7 @@
         "C": "1 bosqich",
         "D": "4 bosqich"
       },
-      "togri_javob": "C"
+      "togri_javob": "A"
     },
     {
       "id": 28,
@@ -385,7 +385,7 @@
         "C": "4 qism",
         "D": "2 qism"
       },
-      "togri_javob": "D"
+      "togri_javob": "C"
     },
     {
       "id": 36,
@@ -539,7 +539,7 @@
         "C": "5",
         "D": "6"
       },
-      "togri_javob": "C"
+      "togri_javob": "B"
     },
     {
       "id": 50,
@@ -847,7 +847,7 @@
         "C": "7",
         "D": "2"
       },
-      "togri_javob": "A"
+      "togri_javob": "D"
     },
     {
       "id": 78,
