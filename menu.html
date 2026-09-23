@@ -28,6 +28,14 @@
           <p>Ikkinchi rejim: Maxsus interfeys orqali testlarni topshirish.</p>
         </div>
       </div>
+
+      <div class="test-card" onclick="GetJavobs('Javob.html')">
+        <div class="card-icon">📝</div>
+        <div class="card-info">
+          <h3>Javoblarni ko'rish</h3>
+          <p>Javoblarni ko'rish imkoniyati.</p>
+        </div>
+      </div>
     </div>
 
     <div class="settings-block">
@@ -122,7 +130,9 @@
         document.getElementById('subjectTitle').innerText = "Fan topilmadi!";
       }
     }
-
+    function GetJavobs(targetHtmlPage) {
+      window.location.href = `${targetHtmlPage}?FanId=${currentFanId}`;
+    }
     // Polzunok liniyasini (track) qizil/yashil rang bilan bo'yash va sinxronlash
     function updateSliderUi() {
       let slide1 = parseInt(sliderStart.value);
