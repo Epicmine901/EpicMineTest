@@ -10,78 +10,137 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/Epicmine901/EpicMineTest/refs/heads/main/stil.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Inter & Montserrat shriftlari -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            background-color: #f8fafc;
             color: #0f172a;
             -webkit-tap-highlight-color: transparent;
         }
 
         .glass-header {
-            background: rgba(255, 255, 255, 0.88);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
 
-        .question-card {
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .question-card:active {
-            transform: scale(0.99);
-        }
-
-        @media (min-width: 640px) {
-            .question-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 16px 32px -12px rgba(15, 23, 42, 0.08);
-            }
-        }
-
-        /* EPICMINETEST Glitch 3D Effect */
+        /* EPICMINETEST Glitch Logo Effect */
         .glitch-logo {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            position: relative;
-            display: inline-block;
             color: #0f172a;
             text-shadow: 
                 -1.5px -1.5px 0px #ff0055, 
                  1.5px  1.5px 0px #00e5ff;
-            transition: all 0.2s ease;
         }
 
-        .glitch-logo:hover {
-            text-shadow: 
-                -2.5px -2.5px 0px #ff0055, 
-                 2.5px  2.5px 0px #00e5ff;
+        /* --- Kartochka Rejimi Stili --- */
+        .card-style {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            margin-bottom: 20px;
         }
 
+        .card-answer-box {
+            background-color: #f0fdf4;
+            border: 1px solid #86efac;
+            border-radius: 14px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .card-badge {
+            width: 32px;
+            height: 32px;
+            background-color: #059669;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 13px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+        }
+
+        /* --- Ixcham Rejim Stili --- */
+        .compact-mode .question-item {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 12px 0 !important;
+            border-bottom: 1px solid #f1f5f9 !important;
+            margin-bottom: 0 !important;
+            border-radius: 0 !important;
+        }
+
+        .compact-mode .q-header {
+            display: none !important;
+        }
+
+        .compact-mode .q-title {
+            margin-bottom: 6px !important;
+        }
+
+        .compact-mode .card-answer-box {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 0 0 24px !important;
+            display: block !important;
+            box-shadow: none !important;
+        }
+
+        .compact-mode .card-badge {
+            display: inline !important;
+            background: transparent !important;
+            color: inherit !important;
+            font-weight: 600 !important;
+            font-size: inherit !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+            width: auto !important;
+            height: auto !important;
+        }
+
+        .compact-mode .card-badge::after {
+            content: ") ";
+        }
+
+        .compact-mode .q-answer-text {
+            display: inline !important;
+        }
+
+        /* Toast Animation */
         @keyframes toastIn {
-            from { opacity: 0; transform: translate(-50%, 20px) scale(0.95); }
-            to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+            from { opacity: 0; transform: translate(-50%, 20px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
         }
         .toast-show {
-            animation: toastIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation: toastIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
 
     <div>
-        <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-sm">
-            <div class="max-w-4xl mx-auto px-4 py-3 sm:py-4 flex items-center justify-between gap-3">
+        <header class="sticky top-0 z-50 glass-header border-b border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 py-3.5 flex items-center justify-between gap-3">
                 
                 <!-- Logo & Title -->
                 <div class="flex items-center space-x-3 min-w-0">
-                    <a href="index.html" class="flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-slate-900 text-white shadow-md shadow-slate-900/20 active:scale-95 transition">
-                        <i class="fa-solid fa-layer-group text-lg sm:text-xl"></i>
+                    <a href="index.html" class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900 text-white shadow-sm">
+                        <i class="fa-solid fa-layer-group text-lg"></i>
                     </a>
                     <div class="min-w-0">
                         <a href="index.html" class="glitch-logo text-base sm:text-xl leading-none block truncate">
@@ -92,8 +151,8 @@
                 </div>
 
                 <!-- Total Count Badge -->
-                <div class="flex-shrink-0 flex items-center space-x-2 bg-slate-100/90 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-2xl text-xs font-semibold text-slate-700 border border-slate-200/80 shadow-sm">
-                    <span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <div class="flex-shrink-0 flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     <span class="hidden xs:inline">Jami:</span>
                     <strong id="total-count" class="text-slate-900 font-bold">0</strong>
                 </div>
@@ -101,11 +160,11 @@
             </div>
         </header>
 
-        <main class="max-w-4xl mx-auto px-3.5 py-4 sm:px-6 sm:py-8">
+        <main class="max-w-4xl mx-auto px-4 py-6">
             
             <!-- Controls Toolbar -->
-            <div class="mb-5 sm:mb-8 space-y-3">
-                <div class="flex flex-row gap-2 sm:gap-3">
+            <div class="mb-6 space-y-3">
+                <div class="flex flex-row gap-2">
                     
                     <!-- Search Input -->
                     <div class="relative flex-grow">
@@ -114,60 +173,131 @@
                             type="text" 
                             id="search-input" 
                             placeholder="Savol yoki javobdan izlash..." 
-                            class="w-full pl-10 pr-9 py-2.5 sm:py-3.5 bg-white border border-slate-200/90 rounded-2xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition shadow-sm"
+                            class="w-full pl-10 pr-9 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 focus:outline-none focus:border-blue-500 shadow-sm"
                         >
-                        <button id="clear-search" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1 rounded-lg">
+                        <button id="clear-search" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1">
                             <i class="fa-solid fa-xmark text-sm"></i>
                         </button>
                     </div>
 
                     <!-- View Toggle Buttons -->
-                    <div class="flex bg-white border border-slate-200/90 rounded-2xl p-1 shadow-sm shrink-0">
-                        <button id="view-card" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-blue-600 bg-blue-50 transition flex items-center gap-1.5">
+                    <div class="flex bg-white border border-slate-200 rounded-xl p-1 shadow-sm shrink-0">
+                        <button id="view-card" class="px-3 py-1.5 rounded-lg text-xs font-bold text-blue-600 bg-blue-50 transition flex items-center gap-1.5">
                             <i class="fa-solid fa-border-all"></i>
                             <span class="hidden sm:inline">Kartochka</span>
                         </button>
-                        <button id="view-compact" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5">
+                        <button id="view-compact" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5">
                             <i class="fa-solid fa-list-ul"></i>
                             <span class="hidden sm:inline">Ixcham</span>
                         </button>
                     </div>
 
+                    <!-- Settings Button (Shesteryonka) -->
+                    <button id="open-settings-btn" class="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition shadow-sm shrink-0" title="Sozlamalar">
+                        <i class="fa-solid fa-gear text-base"></i>
+                    </button>
+
                 </div>
 
-                <div id="search-status" class="hidden text-xs font-medium text-slate-500 px-1 flex justify-between items-center">
-                    <span>Qidiruv bo'yicha topildi: <strong id="visible-count" class="text-blue-600 font-bold">0</strong> ta savol</span>
+                <div id="search-status" class="hidden text-xs font-medium text-slate-500 px-1">
+                    Qidiruv bo'yicha topildi: <strong id="visible-count" class="text-blue-600">0</strong> ta savol
                 </div>
             </div>
 
             <!-- Dynamic Questions Container -->
-            <div id="questions-container" class="space-y-3 sm:space-y-4">
-                <!-- Questions injected dynamically -->
+            <div id="questions-container">
+                <!-- Savollar dinamik ravishda chiqariladi -->
             </div>
 
             <!-- Empty state -->
-            <div id="no-results" class="hidden text-center py-12 px-4 bg-white/80 backdrop-blur rounded-3xl border border-slate-200/80 shadow-sm mt-4">
-                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-500 flex items-center justify-center mx-auto mb-3 text-lg border border-blue-100">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-800 mb-1">Hech narsa topilmadi</h4>
-                <p class="text-xs text-slate-500">Iltimos, boshqacha kalit so'z kiritib ko'ring.</p>
+            <div id="no-results" class="hidden text-center py-12 px-4 bg-white rounded-2xl border border-slate-200 mt-4">
+                <i class="fa-solid fa-magnifying-glass text-2xl text-slate-300 mb-2"></i>
+                <h4 class="text-sm font-bold text-slate-700">Hech narsa topilmadi</h4>
             </div>
 
         </main>
     </div>
 
-    <footer class="mt-auto py-5 border-t border-slate-200/80 bg-white/50 backdrop-blur">
-        <div class="max-w-4xl mx-auto px-4 text-center text-xs text-slate-400 font-medium">
-            &copy; <a href="index.html" class="font-bold text-slate-600 hover:text-blue-600 transition">EpicMineTest</a>. Barcha huquqlar himoyalangan.
+    <!-- Settings Modal Panel -->
+    <div id="settings-modal" class="hidden fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl border border-slate-100">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+                <h3 class="font-bold text-slate-800 text-base flex items-center gap-2">
+                    <i class="fa-solid fa-sliders text-blue-600"></i>
+                    Matn Sozlamalari
+                </h3>
+                <button id="close-settings-btn" class="text-slate-400 hover:text-slate-600 w-8 h-8 rounded-lg flex items-center justify-center hover:bg-slate-100">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <!-- Shrift Tanlash -->
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Shrift (Font Family)</label>
+                    <select id="font-family-select" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-slate-800 font-medium focus:outline-none focus:border-blue-500">
+                        <option value="'Inter', sans-serif">Inter (Default)</option>
+                        <option value="'Montserrat', sans-serif">Montserrat</option>
+                        <option value="'Roboto', sans-serif">Roboto</option>
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                    </select>
+                </div>
+
+                <!-- Font Size Slider -->
+                <div>
+                    <div class="flex justify-between font-semibold text-slate-700 mb-1">
+                        <span>Text o'lchami (Size)</span>
+                        <span id="font-size-val" class="text-blue-600">16px</span>
+                    </div>
+                    <input type="range" id="font-size-range" min="12" max="24" value="16" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Savol Color & Bold -->
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 space-y-2">
+                    <span class="font-semibold text-slate-700 block">Savol stili</span>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <input type="color" id="savol-color-picker" value="#1e293b" class="w-8 h-8 rounded border-none cursor-pointer bg-transparent">
+                            <span class="text-slate-600">Rangini tanlash</span>
+                        </div>
+                        <button id="savol-bold-btn" class="w-8 h-8 border border-slate-300 rounded-lg font-bold text-sm bg-white hover:bg-slate-100 text-slate-800 flex items-center justify-center" title="Jirniy">
+                            Ж
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Javob Color & Bold -->
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 space-y-2">
+                    <span class="font-semibold text-slate-700 block">Javob stili</span>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <input type="color" id="javob-color-picker" value="#334155" class="w-8 h-8 rounded border-none cursor-pointer bg-transparent">
+                            <span class="text-slate-600">Rangini tanlash</span>
+                        </div>
+                        <button id="javob-bold-btn" class="w-8 h-8 border border-slate-300 rounded-lg font-bold text-sm bg-white hover:bg-slate-100 text-slate-800 flex items-center justify-center" title="Jirniy">
+                            Ж
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Reset Button -->
+                <button id="reset-settings-btn" class="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-600 font-semibold rounded-xl transition">
+                    Sozlamalarni tiklash (Reset)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto py-5 border-t border-slate-200 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center text-xs text-slate-400">
+            &copy; <a href="index.html" class="font-bold text-slate-600 hover:text-blue-600">EpicMineTest</a>. Barcha huquqlar himoyalangan.
         </div>
     </footer>
 
-    <!-- Mobile Toast Notification -->
-    <div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur text-white text-xs font-semibold px-4 py-2.5 rounded-2xl shadow-xl z-50 flex items-center gap-2 border border-slate-800">
-        <div class="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-[10px]">
-            <i class="fa-solid fa-check"></i>
-        </div>
+    <!-- Toast Notification -->
+    <div id="toast" class="hidden fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-2xl shadow-xl z-50 flex items-center gap-2">
+        <i class="fa-solid fa-check text-emerald-400"></i>
         <span>Nusxalandi!</span>
     </div>
 
@@ -198,6 +328,7 @@
                     document.getElementById('total-count').innerText = testQuestions.length;
                     
                     renderQuestions(testQuestions);
+                    loadSavedSettings();
                 }
             } catch (err) {
                 console.error("Xatolik yuz berdi:", err);
@@ -227,28 +358,25 @@
                 const searchKeywords = `${savolText} ${togriKey} ${togriText}`.toLowerCase();
 
                 const cardHtml = `
-                    <div class="question-card bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-6 shadow-sm relative" data-keywords="${searchKeywords}">
-                        <div class="flex items-center justify-between gap-2 mb-2.5">
+                    <div class="question-item card-style" data-keywords="${searchKeywords}">
+                        <div class="q-header flex items-center justify-between gap-2 mb-3">
                             <div class="flex items-center gap-2">
-                                <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-blue-50 border border-blue-200/60 text-blue-600 text-xs font-bold flex items-center justify-center shrink-0">${num}</span>
-                                <span class="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider">SAVOL</span>
+                                <span class="w-6 h-6 rounded-md bg-blue-50 text-blue-600 text-xs font-bold flex items-center justify-center">${num}</span>
+                                <span class="text-[11px] font-bold text-slate-400 tracking-wider">SAVOL</span>
                             </div>
-                            <button onclick="copyQuestion(${index})" class="text-slate-400 active:text-blue-600 hover:text-blue-600 active:bg-blue-50 p-1.5 sm:p-2 rounded-xl text-xs flex items-center gap-1 transition" title="Nusxalash">
-                                <i class="fa-regular fa-copy text-sm"></i>
-                                <span class="text-[11px] font-semibold hidden sm:inline">Nusxalash</span>
+                            <button onclick="copyQuestion(${index})" class="text-slate-400 hover:text-blue-600 p-1 rounded text-xs flex items-center gap-1.5 transition">
+                                <i class="fa-regular fa-copy"></i>
+                                <span class="font-medium">Nusxalash</span>
                             </button>
                         </div>
                         
-                        <h3 class="text-sm sm:text-lg font-semibold text-slate-800 leading-snug mb-3.5 q-title">
-                            ${savolText}
+                        <h3 class="q-title text-base sm:text-lg font-bold text-slate-800 leading-snug mb-4">
+                            <span class="inline-compact-num hidden">${num}. </span>${savolText}
                         </h3>
                         
-                        <!-- Faqatgina bitta to'g'ri javob bloki -->
-                        <div class="bg-gradient-to-r from-emerald-50/90 to-teal-50/60 border border-emerald-300/80 rounded-xl p-3 sm:p-4 flex items-start gap-2.5 sm:gap-3.5 text-emerald-950 shadow-sm">
-                            <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0 uppercase shadow-md shadow-emerald-600/20">
-                                ${togriKey}
-                            </span>
-                            <p class="pt-0.5 text-xs sm:text-sm font-medium leading-relaxed q-answer">
+                        <div class="card-answer-box">
+                            <span class="card-badge">${togriKey}</span>
+                            <p class="q-answer-text text-sm font-medium text-slate-800">
                                 ${togriText}
                             </p>
                         </div>
@@ -258,7 +386,7 @@
             });
         }
 
-        // Qidiruv
+        // Search logic
         const searchInput = document.getElementById('search-input');
         const clearBtn = document.getElementById('clear-search');
         const searchStatus = document.getElementById('search-status');
@@ -267,7 +395,7 @@
 
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.question-card');
+            const items = document.querySelectorAll('.question-item');
             let count = 0;
 
             if (query.length > 0) {
@@ -278,18 +406,18 @@
                 searchStatus.classList.add('hidden');
             }
 
-            cards.forEach(card => {
-                const text = card.getAttribute('data-keywords');
+            items.forEach(item => {
+                const text = item.getAttribute('data-keywords');
                 if (text.includes(query)) {
-                    card.classList.remove('hidden');
+                    item.classList.remove('hidden');
                     count++;
                 } else {
-                    card.classList.add('hidden');
+                    item.classList.add('hidden');
                 }
             });
 
             visibleCountSpan.textContent = count;
-            noResults.classList.toggle('hidden', count > 0 || cards.length === 0);
+            noResults.classList.toggle('hidden', count > 0 || items.length === 0);
         });
 
         clearBtn.addEventListener('click', () => {
@@ -298,7 +426,7 @@
             searchInput.focus();
         });
 
-        // Nusxalash
+        // Copy function
         function copyQuestion(index) {
             const item = testQuestions[index];
             if (!item) return;
@@ -320,7 +448,7 @@
             document.execCommand('copy');
             document.body.removeChild(textarea);
 
-            showToast("Savol va javob nusxalandi!");
+            showToast("Nusxalandi!");
         }
 
         function showToast(message) {
@@ -335,29 +463,153 @@
             }, 2000);
         }
 
-        // Ko'rinish rejimini o'zgartirish
+        // Toggle View modes
         const container = document.getElementById('questions-container');
         const viewCardBtn = document.getElementById('view-card');
         const viewCompactBtn = document.getElementById('view-compact');
 
         viewCardBtn.addEventListener('click', () => {
-            container.className = "space-y-3 sm:space-y-4";
-            document.querySelectorAll('.question-card').forEach(c => {
-                c.classList.remove('p-3');
-                c.classList.add('p-4', 'sm:p-6');
-            });
-            viewCardBtn.className = "px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-blue-600 bg-blue-50 shadow-sm transition flex items-center gap-1.5";
-            viewCompactBtn.className = "px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5";
+            container.classList.remove('compact-mode');
+            document.querySelectorAll('.inline-compact-num').forEach(el => el.classList.add('hidden'));
+            
+            viewCardBtn.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold text-blue-600 bg-blue-50 transition flex items-center gap-1.5";
+            viewCompactBtn.className = "px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5";
+            localStorage.setItem('viewMode', 'card');
         });
 
         viewCompactBtn.addEventListener('click', () => {
-            container.className = "space-y-2";
-            document.querySelectorAll('.question-card').forEach(c => {
-                c.classList.remove('p-4', 'sm:p-6');
-                c.classList.add('p-3');
+            container.classList.add('compact-mode');
+            document.querySelectorAll('.inline-compact-num').forEach(el => el.classList.remove('hidden'));
+
+            viewCompactBtn.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold text-blue-600 bg-blue-50 transition flex items-center gap-1.5";
+            viewCardBtn.className = "px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5";
+            localStorage.setItem('viewMode', 'compact');
+        });
+
+        // --- Settings Modal & LocalStorage Logic ---
+        const settingsModal = document.getElementById('settings-modal');
+        const openSettingsBtn = document.getElementById('open-settings-btn');
+        const closeSettingsBtn = document.getElementById('close-settings-btn');
+
+        const fontFamilySelect = document.getElementById('font-family-select');
+        const fontSizeRange = document.getElementById('font-size-range');
+        const fontSizeVal = document.getElementById('font-size-val');
+
+        const savolColorPicker = document.getElementById('savol-color-picker');
+        const savolBoldBtn = document.getElementById('savol-bold-btn');
+        const javobColorPicker = document.getElementById('javob-color-picker');
+        const javobBoldBtn = document.getElementById('javob-bold-btn');
+        const resetSettingsBtn = document.getElementById('reset-settings-btn');
+
+        let isSavolBold = true;
+        let isJavobBold = false;
+
+        openSettingsBtn.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+        closeSettingsBtn.addEventListener('click', () => settingsModal.classList.add('hidden'));
+        settingsModal.addEventListener('click', (e) => {
+            if (e.target === settingsModal) settingsModal.classList.add('hidden');
+        });
+
+        function applyCustomStyles() {
+            const container = document.getElementById('questions-container');
+            container.style.fontFamily = fontFamilySelect.value;
+
+            const baseSize = parseInt(fontSizeRange.value, 10);
+            fontSizeVal.innerText = `${baseSize}px`;
+
+            document.querySelectorAll('.q-title').forEach(el => {
+                el.style.fontSize = `${baseSize}px`;
+                el.style.color = savolColorPicker.value;
+                el.style.fontWeight = isSavolBold ? '700' : '400';
             });
-            viewCompactBtn.className = "px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-blue-600 bg-blue-50 shadow-sm transition flex items-center gap-1.5";
-            viewCardBtn.className = "px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-slate-800 transition flex items-center gap-1.5";
+
+            document.querySelectorAll('.q-answer-text').forEach(el => {
+                el.style.fontSize = `${Math.max(baseSize - 2, 12)}px`;
+                el.style.color = javobColorPicker.value;
+                el.style.fontWeight = isJavobBold ? '700' : '400';
+            });
+
+            // Save to localStorage
+            const settings = {
+                fontFamily: fontFamilySelect.value,
+                fontSize: fontSizeRange.value,
+                savolColor: savolColorPicker.value,
+                javobColor: javobColorPicker.value,
+                isSavolBold: isSavolBold,
+                isJavobBold: isJavobBold
+            };
+            localStorage.setItem('appStyleSettings', JSON.stringify(settings));
+        }
+
+        function loadSavedSettings() {
+            // Load view mode
+            const savedViewMode = localStorage.getItem('viewMode');
+            if (savedViewMode === 'compact') {
+                viewCompactBtn.click();
+            }
+
+            // Load style settings
+            const savedSettings = localStorage.getItem('appStyleSettings');
+            if (savedSettings) {
+                try {
+                    const settings = JSON.parse(savedSettings);
+                    if (settings.fontFamily) fontFamilySelect.value = settings.fontFamily;
+                    if (settings.fontSize) fontSizeRange.value = settings.fontSize;
+                    if (settings.savolColor) savolColorPicker.value = settings.savolColor;
+                    if (settings.javobColor) javobColorPicker.value = settings.javobColor;
+                    
+                    if (settings.isSavolBold !== undefined) {
+                        isSavolBold = settings.isSavolBold;
+                        savolBoldBtn.classList.toggle('bg-blue-600', isSavolBold);
+                        savolBoldBtn.classList.toggle('text-white', isSavolBold);
+                    }
+                    if (settings.isJavobBold !== undefined) {
+                        isJavobBold = settings.isJavobBold;
+                        javobBoldBtn.classList.toggle('bg-blue-600', isJavobBold);
+                        javobBoldBtn.classList.toggle('text-white', isJavobBold);
+                    }
+                } catch (e) {
+                    console.error("Xotiradan yuklashda xatolik:", e);
+                }
+            } else {
+                savolBoldBtn.classList.add('bg-blue-600', 'text-white');
+            }
+
+            applyCustomStyles();
+        }
+
+        fontFamilySelect.addEventListener('change', applyCustomStyles);
+        fontSizeRange.addEventListener('input', applyCustomStyles);
+        savolColorPicker.addEventListener('input', applyCustomStyles);
+        javobColorPicker.addEventListener('input', applyCustomStyles);
+
+        savolBoldBtn.addEventListener('click', () => {
+            isSavolBold = !isSavolBold;
+            savolBoldBtn.classList.toggle('bg-blue-600', isSavolBold);
+            savolBoldBtn.classList.toggle('text-white', isSavolBold);
+            applyCustomStyles();
+        });
+
+        javobBoldBtn.addEventListener('click', () => {
+            isJavobBold = !isJavobBold;
+            javobBoldBtn.classList.toggle('bg-blue-600', isJavobBold);
+            javobBoldBtn.classList.toggle('text-white', isJavobBold);
+            applyCustomStyles();
+        });
+
+        resetSettingsBtn.addEventListener('click', () => {
+            fontFamilySelect.value = "'Inter', sans-serif";
+            fontSizeRange.value = 16;
+            savolColorPicker.value = "#1e293b";
+            javobColorPicker.value = "#334155";
+            isSavolBold = true;
+            isJavobBold = false;
+
+            savolBoldBtn.className = "w-8 h-8 border border-slate-300 rounded-lg font-bold text-sm bg-blue-600 text-white flex items-center justify-center";
+            javobBoldBtn.className = "w-8 h-8 border border-slate-300 rounded-lg font-bold text-sm bg-white text-slate-800 flex items-center justify-center";
+
+            localStorage.removeItem('appStyleSettings');
+            applyCustomStyles();
         });
 
         window.addEventListener('DOMContentLoaded', initMenu);
