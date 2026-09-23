@@ -1,0 +1,241 @@
+/* ==========================================================================
+   1. ОБЩИЕ СТИЛИ И СБРОС НАСТРОЕК
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body {
+  background: radial-gradient(circle at top, #25262e 0%, #141519 100%);
+  color: #e2e8f0;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   2. NATIJA SAHIFASI UCHUN STILLAR (result.html)
+   ========================================================================== */
+.result-container {
+  background-color: #181818;
+  border: 1px solid #333;
+  padding: 40px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.result-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.subject-name {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Doiraviy yoki katta foiz ko'rsatkichi */
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#2e7d32 0%, #333 0%);
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.score-circle::before {
+  content: '';
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: #181818;
+  border-radius: 50%;
+}
+
+.score-text {
+  position: relative;
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* Statistika slayder bloki */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.stat-value.correct { color: #4caf50; }
+.stat-value.wrong { color: #f44336; }
+
+/* Tugmalar bloki */
+.result-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-result {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-home {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.btn-home:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-restart {
+  background-color: #cc1818;
+  border: 1px solid #e53935;
+  color: #ffffff;
+}
+
+.btn-restart:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. BRAND LOGOTIP STILI (EpicMineTest)
+   ========================================================================== */
+.top-header {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 100;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.brand-logo:hover {
+  color: #cc1818; 
+  text-shadow: 0 0 15px rgba(204, 24, 24, 0.7);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. MOBIL QURILMALAR UCHUN MOSLASHUV (RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 992px) {
+  body {
+    padding-top: 80px;
+    align-items: flex-start;
+  }
+  
+  .top-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  .result-container {
+    padding: 25px 15px;
+  }
+
+  .result-title {
+    font-size: 24px;
+  }
+
+  .score-circle {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .score-circle::before {
+    width: 104px;
+    height: 104px;
+  }
+
+  .score-text {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .stat-value {
+    font-size: 18px;
+  }
+
+  .result-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-result {
+    width: 100%;
+    padding: 12px;
+  }
+}

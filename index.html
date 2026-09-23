@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bosh Sahifa - Fanlar Ro'yxati</title>
-  <link rel="stylesheet" href="stil.css">
-  <!-- Подключение FontAwesome для иконок -->
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="top-header">
     <a href="index.html" class="brand-logo">EpicMineTest</a>
   </div>
+
   <div class="main-container">
     <header class="main-header">
       <h1 class="main-title">Fanlar Akademiyasi</h1>
@@ -27,8 +27,7 @@
         </select>
 
         <input type="text" id="searchInput" class="search-input" placeholder="Fanni nomini yozing..." autocomplete="off">
-        
-        <button id="searchBtn" class="btn btn-next">Qidirish</button>
+        <button id="searchBtn" class="search-btn">Qidirish</button>
       </div>
     </header>
 
@@ -39,204 +38,47 @@
     </main>
   </div>
 
-  <!-- O'ng pastdagi kichik yumaloq knopka -->
-  <button id="open-share-modal-btn" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; width: 48px; height: 48px; border-radius: 50%; background-color: #e11d48; color: #ffffff; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; font-size: 18px; transition: transform 0.2s;" title="Ulashish">
+  <!-- Share Button & Modal -->
+  <button id="open-share-modal-btn" class="share-trigger-btn" title="Ulashish">
       <i class="fa-solid fa-share-nodes"></i>
   </button>
 
-  <!-- Ekran o'rtasida ochiladigan modal oyna -->
-  <div id="share-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75); backdrop-filter: blur(4px); z-index: 10000; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box;">
-      <div style="background-color: #18181b; width: 100%; max-width: 360px; border-radius: 16px; border: 1px solid #27272a; padding: 20px; color: #ffffff; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); font-family: sans-serif; box-sizing: border-box;">
-          
-          <!-- Modal Sarlavhasi -->
-          <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #27272a; padding-bottom: 12px; margin-bottom: 16px;">
-              <h3 style="margin: 0; font-size: 16px; font-weight: bold; color: #f4f4f5; display: flex; align-items: center; gap: 8px;">
-                  <i class="fa-solid fa-share-nodes" style="color: #e11d48;"></i> Ulashish
+  <div id="share-modal" class="modal-overlay">
+      <div class="modal-card">
+          <div class="modal-header">
+              <h3 class="modal-title">
+                  <i class="fa-solid fa-share-nodes highlight-icon"></i> Ulashish
               </h3>
-              <button id="close-share-modal-btn" style="background: transparent; border: none; color: #a1a1aa; font-size: 20px; cursor: pointer; padding: 4px 8px; border-radius: 6px;">
+              <button id="close-share-modal-btn" class="modal-close-btn">
                   <i class="fa-solid fa-xmark"></i>
               </button>
           </div>
 
-          <!-- Variantlar -->
-          <div style="display: flex; flex-direction: column; gap: 10px;">
-              <!-- Option 1 -->
-              <button id="share-simple-btn" style="display: flex; align-items: center; justify-content: space-between; width: 100%; background-color: #27272a; border: 1px solid #3f3f46; border-radius: 12px; padding: 12px 14px; color: #ffffff; text-align: left; cursor: pointer; transition: background-color 0.2s; box-sizing: border-box;">
+          <div class="modal-options">
+              <button id="share-simple-btn" class="share-option-btn">
                   <div>
-                      <strong style="display: block; font-size: 13px; color: #f4f4f5;">Oddiy ulashish</strong>
-                      <span style="font-size: 11px; color: #a1a1aa;">Saytning asosiy havolasini nusxalash</span>
+                      <strong class="option-title">Oddiy ulashish</strong>
+                      <span class="option-sub">Saytning asosiy havolasini nusxalash</span>
                   </div>
-                  <i class="fa-solid fa-link" style="color: #a1a1aa; font-size: 14px; margin-left: 8px;"></i>
+                  <i class="fa-solid fa-link icon-sub"></i>
               </button>
 
-              <!-- Option 2 -->
-              <button id="share-answers-btn" style="display: flex; align-items: center; justify-content: space-between; width: 100%; background-color: #27272a; border: 1px solid #3f3f46; border-radius: 12px; padding: 12px 14px; color: #ffffff; text-align: left; cursor: pointer; transition: background-color 0.2s; box-sizing: border-box;">
+              <button id="share-answers-btn" class="share-option-btn">
                   <div>
-                      <strong style="display: block; font-size: 13px; color: #f4f4f5;">Javoblar bilan ulashish</strong>
-                      <span style="font-size: 11px; color: #a1a1aa;">Barcha fanlar havolasini nusxalash</span>
+                      <strong class="option-title">Javoblar bilan ulashish</strong>
+                      <span class="option-sub">Barcha fanlar havolasini nusxalash</span>
                   </div>
-                  <i class="fa-solid fa-list-check" style="color: #10b981; font-size: 14px; margin-left: 8px;"></i>
+                  <i class="fa-solid fa-list-check icon-green"></i>
               </button>
           </div>
       </div>
   </div>
 
-  <!-- Nusxalandi Toast bildirishnomasi -->
-  <div id="toast" style="display: none; position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background-color: #18181b; border: 1px solid #3f3f46; color: #ffffff; font-size: 13px; font-weight: 600; padding: 10px 18px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); z-index: 10001; align-items: center; gap: 8px; font-family: sans-serif;">
-      <i class="fa-solid fa-check" style="color: #10b981;"></i>
+  <div id="toast" class="toast-notification">
+      <i class="fa-solid fa-check icon-green"></i>
       <span>Nusxalandi!</span>
   </div>
 
-  <script>
-    let allSubjects = [];
-
-    // Qidiruv va Semestr bo'yicha birgalikda saralash funksiyasi
-    function filterSubjects() {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
-      const selectedSemester = document.getElementById('semesterSelect').value;
-
-      const filtered = allSubjects.filter(subject => {
-        const matchesQuery = subject.Fan ? subject.Fan.toLowerCase().includes(query) : true;
-        const matchesSemester = selectedSemester === 'all' || String(subject.semester || subject.semestr) === selectedSemester;
-        return matchesQuery && matchesSemester;
-      });
-
-      renderSubjects(filtered);
-    }
-
-    // Fanlarni JSON'dan yuklab olish funksiyasi
-    async function loadSubjects() {
-      try {
-        const response = await fetch('jsons/fanlar.json');
-        if (!response.ok) throw new Error("fanlar.json fayli topilmadi.");
-        
-        allSubjects = await response.json();
-        renderSubjects(allSubjects);
-      } catch (error) {
-        console.error("Xatolik:", error.message);
-        document.getElementById('fanlarList').innerHTML = `<div class="error-text">Ma'lumotlarni yuklab bo'lmadi!</div>`;
-      }
-    }
-
-    // Fanlarni ekranga dinamik chizish funksiyasi
-    function renderSubjects(subjectsList) {
-      const container = document.getElementById('fanlarList');
-      container.innerHTML = '';
-
-      if (subjectsList.length === 0) {
-        container.innerHTML = `<div class="no-result">Hech qanday fan topilmadi.</div>`;
-        return;
-      }
-
-      subjectsList.forEach(subject => {
-        const card = document.createElement('div');
-        card.className = 'subject-card';
-        
-        card.onclick = () => {
-          window.location.href = `menu.html?FanId=${subject.id}`;
-        };
-
-        card.innerHTML = `
-          <div class="subject-icon">📚</div>
-          <h3 class="subject-name">${subject.Fan}</h3>
-          <p class="subject-desc">${subject.Discrption || 'Ushbu fan bo\'yicha testlar majmuasi.'}</p>
-        `;
-        
-        container.appendChild(card);
-      });
-    }
-
-    // Event listener'lar (Единая точка вызова)
-    document.getElementById('searchInput').addEventListener('input', filterSubjects);
-    document.getElementById('semesterSelect').addEventListener('change', filterSubjects);
-    document.getElementById('searchBtn').onclick = filterSubjects;
-
-    // --- Modal va Share Tizimi ---
-    const shareModal = document.getElementById('share-modal');
-    const openBtn = document.getElementById('open-share-modal-btn');
-    const closeBtn = document.getElementById('close-share-modal-btn');
-    const shareSimpleBtn = document.getElementById('share-simple-btn');
-    const shareAnswersBtn = document.getElementById('share-answers-btn');
-
-    if (openBtn && shareModal) {
-        openBtn.addEventListener('click', () => {
-            shareModal.style.display = 'flex';
-        });
-        
-        closeBtn.addEventListener('click', () => {
-            shareModal.style.display = 'none';
-        });
-
-        shareModal.addEventListener('click', (e) => {
-            if (e.target === shareModal) {
-                shareModal.style.display = 'none';
-            }
-        });
-    }
-
-    if (shareSimpleBtn) {
-        shareSimpleBtn.addEventListener('click', () => {
-            const baseUrl = window.location.origin + window.location.pathname;
-            copyToClipboard(baseUrl, "Sayt havolasi nusxalandi!");
-            shareModal.style.display = 'none';
-        });
-    }
-
-    if (shareAnswersBtn) {
-        shareAnswersBtn.addEventListener('click', () => {
-            const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
-            let shareText = "📚 EpicMineTest - Test javoblari:\n\n";
-
-            if (allSubjects && allSubjects.length > 0) {
-                allSubjects.forEach((subject) => {
-                    const fanUrl = `${baseUrl}Javob.html?FanId=${subject.id}`;
-                    shareText += `${subject.id}: ${subject.Fan}\n🔗 ${fanUrl}\n\n`;
-                });
-            } else {
-                shareText += window.location.href;
-            }
-            
-            copyToClipboard(shareText, "Fanlar va havolalar nusxalandi!");
-            shareModal.style.display = 'none';
-        });
-    }
-
-    function copyToClipboard(text, message) {
-        if (navigator.clipboard && window.isSecureContext) {
-            navigator.clipboard.writeText(text).then(() => {
-                showToast(message);
-            }).catch(() => {
-                fallbackCopyTextToClipboard(text, message);
-            });
-        } else {
-            fallbackCopyTextToClipboard(text, message);
-        }
-    }
-
-    function fallbackCopyTextToClipboard(text, message) {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        showToast(message);
-    }
-
-    function showToast(message) {
-        const toast = document.getElementById('toast');
-        if (!toast) return;
-        toast.querySelector('span').textContent = message;
-        toast.style.display = 'flex';
-
-        setTimeout(() => {
-            toast.style.display = 'none';
-        }, 2000);
-    }
-
-    window.onload = loadSubjects;
-  </script>
+  <script src="JavaScript/index.js"></script>
 </body>
 </html>

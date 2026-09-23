@@ -1,0 +1,389 @@
+/* ==========================================================================
+   1. UMUMIY STILLAR VA SBRIS
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body {
+  background: radial-gradient(circle at top, #25262e 0%, #141519 100%);
+  color: #e2e8f0;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ==========================================================================
+   2. CHAP TOMON: SAVOL VA NAVIGATSIYA BLOKI
+   ========================================================================== */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-block {
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  padding: 35px;
+  border-radius: 14px;
+  min-height: 440px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.question-text {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-left: 4px solid #cc1818;
+  padding-left: 15px;
+}
+
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+/* Tezkor rejim uchun variant tugmalari */
+.fast-answer-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #1b1c21;
+  border: 1px solid #2d3139;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #e2e8f0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.fast-answer-btn:hover:not(:disabled) {
+  background-color: #252731;
+  border-color: #4f5666;
+  transform: translateX(4px);
+}
+
+.fast-answer-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 15px;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.fast-answer-btn.correct {
+  background-color: #1b5e20 !important;
+  border-color: #4caf50 !important;
+  color: #ffffff !important;
+}
+
+.fast-answer-btn.correct .fast-answer-badge {
+  background-color: #4caf50 !important;
+  color: #ffffff !important;
+}
+
+.fast-answer-btn.wrong {
+  background-color: #b71c1c !important;
+  border-color: #f44336 !important;
+  color: #ffffff !important;
+}
+
+.fast-answer-btn.wrong .fast-answer-badge {
+  background-color: #f44336 !important;
+  color: #ffffff !important;
+}
+
+.fast-answer-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+  transform: none;
+}
+
+.navigation-block {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-prev {
+  background-color: #333742;
+  border: 1px solid #454b59;
+}
+
+.btn-prev:hover {
+  background-color: #424857;
+  transform: translateY(-2px);
+}
+
+.btn-next {
+  background-color: #cc1818;
+}
+
+.btn-next:hover {
+  background-color: #e51a1a;
+  box-shadow: 0 6px 15px rgba(204, 24, 24, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. O'NG TOMON: MATRITSA BLOKI
+   ========================================================================== */
+.matrix-block {
+  background: linear-gradient(145deg, #cc1818, #990f0f);
+  padding: 25px 20px;
+  border-radius: 14px;
+  align-self: start;
+  box-shadow: 0 10px 35px rgba(204, 24, 24, 0.25);
+  height: 511px;
+  max-height: 511px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.matrix-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); 
+  gap: 10px;
+}
+
+.matrix-grid.has-scroll {
+  max-height: 380px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+}
+
+.matrix-item {
+  aspect-ratio: 1;
+  background-color: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.matrix-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.matrix-item.answered {
+  background-color: #2e7d32 !important;
+  border-color: #4caf50;
+  color: white !important;
+}
+
+.matrix-item.wrong {
+  background-color: #c55b04 !important;
+  border-color: #c55b04 !important;
+  color: white !important;
+}
+
+.matrix-item.active {
+  background-color: #ffffff !important;
+  color: #cc1818 !important;
+  border-color: #ffffff !important;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+  z-index: 2;
+}
+
+/* Scrollbar */
+.matrix-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.matrix-grid::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.matrix-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+}
+
+.submit-block {
+  margin-top: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #1b5e20;
+  border: 1px solid #2e7d32;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-submit:hover:not(:disabled) {
+  background-color: #2e7d32;
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ==========================================================================
+   4. LOGO VA HEADER
+   ========================================================================== */
+.top-header {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 100;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.brand-logo:hover {
+  color: #cc1818; 
+  text-shadow: 0 0 15px rgba(204, 24, 24, 0.7);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   5. MOBIL MOSLASHUV (RESPONSIVE)
+   ========================================================================== */
+@media (min-width: 992px) {
+  .quiz-container {
+    grid-template-columns: 1fr 380px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 80px 12px 20px 12px;
+    align-items: flex-start;
+  }
+
+  .quiz-container {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .question-block {
+    padding: 20px 15px;
+    min-height: auto;
+  }
+
+  .question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .matrix-block {
+    height: auto;
+    max-height: none;
+    padding: 20px 15px;
+    order: 2;
+  }
+
+  .matrix-grid {
+    grid-template-columns: repeat(auto-fit, minmax(38px, 1fr)) !important;
+    gap: 8px;
+  }
+
+  .matrix-grid.has-scroll {
+    max-height: 250px;
+  }
+
+  .top-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+}
