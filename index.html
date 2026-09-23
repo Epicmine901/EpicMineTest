@@ -16,7 +16,18 @@
     <header class="main-header">
       <h1 class="main-title">Fanlar Akademiyasi</h1>
       <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Fanni nomini yozing..." autocomplete="off">
+        <select id="semesterSelect" class="search-select">
+          <option value="all">Barcha semestrlar</option>
+          <option value="6">6-semestr</option>
+          <option value="5">5-semestr</option>
+          <option value="4">4-semestr</option>
+          <option value="3">3-semestr</option>
+          <option value="2">2-semestr</option>
+          <option value="1">1-semestr</option>
+        </select>
+
+        <input type="text" id="searchInput" class="search-input" placeholder="Fanni nomini yozing..." autocomplete="off">
+        
         <button id="searchBtn" class="btn btn-next">Qidirish</button>
       </div>
     </header>
@@ -77,8 +88,21 @@
   </div>
 
   <script>
-    // Global o'zgaruvchi fanlar ro'yxatini saqlash uchun
     let allSubjects = [];
+
+    // Qidiruv va Semestr bo'yicha birgalikda saralash funksiyasi
+    function filterSubjects() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const selectedSemester = document.getElementById('semesterSelect').value;
+
+      const filtered = allSubjects.filter(subject => {
+        const matchesQuery = subject.Fan ? subject.Fan.toLowerCase().includes(query) : true;
+        const matchesSemester = selectedSemester === 'all' || String(subject.semester || subject.semestr) === selectedSemester;
+        return matchesQuery && matchesSemester;
+      });
+
+      renderSubjects(filtered);
+    }
 
     // Fanlarni JSON'dan yuklab olish funksiyasi
     async function loadSubjects() {
@@ -122,24 +146,10 @@
       });
     }
 
-    // Dinamik Qidiruv tizimi
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase().trim();
-      const filtered = allSubjects.filter(subject => 
-        subject.Fan.toLowerCase().includes(query)
-      );
-      renderSubjects(filtered);
-    });
-
-    // Qidirish tugmasi bosilgandagi holat
-    document.getElementById('searchBtn').onclick = () => {
-      const query = searchInput.value.toLowerCase().trim();
-      const filtered = allSubjects.filter(subject => 
-        subject.Fan.toLowerCase().includes(query)
-      );
-      renderSubjects(filtered);
-    };
+    // Event listener'lar (Единая точка вызова)
+    document.getElementById('searchInput').addEventListener('input', filterSubjects);
+    document.getElementById('semesterSelect').addEventListener('change', filterSubjects);
+    document.getElementById('searchBtn').onclick = filterSubjects;
 
     // --- Modal va Share Tizimi ---
     const shareModal = document.getElementById('share-modal');
@@ -164,7 +174,6 @@
         });
     }
 
-    // 1. Oddiy share
     if (shareSimpleBtn) {
         shareSimpleBtn.addEventListener('click', () => {
             const baseUrl = window.location.origin + window.location.pathname;
@@ -173,13 +182,11 @@
         });
     }
 
-    // 2. Javoblar ro'yxati share
     if (shareAnswersBtn) {
         shareAnswersBtn.addEventListener('click', () => {
             const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
             let shareText = "📚 EpicMineTest - Test javoblari:\n\n";
 
-            // Isishtirilgan tuzatish: allSubjects massividan foydalanish va fan.Fan maydonini olish
             if (allSubjects && allSubjects.length > 0) {
                 allSubjects.forEach((subject) => {
                     const fanUrl = `${baseUrl}Javob.html?FanId=${subject.id}`;
@@ -229,7 +236,6 @@
         }, 2000);
     }
 
-    // Sahifa yuklanganda ishga tushirish
     window.onload = loadSubjects;
   </script>
 </body>
