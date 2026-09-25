@@ -144,6 +144,10 @@ body {
 }
 
 .subject-card {
+  -webkit-user-select: none; /* Safari ва Chrome учун */
+  -moz-user-select: none;    /* Firefox учун */
+  -ms-user-select: none;     /* IE/Edge учун */
+  user-select: none;         /* Стандарт */
   background-color: #1b1c21;
   border: 1px solid #2d3139;
   border-radius: 14px;
