@@ -1,0 +1,1051 @@
+{
+    "Fan": "Tadbirkorlik asoslari",
+    "Discrption": "Tadbirkorlik asoslari fanidan test savollari",
+    "test_savollari": [
+        {
+            "id": 1,
+            "savol": "Savdo qanday jarayon hisoblanadi?",
+            "variantlar": {
+                "A": "Mijoz ehtiyojini aniqlab, unga mos yechim taklif qilish va bitimni yakunlash",
+                "B": "Mahsulotni reklama orqali ko‘proq odamga tanitish va brendni mashhur qilish",
+                "C": "Tovarni ishlab chiqaruvchidan omborga, ombordan do‘konga yetkazib berish",
+                "D": "Raqobatchilar narxini o‘rganib, mahsulotga yangi narx belgilash"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 2,
+            "savol": "Savdo voronkasi tasviri nima uchun pastga qarab torayib boradi?",
+            "variantlar": {
+                "A": "Har bosqichda mijozlarning bir qismi tushib qoladi",
+                "B": "Pastki bosqichlarda mahsulot narxi oshib boradi",
+                "C": "Har bosqichda sotuvchilar soni kamayib boradi",
+                "D": "Voronka reklama xarajatining kamayishini ko‘rsatadi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 3,
+            "savol": "Konversiya qanday hisoblanadi?",
+            "variantlar": {
+                "A": "Xaridorlar soni tashriflar soniga bo‘linib, 100 foizga ko‘paytiriladi",
+                "B": "Tashriflar soni xaridorlar soniga bo‘linib, 100 foizga ko‘paytiriladi",
+                "C": "Umumiy tushum cheklar soniga bo‘linadi",
+                "D": "Qaytgan mijozlar soni jami mijozlar soniga bo‘linadi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 4,
+            "savol": "Do‘konga bir kunda 250 kishi kirdi, ulardan 30 tasi xarid qildi. Konversiya necha foizni tashkil etadi?",
+            "variantlar": {
+                "A": "12 %",
+                "B": "8,3 %",
+                "C": "25 %",
+                "D": "30 %"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 5,
+            "savol": "Telefon sotib olgan har bir mijozga g‘ilof ham taklif qilinadi. Bu usul nimaga qaratilgan?",
+            "variantlar": {
+                "A": "O‘rtacha chekni oshirishga",
+                "B": "Voronka tepasini kengaytirishga",
+                "C": "E’tiroz bilan ishlashga",
+                "D": "Takroriy xarid ulushini hisoblashga"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 6,
+            "savol": "Mijoz o‘rtacha 50 000 so‘mlik xarid qiladi, yiliga 10 marta keladi va 4 yil davomida mijoz bo‘lib qoladi. Mijozning kutilayotgan umumiy savdo tushumi qancha?",
+            "variantlar": {
+                "A": "2 000 000 so‘m",
+                "B": "200 000 so‘m",
+                "C": "5 000 000 so‘m",
+                "D": "20 000 000 so‘m"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 7,
+            "savol": "Mijoz katta xarid uchun 10 % chegirma so‘radi. Sotuvchining qaysi javobi ikki tomon uchun maqbul kelishuvga misol bo‘ladi?",
+            "variantlar": {
+                "A": "«Chegirma beraman, agar to‘lov bir yo‘la amalga oshirilsa»",
+                "B": "«Chegirma qila olmaymiz, narx qat’iy»",
+                "C": "«Mayli, sizga 15 % chegirma beraman»",
+                "D": "«Boshqa do‘konlarda narx bundan ham qimmat, borib solishtirib keling»"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 8,
+            "savol": "Mijozlar bilan munosabatlarni boshqarish tizimi (CRM) deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Har bir mijozning aloqasi, xaridlari va suhbatlari saqlanadigan dastur",
+                "B": "Xodimlarning ish vaqtini hisobga olib boradigan dastur",
+                "C": "Ombordagi tovar qoldig‘ini hisoblaydigan dastur",
+                "D": "Soliq hisobotlarini tayyorlaydigan dastur"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 9,
+            "savol": "Moliyaviy resurslar deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Korxona ixtiyoridagi pul mablag‘lari va ular hisobidan shakllangan mol-mulk",
+                "B": "Korxonaning bankdan olgan kredit va qarz mablag‘lari",
+                "C": "Korxona bir yil davomida olgan sof foyda",
+                "D": "Xodimlarga ish haqi to‘lash uchun ajratilgan mablag‘"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 10,
+            "savol": "Moliyaviy resurslar shakllanish manbasiga ko‘ra guruhlarga bo'linsa, ustav kapitali, taqsimlanmagan foyda va jamg‘arma qaysi guruhga kiradi?",
+            "variantlar": {
+                "A": "O‘z mablag‘lari",
+                "B": "Jalb qilingan mablag‘lar",
+                "C": "Aylanma mablag‘lar",
+                "D": "Asosiy mablag‘lar"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 11,
+            "savol": "Likvidlik nima?",
+            "variantlar": {
+                "A": "Mol-mulkning tez va yo‘qotishsiz pulga aylana olish qobiliyati",
+                "B": "Yaqin muddatdagi majburiyatlarni o‘z vaqtida qoplay olish",
+                "C": "Korxonaning har oy foyda ko‘ra olish qobiliyati",
+                "D": "Mahsulotni qisqa muddatda sotib tugatish qobiliyati"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 12,
+            "savol": "Quyidagi mol-mulk turlaridan qaysi birining likvidligi eng past?",
+            "variantlar": {
+                "A": "Bino",
+                "B": "Mijoz qarzi",
+                "C": "Tovar zaxirasi",
+                "D": "Jihoz"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 13,
+            "savol": "Korxona 20 mln so‘mlik mahsulotni muddatli to‘lov sharti bilan sotdi, puli hali kelmadi. Shu paytdagi holat qaysi javobda to‘g‘ri ko‘rsatilgan?",
+            "variantlar": {
+                "A": "Hisobotda foyda bor, lekin kassada pul yo‘q",
+                "B": "Kassada pul bor, lekin foyda yozilmaydi",
+                "C": "Foyda ham, kassadagi pul ham ko‘payadi",
+                "D": "Na foyda, na kassadagi pul o‘zgaradi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 14,
+            "savol": "Quyidagilardan qaysi biri kirim tarkibida?",
+            "variantlar": {
+                "A": "Mijozdan oldindan olingan avans",
+                "B": "Kredit bo‘yicha oylik to‘lov",
+                "C": "Reklama va transport xarajati",
+                "D": "Ish haqi va soliqlar"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 15,
+            "savol": "Oy boshida kassada 3 mln so‘m bor edi. Oy davomida kirim 9 mln so‘m, chiqim 14 mln so‘m bo‘ldi. Oy oxirida qanday holat yuzaga keladi?",
+            "variantlar": {
+                "A": "2 mln so‘mlik kassa defitsiti",
+                "B": "5 mln so‘mlik kassa defitsiti",
+                "C": "2 mln so‘m pul qoldig‘i",
+                "D": "5 mln so‘m pul qoldig‘i"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 16,
+            "savol": "Quyidagilardan qaysi biri aylanma kapitalga kirmaydi?",
+            "variantlar": {
+                "A": "Sexdagi ishlab chiqarish uskunasi",
+                "B": "Kassadagi va hisobdagi pul",
+                "C": "Ombordagi xomashyo va tovar",
+                "D": "Mijozlardagi qarz"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 17,
+            "savol": "Qarzdorlikni nazorat qilish qoidasiga ko‘ra to‘lov muddatlari qanday bo‘lishi kerak?",
+            "variantlar": {
+                "A": "Mijozdan pul olish muddati yetkazib beruvchiga to‘lash muddatidan qisqaroq bo‘lishi",
+                "B": "Mijozdan pul olish muddati yetkazib beruvchiga to‘lash muddatidan uzunroq bo‘lishi",
+                "C": "Yetkazib beruvchiga to‘lov mijozdan pul kelmasdan oldin qilinishi",
+                "D": "Mijozdan pul olish muddati umuman belgilanmasligi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 18,
+            "savol": "Non tsexida sotuvdan tushum yanvardan martgacha 28, 26 va 24 mln so‘mga tushdi, xomashyo, ish haqi va ijara xarajatlari o‘zgarmadi, martda esa 6 mln so‘mlik jihoz olindi. Mart oxirida qoldiqning minusga tushishiga asosiy sabab nima?",
+            "variantlar": {
+                "A": "Sotuv pasayib borayotgan paytda jihoz xaridi qilingani",
+                "B": "Xomashyo xarajati har oy oshib borgani",
+                "C": "Ish haqi fevraldan boshlab ko‘paygani",
+                "D": "Ijara va kommunal to‘lovlar ikki baravar oshgani"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 19,
+            "savol": "Biznes-model kanvasida korxona kimga mahsulot yoki xizmat sotishini belgilaydigan blok qaysi?",
+            "variantlar": {
+                "A": "Mijoz segmentlari",
+                "B": "Qiymat taklifi",
+                "C": "Sotuv kanallari",
+                "D": "Asosiy hamkorlar"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 20,
+            "savol": "Do‘kon, internet do‘koni va mobil ilova Biznes-model kanvasning qaysi blokiga kiradi?",
+            "variantlar": {
+                "A": "Sotuv kanallari",
+                "B": "Xarajatlar tarkibi",
+                "C": "Asosiy resurslar",
+                "D": "Mijoz segmentlari"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 21,
+            "savol": "Obuna to‘lovi, komissiya va litsenziya Biznes-model kanvasning qaysi blokiga tegishli?",
+            "variantlar": {
+                "A": "Daromad manbalari",
+                "B": "Asosiy hamkorlar",
+                "C": "Sotuv kanallari",
+                "D": "Xarajatlar tarkibi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 22,
+            "savol": "Korxonaning boshqa korxonaga uskuna sotishi qanday savdo hisoblanadi?",
+            "variantlar": {
+                "A": "B2B savdo",
+                "B": "B2C savdo",
+                "C": "C2C savdo",
+                "D": "C2B savdo"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 23,
+            "savol": "Mijoz deb kimga aytiladi?",
+            "variantlar": {
+                "A": "Korxona taklif etayotgan mahsulot yoki xizmatni sotib oluvchi shaxs yoki tashkilotga",
+                "B": "Korxona bilan mehnat shartnomasi tuzgan xodimga",
+                "C": "Mahsulot sotuvi bilan shug‘ullanuvchi vositachiga",
+                "D": "Korxonaga xomashyo va resurslar yetkazib beruvchi tashkilot yoki jismoniy shaxsga"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 24,
+            "savol": "Bir nechta insonlar guruhi bilan muhokama o‘tkazib mijozlar fikrini bilish usuli qanday ataladi?",
+            "variantlar": {
+                "A": "Fokus guruh",
+                "B": "Kuzatuv",
+                "C": "So‘rovnoma",
+                "D": "Intervyu"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 25,
+            "savol": "Mijoz segmentatsiyasida yosh, jins, daromad va kasb qaysi mezonlar guruhiga kiradi?",
+            "variantlar": {
+                "A": "Demografik mezonlar",
+                "B": "Geografik mezonlar",
+                "C": "Psixografik mezonlar",
+                "D": "Xulq-atvor mezonlari"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 26,
+            "savol": "Sifat, dizayn, assortiment va kafolat bo‘yicha qarorlar marketingdagi 4Pning qaysi guruhiga kiradi?",
+            "variantlar": {
+                "A": "Mahsulot bo‘yicha qarorlar",
+                "B": "Taqsimot bo‘yicha qarorlar",
+                "C": "Kommunikatsiya bo‘yicha qarorlar",
+                "D": "Narx bo‘yicha qarorlar"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 27,
+            "savol": "Reklama so‘zi qaysi tildan kelib chiqqan va qanday ma’no bildiradi?",
+            "variantlar": {
+                "A": "Lotin tilidan, chaqiriq va jalb qilish ma’nosida",
+                "B": "Fransuz tilidan, savdo qilish ma’nosida",
+                "C": "Yunon tilidan, hisoblash ma’nosida",
+                "D": "Arab tilidan, xabar berish ma’nosida"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 28,
+            "savol": "Bozorga endi chiqqan mahsulot uchun reklamaning qaysi maqsadi birinchi o‘ringa chiqadi?",
+            "variantlar": {
+                "A": "Axborot berish",
+                "B": "Imidjni mustahkamlash",
+                "C": "Eslatish",
+                "D": "Raqobatchini tanqid qilish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 29,
+            "savol": "Tadbirkorlik faoliyatining asosiy maqsadi nima?",
+            "variantlar": {
+                "A": "O‘z tavakkalchiligi asosida foyda olish",
+                "B": "Davlat idorasida ishlash",
+                "C": "Boshqa korxonada yollanib ishlash",
+                "D": "Faqat xayriya bilan shug‘ullanish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 30,
+            "savol": "Fanda tadbirkorlikning nechta yondashuvi sanab o‘tilgan (kichik biznes, mikrobiznes, startap, oilaviy va ijtimoiy tadbirkorlik)?",
+            "variantlar": {
+                "A": "5 ta",
+                "B": "7 ta",
+                "C": "4 ta",
+                "D": "6 ta"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 31,
+            "savol": "Startap – bu ...",
+            "variantlar": {
+                "A": "yangi g‘oya asosida tez o‘sishga mo‘ljallangan yosh loyiha",
+                "B": "ko‘p yillardan beri faoliyat yuritayotgan barqaror korxona",
+                "C": "davlat buyurtmasi asosida ishlaydigan tashkilot",
+                "D": "faqat savdo bilan shug‘ullanadigan do‘kon"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 32,
+            "savol": "Ijtimoiy tadbirkorlikning asosiy xususiyati nimada?",
+            "variantlar": {
+                "A": "Jamiyatdagi biror muammoni hal qilish",
+                "B": "Faqat maksimal foyda olishga intilish",
+                "C": "Soliq to‘lamasdan faoliyat yuritish",
+                "D": "Faqat davlat mablag‘i hisobidan ishlash"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 33,
+            "savol": "Oilaviy tadbirkorlik – bu ...",
+            "variantlar": {
+                "A": "oila a’zolari birgalikda olib boradigan biznes faoliyati",
+                "B": "bir kishi tomonidan olib boriladigan faoliyat",
+                "C": "xorijiy investor tomonidan tashkil etilgan biznes",
+                "D": "davlat tomonidan boshqariladigan korxona"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 34,
+            "savol": "Tadbirkorlik tafakkuriga ega inson kundalik hayotdagi muammoga qanday qaraydi?",
+            "variantlar": {
+                "A": "Uni biznes imkoniyati sifatida ko‘radi",
+                "B": "E’tiborsiz qoldiradi",
+                "C": "Boshqalar hal qilishini kutadi",
+                "D": "Muammodan uzoqlashishga harakat qiladi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 35,
+            "savol": "“Muammo – yechim – mijoz – daromad manbai” zanjiri nechta bo‘g‘indan iborat?",
+            "variantlar": {
+                "A": "4 ta",
+                "B": "6 ta",
+                "C": "3 ta",
+                "D": "5 ta"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 36,
+            "savol": "Ishchi tafakkuridan farqli ravishda tadbirkor tafakkuriga xos xususiyat qaysi?",
+            "variantlar": {
+                "A": "Tavakkalchilikni o‘z zimmasiga olish",
+                "B": "Har oy barqaror maosh olishni kutish",
+                "C": "Faqat berilgan topshiriqni bajarish",
+                "D": "Ish vaqti tugashini kutish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 37,
+            "savol": "Tadbirkor 2 ta loyiha uchun 50 mln so‘mdan grant oldi. Grantlarning jami summasi qancha va u qaytariladimi?",
+            "variantlar": {
+                "A": "100 mln so‘m, qaytarilmaydi",
+                "B": "100 mln so‘m, foiz bilan qaytariladi",
+                "C": "50 mln so‘m, qaytariladi",
+                "D": "25 mln so‘m, qaytarilmaydi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 38,
+            "savol": "Biznes g‘oya birinchi navbatda nimaga asoslanishi kerak?",
+            "variantlar": {
+                "A": "Bozordagi real muammo va bo‘shliqqa",
+                "B": "Tadbirkor va investorning shaxsiy xohishiga",
+                "C": "Raqiblarning reklamasiga",
+                "D": "Tasodifiy tanlovga"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 39,
+            "savol": "Bozordagi bo‘shliq deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Talab bor, lekin taklif yetarli bo‘lmagan soha",
+                "B": "Mahsulot umuman sotilmaydigan soha",
+                "C": "Raqobat juda kuchli bo‘lgan soha",
+                "D": "Davlat taqiqlagan faoliyat turi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 40,
+            "savol": "So‘rovnoma qanday maqsadda o‘tkaziladi?",
+            "variantlar": {
+                "A": "Mijozlarning ehtiyoji va fikrini o‘rganish uchun",
+                "B": "Mahsulot narxini oshirish uchun",
+                "C": "Xodimlarni jazolash uchun",
+                "D": "Soliq imtiyozi olish uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 41,
+            "savol": "Biznes krediti qanday maqsadda olinadi?",
+            "variantlar": {
+                "A": "Biznesni boshlash yoki kengaytirish uchun",
+                "B": "Shaxsiy maishiy texnika xarid qilish uchun",
+                "C": "Ta’til sarf-xarajatlari uchun",
+                "D": "Uy jihozlarini yangilash uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 42,
+            "savol": "Iste’mol krediti nima uchun beriladi?",
+            "variantlar": {
+                "A": "Shaxsiy ehtiyojlarni qondirish uchun",
+                "B": "Ishlab chiqarishni kengaytirish uchun",
+                "C": "Xodimlarga maosh to‘lash uchun",
+                "D": "Uskuna sotib olish uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 43,
+            "savol": "Biznes krediti bilan iste’mol kreditining tub farqi nimada?",
+            "variantlar": {
+                "A": "Biznes kreditida mablag‘ daromad keltiruvchi faoliyatga yo‘naltiriladi",
+                "B": "Iste’mol krediti hech qachon qaytarilmaydi",
+                "C": "Biznes krediti faqat naqd pulda beriladi",
+                "D": "Iste’mol kreditiga garov talab qilinmaydi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 44,
+            "savol": "Kafillik deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Uchinchi shaxsning qarz qaytarilishi uchun javobgarlikni o‘z zimmasiga olishi",
+                "B": "Qarz oluvchining javobgarlikni o‘z zimmasiga olib o‘z mulkini bankka topshirishi",
+                "C": "Bankning kredit foizini kechirishi",
+                "D": "Kreditni muddatidan oldin qaytarish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 45,
+            "savol": "Tadbirkor yillik 20 % stavkada 10 mln so‘m kredit oldi. Bir yil uchun foiz to‘lovi qancha bo‘ladi?",
+            "variantlar": {
+                "A": "2 mln so‘m",
+                "B": "1 mln so‘m",
+                "C": "5 mln so‘m",
+                "D": "10 mln so‘m"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 46,
+            "savol": "Kredit olishdan oldin pul oqimi tahlili nima uchun o‘tkaziladi?",
+            "variantlar": {
+                "A": "Biznesning kreditni qaytarish qobiliyatini aniqlash uchun",
+                "B": "Bankning daromadini hisoblash uchun",
+                "C": "Xodimlar sonini aniqlash uchun",
+                "D": "Reklama byudjetini tuzish uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 47,
+            "savol": "“Kelajakka qadam” dasturi asosan kimlarga mo‘ljallangan?",
+            "variantlar": {
+                "A": "Yosh tadbirkorlarga",
+                "B": "Pensionerlarga",
+                "C": "Yirik korxonalarga",
+                "D": "Xorijiy investorlarga"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 48,
+            "savol": "Kichik biznes uchun nechta soliq rejimi mavjud va ular qaysilar?",
+            "variantlar": {
+                "A": "2 ta – soddalashtirilgan va umumiy",
+                "B": "1 ta – umumiy",
+                "C": "3 ta – ichki, tashqi, bojxona",
+                "D": "4 ta – oylik, choraklik, yillik, bir martalik"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 49,
+            "savol": "Soddalashtirilgan soliq tizimi asosan kimlarga mo‘ljallangan?",
+            "variantlar": {
+                "A": "Kichik biznes va xususiy tadbirkorlarga",
+                "B": "Yirik sanoat korxonalariga",
+                "C": "Davlat idoralariga",
+                "D": "Xorijiy banklarga"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 50,
+            "savol": "Soliq imtiyozi – bu ...",
+            "variantlar": {
+                "A": "qonun bilan belgilangan soliq yengilligi",
+                "B": "soliqni ikki barobar ko‘p to‘lash",
+                "C": "soliqni yashirish usuli",
+                "D": "soliqni kechiktirish uchun jarima"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 51,
+            "savol": "my.soliq.uz tizimi tadbirkorga qanday imkoniyat beradi?",
+            "variantlar": {
+                "A": "Elektron hisobotlarni topshirish va shaxsiy kabinetdan foydalanish",
+                "B": "Bank krediti olish",
+                "C": "Mahsulot sotish",
+                "D": "Xodimlarni ishga olish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 52,
+            "savol": "Hisob-faktura qanday hujjat?",
+            "variantlar": {
+                "A": "Birlamchi moliyaviy hujjat",
+                "B": "Xodimga beriladigan ish haqi varaqasi",
+                "C": "Bank krediti shartnomasi",
+                "D": "Ijara shartnomasi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 53,
+            "savol": "Chek qanday hujjat hisoblanadi?",
+            "variantlar": {
+                "A": "To‘lov qabul qilinganini tasdiqlovchi hujjat",
+                "B": "Tovarni yetkazib berish hujjati",
+                "C": "Soliq hisoboti",
+                "D": "Ish o‘rni tavsifi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 54,
+            "savol": "Soliqni yashirish yoki noto‘g‘ri hisoblash qanday oqibatga olib keladi?",
+            "variantlar": {
+                "A": "Jarima va huquqiy javobgarlikka",
+                "B": "Soliq imtiyozi beriladi",
+                "C": "Kredit foizi pasayadi",
+                "D": "Hech qanday oqibati bo‘lmaydi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 55,
+            "savol": "Tadbirkorning oylik daromadi 10 mln so‘m, soliq stavkasi shartli ravishda 4 % deb olinsa, oylik soliq summasi qancha bo‘ladi?",
+            "variantlar": {
+                "A": "400 ming so‘m",
+                "B": "40 ming so‘m",
+                "C": "4 mln so‘m",
+                "D": "1 mln so‘m"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 56,
+            "savol": "Biznes-model nimani ko‘rsatadi?",
+            "variantlar": {
+                "A": "Biznes qanday ishlashi va qanday yo‘l bilan daromad keltirishini",
+                "B": "Faqat xodimlar ro‘yxatini",
+                "C": "Faqat soliq hisobotlarini",
+                "D": "Faqat reklama matnlarini"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 57,
+            "savol": "Qiymat taklifi deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Mijozga taklif qilinadigan foyda va yechim",
+                "B": "Mahsulotning ishlab chiqarish tannarxi",
+                "C": "Xodimlarga beriladigan mukofot",
+                "D": "Bank kreditining foizi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 58,
+            "savol": "Biznes-modeldagi “kanallar” nimani bildiradi?",
+            "variantlar": {
+                "A": "Mahsulot mijozga yetkaziladigan yo‘llarni",
+                "B": "Xodimlar o‘rtasidagi muloqot usullarini",
+                "C": "Soliq to‘lash usullarini",
+                "D": "Kredit olish tartibini"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 59,
+            "savol": "Franshiza – bu ...",
+            "variantlar": {
+                "A": "tayyor brend va biznes modelidan haq evaziga foydalanish huquqi",
+                "B": "bankdan olinadigan kredit turi",
+                "C": "davlat granti",
+                "D": "mahsulotni eksport qilish usuli"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 60,
+            "savol": "B2C modeli nimani bildiradi?",
+            "variantlar": {
+                "A": "Biznesning bevosita iste’molchiga sotishini",
+                "B": "Biznesning boshqa biznesga sotishini",
+                "C": "Davlatning mahalliy biznesga xizmat ko‘rsatishini",
+                "D": "Biznesning davlatga sotishini"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 61,
+            "savol": "Raqobatdosh ustunlik – bu ...",
+            "variantlar": {
+                "A": "mahsulotni raqiblardan ajratib turuvchi",
+                "B": "mahsulotning eng past narxda sotilishi",
+                "C": "korxonaning soliq to‘lamasligi",
+                "D": "eng ko‘p xodimga ega bo‘lish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 62,
+            "savol": "Marketing-miks nechta elementdan iborat va u qanday belgilanadi?",
+            "variantlar": {
+                "A": "4 ta – 4P",
+                "B": "3 ta – 3P",
+                "C": "5 ta – 5P",
+                "D": "7 ta – 7P"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 63,
+            "savol": "4P dagi “sotish joyi” (Place) elementi nimani anglatadi?",
+            "variantlar": {
+                "A": "Mahsulotni mijozga qayerda va qanday yetkazishni",
+                "B": "Mahsulotning sifatini",
+                "C": "Mahsulotning narxini va narx siyosatini",
+                "D": "Reklama matnini"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 64,
+            "savol": "4P dagi Promotion(kommunikatsiya) elementiga nima kiradi?",
+            "variantlar": {
+                "A": "Reklama, aksiya va chegirmalar",
+                "B": "Xodimlarga maosh to‘lash",
+                "C": "Soliq hisobotini topshirish",
+                "D": "Tovar tannarxini hisoblash"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 65,
+            "savol": "Maqsadli (targeted) reklamaning asosiy xususiyati nimada?",
+            "variantlar": {
+                "A": "Aniq belgilangan auditoriyaga yo‘naltiriladi",
+                "B": "Barchaga bir xil ko‘rsatiladi va jalb qilinadi",
+                "C": "Faqat televizor orqali beriladi",
+                "D": "Bepul tarqatiladi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 66,
+            "savol": "Distribyutsiya(taqsimot) deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Mahsulotni ishlab chiqaruvchidan mijozga yetkazish jarayoni",
+                "B": "Mahsulotning narxini belgilash, dizaynini yangilash g’oyalari",
+                "C": "Xodimlarni o‘qitish",
+                "D": "Soliq to‘lash tartibi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 67,
+            "savol": "Logistika biznesda qanday vazifani bajaradi?",
+            "variantlar": {
+                "A": "Tovarlarni tashish, saqlash va yetkazib berishni tashkil etish",
+                "B": "Reklama matnini yozish",
+                "C": "Xodimlarni ishga qabul qilish",
+                "D": "Soliq hisobotini tuzish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 68,
+            "savol": "Tadbirkor reklamaga 1 mln so‘m sarflab, 20 ta yangi mijoz jalb qildi. Bitta mijozni jalb qilish xarajati qancha?",
+            "variantlar": {
+                "A": "50 ming so‘m",
+                "B": "20 ming so‘m",
+                "C": "100 ming so‘m",
+                "D": "200 ming so‘m"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 69,
+            "savol": "Brendga bo‘lgan ishonchni oshirishga nima yordam beradi?",
+            "variantlar": {
+                "A": "Sifatning barqarorligi",
+                "B": "Narxni tez-tez o‘zgartirish",
+                "C": "Mijozlar shikoyatiga e’tibor bermaslik",
+                "D": "Har safar boshqa nom ostida sotish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 70,
+            "savol": "Savdo jarayoni nechta bosqichdan iborat deb ko‘rsatilgan?",
+            "variantlar": {
+                "A": "7 ta",
+                "B": "13 ta",
+                "C": "5 ta",
+                "D": "10 ta"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 71,
+            "savol": "Savdo voronkasining birinchi bosqichi qaysi?",
+            "variantlar": {
+                "A": "Mijozda qiziqish uyg‘otish",
+                "B": "Takroriy xarid",
+                "C": "Sodiqlik",
+                "D": "Shartnoma imzolash"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 72,
+            "savol": "Savdo voronkasining yakuniy bosqichi qaysi?",
+            "variantlar": {
+                "A": "Mijozning sodiqligi",
+                "B": "Reklama ko‘rsatish",
+                "C": "Mahsulot bilan tanishtirish",
+                "D": "Narxni aytish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 73,
+            "savol": "Mijozning e’tirozi bilan ishlashda to‘g‘ri yondashuv qaysi?",
+            "variantlar": {
+                "A": "E’tirozning sababini aniqlab, unga asosli javob berish",
+                "B": "Mijoz bilan bahslashish va o’z fikrini uqtirishga urinish",
+                "C": "E’tirozni eshitmaganga olish",
+                "D": "Suhbatni darhol to‘xtatish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 74,
+            "savol": "Muzokaraning asosiy maqsadi nima?",
+            "variantlar": {
+                "A": "Ikki tomon uchun ham maqbul kelishuvga erishish",
+                "B": "Mijozni har qanday yo‘l bilan yengish",
+                "C": "Narxni iloji boricha oshirish",
+                "D": "Mijozdan tezroq qutulish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 75,
+            "savol": "Mijozlar bazasini yuritish biznesga qanday foyda beradi?",
+            "variantlar": {
+                "A": "Mijozlar bilan aloqani saqlab, ularga qayta taklif berish imkonini beradi",
+                "B": "Soliqdan ozod qiladi",
+                "C": "Xodimlar sonini kamaytiradi",
+                "D": "Kredit foizini pasaytiradi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 76,
+            "savol": "Do‘konga 100 ta mijoz kirdi, ulardan 10 tasi xarid qildi. Konversiyasi qancha chiqadi?",
+            "variantlar": {
+                "A": "10 %",
+                "B": "1 %",
+                "C": "50 %",
+                "D": "90 %"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 77,
+            "savol": "Mavjud mijozni uzoq muddat ushlab qolish nima uchun foydali?",
+            "variantlar": {
+                "A": "Chunki yangi mijoz jalb qilish odatda qimmatroqqa tushadi",
+                "B": "Chunki eski mijoz hech qachon shikoyat qilmaydi va chegirma so’ramaydi",
+                "C": "Chunki eski mijozga soliq to‘lanmaydi",
+                "D": "Chunki eski mijoz har doim ko‘proq to‘laydi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 78,
+            "savol": "Pul oqimi to‘g‘risidagi hisobot (Cash Flow) nimani ko‘rsatadi?",
+            "variantlar": {
+                "A": "Pulning haqiqiy kirimi, chiqimi va qoldig‘ini",
+                "B": "Xodimlarning ish vaqtini",
+                "C": "Mahsulotning reklama rejasini",
+                "D": "Raqiblarning narxlarini va mavjud bozor sig’imini"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 79,
+            "savol": "Oy davomida kirim 15 mln so‘m, chiqim 12 mln so‘m bo‘ldi. Oy oxiridagi pul qoldig‘ining o‘zgarishi qancha?",
+            "variantlar": {
+                "A": "3 mln so‘m ko‘paydi",
+                "B": "3 mln so‘m kamaydi",
+                "C": "27 mln so‘m ko‘paydi",
+                "D": "O‘zgarmadi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 80,
+            "savol": "Quyidagilardan qaysi biri “chiqim”ga kiradi?",
+            "variantlar": {
+                "A": "Ijara va kommunal to‘lovlar",
+                "B": "Mijozdan kelib tushgan to‘lov",
+                "C": "Olingan grant",
+                "D": "Sotilgan mahsulot puli"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 81,
+            "savol": "Kassa defitsiti – bu ...",
+            "variantlar": {
+                "A": "to‘lovlarni amalga oshirish uchun pul yetishmasligi",
+                "B": "kassada pul haddan ortiq ko‘payib ketishi",
+                "C": "soliq imtiyozi turi",
+                "D": "mahsulotning sotilmasdan omborda ortib qolishi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 82,
+            "savol": "Kassa defitsitining oldini olish uchun nima qilish kerak?",
+            "variantlar": {
+                "A": "Pul oqimini oldindan rejalashtirish va zaxira mablag‘ ajratish",
+                "B": "Barcha xodimlarni ishdan bo‘shatish",
+                "C": "Mahsulot narxini keskin oshirish",
+                "D": "Mijozlarga mahsulotni hech qachon muddatli to‘lovga bermaslik"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 83,
+            "savol": "Aylanma mablag‘lar nima uchun kerak?",
+            "variantlar": {
+                "A": "Biznesning kundalik faoliyatini uzluksiz ta’minlash uchun",
+                "B": "Faqat bino sotib olish uchun",
+                "C": "Xodimlarni mukofotlash va bayram tadbirlarini o’tkazish uchun",
+                "D": "Soliq imtiyozi olish uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 84,
+            "savol": "Debitorlik qarzdorligi deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Mijozlarning biznesga to‘lashi kerak bo‘lgan qarzi",
+                "B": "Biznesning yetkazib beruvchilarga to‘lashi kerak bo‘lgan qarzi",
+                "C": "Bankdan olingan kredit",
+                "D": "Davlatga to‘lanadigan soliq"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 85,
+            "savol": "Biznesda qarzdorlikning nechta turi nazorat qilinadi va ular qaysilar?",
+            "variantlar": {
+                "A": "2 ta – debitorlik va kreditorlik",
+                "B": "1 ta – bank qarzi",
+                "C": "3 ta – soliq, ijara, maosh",
+                "D": "4 ta – ichki, tashqi, qisqa, uzoq"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 86,
+            "savol": "Startap yoki kichik biznesda odatda nechta asoschi (co-founder) optimal hisoblanadi?",
+            "variantlar": {
+                "A": "2-3 ta",
+                "B": "1 ta",
+                "C": "6-7 ta",
+                "D": "10 tadan ortiq"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 87,
+            "savol": "Asoschilarni tanlashda ko'nikmalarning bir-birini to'ldirishi nimani anglatadi?",
+            "variantlar": {
+                "A": "Har bir asoschi turli sohada kuchli bo'lib, birgalikda to'liq qamrovni ta'minlashi",
+                "B": "Barcha asoschilar bir xil sohada mutaxassis bo'lishi",
+                "C": "Asoschilar hech qanday tajribaga ega bo'lmasligi",
+                "D": "Faqat bitta asoschi barcha ishni bajarishi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 88,
+            "savol": "Ilk xodimlarni (early hires) tanlashda nima ayniqsa muhim hisoblanadi?",
+            "variantlar": {
+                "A": "Ko'p vazifani bajara olish va noaniqlikka moslasha olish qobiliyati",
+                "B": "Faqat bitta tor vazifani bajara olishi",
+                "C": "Faqat diplomning mavjudligi",
+                "D": "Ish stajining kamida 15 yil bo'lishi"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 89,
+            "savol": "“Probation period” (sinov muddati) qanday maqsadda qo'llaniladi?",
+            "variantlar": {
+                "A": "Xodimning jamoaga mosligini amaliyotda tekshirish uchun",
+                "B": "Xodimga darhol yuqori lavozim berish uchun",
+                "C": "Xodimni ishdan darhol bo'shatish uchun",
+                "D": "Xodimning maoshini kamaytirish uchun"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 90,
+            "savol": "Quyidagilardan qaysi biri moddiy motivatsiya turiga kiradi?",
+            "variantlar": {
+                "A": "Bonus va mukofotlar",
+                "B": "Fikr-mulohaza (feedback) berish",
+                "C": "Moslashuvchan ish jadvali",
+                "D": "Yutuqni jamoa oldida tan olish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 91,
+            "savol": "Delegatsiya (delegation) deganda nima tushuniladi?",
+            "variantlar": {
+                "A": "Vazifani bajarish uchun zarur vakolat va mas'uliyatni boshqa xodimga topshirish",
+                "B": "Xodimni ishdan bo'shatish",
+                "C": "Barcha qarorlarni faqat rahbar qabul qilishi",
+                "D": "Kompaniyani boshqa firmaga sotish"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 92,
+            "savol": "Mijozdan tushumning kechikishi yoki pul oqimi yetishmasligi qaysi risk turiga misol bo'ladi?",
+            "variantlar": {
+                "A": "Moliyaviy risk",
+                "B": "Bozor riski",
+                "C": "Huquqiy risk",
+                "D": "Operatsion risk"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 93,
+            "savol": "Raqobatchining yangi mahsulot yoki past narx bilan bozorga chiqishi qaysi risk turiga kiradi?",
+            "variantlar": {
+                "A": "Bozor riski",
+                "B": "Moliyaviy risk",
+                "C": "Operatsion risk",
+                "D": "Huquqiy risk"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 94,
+            "savol": "Yetkazib beruvchi bilan bog'liq kechikish yoki muhim xodimning kutilmaganda ishdan ketishi qaysi risk turiga misol bo'ladi?",
+            "variantlar": {
+                "A": "Operatsion risk",
+                "B": "Bozor riski",
+                "C": "Moliyaviy risk",
+                "D": "Huquqiy risk"
+            },
+            "togri_javob": "A"
+        },
+        {
+            "id": 95,
+            "savol": "Risklarni boshqarish matritsasida risklar qaysi ikki mezon bo'yicha baholanadi?",
+            "variantlar": {
+                "A": "Yuzaga kelish ehtimoli va ta'sir darajasi",
+                "B": "Xodimlar soni va ish staji",
+                "C": "Kompaniya yoshi va joylashuvi",
+                "D": "Mahsulot narxi va sifat"
+            },
+            "togri_javob": "A"
+        }
+    ]
+}
